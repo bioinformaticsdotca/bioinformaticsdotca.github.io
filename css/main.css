@@ -1624,6 +1624,10 @@
 
 	body {
 		background-color: #000000;
+		background-image: -moz-linear-gradient(45deg, #f7f2e7 15%, #cac6be 85%);
+		background-image: -webkit-linear-gradient(45deg, #f7f2e7 15%, #cac6be 85%);
+		background-image: -ms-linear-gradient(45deg, #f7f2e7 15%, #cac6be 85%);
+		background-image: linear-gradient(45deg, #f7f2e7 15%, #cac6be 85%);
 
 	}
 
