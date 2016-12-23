@@ -3146,6 +3146,31 @@
 					max-width: 75%;
 				}
 
+		#header.tutorial {
+			padding: 7em 5em 4em 5em ;
+		}
+
+			#header.tutorial h1 {
+				font-size: 3.25em;
+			}
+
+			#header.tutorial > * {
+				-moz-transition: opacity 3s ease;
+				-webkit-transition: opacity 3s ease;
+				-ms-transition: opacity 3s ease;
+				transition: opacity 3s ease;
+				-moz-transition-delay: 0.5s;
+				-webkit-transition-delay: 0.5s;
+				-ms-transition-delay: 0.5s;
+				transition-delay: 0.5s;
+				opacity: 1;
+			}
+
+				#header.tutorial img {
+					float: right;
+    				margin: 0 0 10px 10px;
+				}
+
 		@media screen and (max-width: 1280px) {
 
 			#header {
