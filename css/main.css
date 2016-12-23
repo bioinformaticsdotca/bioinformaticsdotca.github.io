@@ -3182,6 +3182,10 @@
 				#header.alt {
 					padding: 6em 4em 3em 4em ;
 				}
+			
+			#header.tutorial {
+					padding: 6em 4em 3em 4em ;
+				}
 
 		}
 
@@ -3192,6 +3196,9 @@
 			}
 
 				#header.alt {
+					padding: 5em 3em 2em 3em ;
+				}
+			#header.tutorial {
 					padding: 5em 3em 2em 3em ;
 				}
 
@@ -3219,6 +3226,13 @@
 					#header.alt h1 {
 						font-size: 2.5em;
 					}
+				#header.tutorial {
+					padding: 4em 2em 1em 2em ;
+				}
+
+					#header.tutorial h1 {
+						font-size: 2.5em;
+					}
 
 		}
 
@@ -3229,6 +3243,9 @@
 			}
 
 				#header.alt {
+					padding: 4em 1.5em 1em 1.5em ;
+				}
+			#header.tutorial {
 					padding: 4em 1.5em 1em 1.5em ;
 				}
 
@@ -3243,6 +3260,10 @@
 				#header.alt {
 					padding: 3.5em 1em 0.5em 1em ;
 				}
+			
+			#header.tutorial {
+					padding: 3.5em 1em 0.5em 1em ;
+				}
 
 		}
 
@@ -3255,6 +3276,10 @@
 			-webkit-transform: scale(0.8) rotate(-30deg);
 			-ms-transform: scale(0.8) rotate(-30deg);
 			transform: scale(0.8) rotate(-30deg);
+		}
+
+		body.is-loading #header.tutorial > * {
+			opacity: 0;
 		}
 
 /* Nav */
