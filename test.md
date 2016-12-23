@@ -7,4 +7,4 @@ header2: Test page
 image: /site_images/CBW_RNA_seq_icon.jpg
 ---
 
-This is some content. And it's back.
+This is some content. 
