@@ -3169,7 +3169,7 @@
 				#header.tutorial img {
 					display: block;
 					float: left;
-    					margin: 0 auto;
+    					margin: 15px;
 					max-width: 75%;
 				}
 
