@@ -3167,7 +3167,8 @@
 			}
 
 				#header.tutorial img {
-					float: right;
+					display: block;
+					float: left;
     					margin: 0 auto;
 					max-width: 75%;
 				}
