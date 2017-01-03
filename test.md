@@ -1,5 +1,5 @@
 ---
-layout: workshop_main
+layout: workshop_main_2day
 permalink: /test
 title: Test2
 header1: Test
