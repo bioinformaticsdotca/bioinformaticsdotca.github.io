@@ -1,3 +1,6 @@
 [submodule "HT-Biology_2017"]
 	path = HT-Biology_2017
 	url = https://github.com/bioinformaticsdotca/HT-Biology_2017.git
+[submodule "AWS_stuff"]
+	path = AWS_stuff
+	url = https://github.com/bioinformaticsdotca/AWS_stuff.git
