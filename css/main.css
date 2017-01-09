@@ -1792,7 +1792,7 @@
 	}
 
 	pre {
-		overflow: auto;
+		overflow: scroll;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
@@ -1802,7 +1802,7 @@
 			display: block;
 			line-height: 1.75;
 			padding: 1em 1.5em;
-			overflow-x: auto;
+			overflow-x: scroll;
 		}
 
 	hr {
