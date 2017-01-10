@@ -260,8 +260,6 @@ NA12878.bwa.sort.bam.vcf  NA12878.bwa.sort.rmdup.realign.bam  other_files
 </code></pre>
 
 <pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls
-NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
-NA12878.bwa.sort.bam.vcf      NA12878.bwa.sort.rmdup.realign.bam.filter.vcf      other_files
-NA12878.bwa.sort.bam.vcf.idx  NA12878.bwa.sort.rmdup.realign.bam.filter.vcf.idx
+aaaaaaaaaaaaaaaaaaaaaaaa      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 </code></pre>
 
