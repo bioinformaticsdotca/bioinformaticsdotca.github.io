@@ -259,12 +259,21 @@ NA12878.bwa.sort.bam.bai  NA12878.bwa.sort.rmdup.realign.bai  NA12878.bwa.sort.r
 NA12878.bwa.sort.bam.vcf  NA12878.bwa.sort.rmdup.realign.bam  other_files
 </code></pre>
 
-<pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls</pre></code>
-<pre><code>NA12878.bwa.sort.bam          NA12878.bwa.sort.rmdup.realign.bai                 NA12878.bwa.sort.rmdup.realign.bam.vcf</pre></code>
-<pre><code>NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx</pre></code>
-<pre><code>NA12878.bwa.sort.bam.vcf      NA12878.bwa.sort.rmdup.realign.bam.filter.vcf      other_files</pre></code>
-<pre><code>NA12878.bwa.sort.bam.vcf.idx  NA12878.bwa.sort.rmdup.realign.bam.filter.vcf.idx</pre></code>
+<pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls
 </pre></code>
+
+<pre><code>NA12878.bwa.sort.bam          NA12878.bwa.sort.rmdup.realign.bai                 NA12878.bwa.sort.rmdup.realign.bam.vcf
+</pre></code>
+
+<pre><code>NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
+</pre></code>
+
+<pre><code>NA12878.bwa.sort.bam.vcf      NA12878.bwa.sort.rmdup.realign.bam.filter.vcf      other_files
+</pre></code>
+
+<pre><code>NA12878.bwa.sort.bam.vcf.idx  NA12878.bwa.sort.rmdup.realign.bam.filter.vcf.idx
+</pre></code>
+
 
 
 
