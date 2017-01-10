@@ -18,17 +18,9 @@ This is some content...
 
 #### Lab Practical
 
-
-
-
 ```
 code width 90% this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
 ```
-
-
-
-
-
 
 # Day 2
 
