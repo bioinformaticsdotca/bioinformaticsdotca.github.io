@@ -254,10 +254,9 @@ To perform more rigorous filtering, another program must be used. In our case, w
 At this point, you should have the following result files:
 
 <pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls
-NA12878.bwa.sort.bam          NA12878.bwa.sort.rmdup.realign.bai                 NA12878.bwa.sort.rmdup.realign.bam.vcf
-NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
-NA12878.bwa.sort.bam.vcf      NA12878.bwa.sort.rmdup.realign.bam.filter.vcf      other_files
-NA12878.bwa.sort.bam.vcf.idx  NA12878.bwa.sort.rmdup.realign.bam.filter.vcf.idx
+NA12878.bwa.sort.bam      NA12878.bwa.sort.bam.vcf.idx        NA12878.bwa.sort.rmdup.realign.bam.vcf
+NA12878.bwa.sort.bam.bai  NA12878.bwa.sort.rmdup.realign.bai  NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
+NA12878.bwa.sort.bam.vcf  NA12878.bwa.sort.rmdup.realign.bam  other_files
 </code></pre>
 
 
