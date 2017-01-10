@@ -253,6 +253,10 @@ To perform more rigorous filtering, another program must be used. In our case, w
 
 At this point, you should have the following result files:
 
+<pre><code>
+this is code
+</code></pre>
+
 
 
 
