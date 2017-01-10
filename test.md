@@ -19,7 +19,6 @@ This is some content...
 #### Lab Practical
 
 
-<div style="width: 50em; overflow:scroll">
 
 
 <pre><code>
@@ -27,7 +26,7 @@ i've add an extra div and fixed formatting and added width as em this is all cod
 </code></pre>
 
 
-</div>
+
 
 
 
