@@ -248,3 +248,43 @@ To perform more rigorous filtering, another program must be used. In our case, w
 `--filterName` defines what the filter field should display if that filter is true. 
 
 ***What is QD, FS, and MQ?***
+
+#### File check
+
+At this point, you should have the following result files:
+
+<pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls
+NA12878.bwa.sort.bam          NA12878.bwa.sort.rmdup.realign.bai                 NA12878.bwa.sort.rmdup.realign.bam.vcf
+NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
+NA12878.bwa.sort.bam.vcf      NA12878.bwa.sort.rmdup.realign.bam.filter.vcf      other_files
+NA12878.bwa.sort.bam.vcf.idx  NA12878.bwa.sort.rmdup.realign.bam.filter.vcf.idx
+</code></pre>
+
+## Adding functional consequence
+<a name="function"></a>
+
+The next step in trying to make sense of the variant calls is to assign functional consequence to each variant.
+
+At the most basic level, this involves using gene annotations to determine if variants are sense, missense, or nonsense. 
+
+<pre><code>java -Xmx2G -jar other_files/snpEff/snpEff.jar eff \
+-c other_files/snpEff/snpEff.config -v -no-intergenic \
+-i vcf -o vcf hg19 NA12878.bwa.sort.rmdup.realign.bam.filter.vcf \
+> NA12878.bwa.sort.rmdup.realign.bam.filter.snpeff.vcf
+</code></pre>
+
+`-Xmx2g` instructs java to allow up 4 GB of RAM to be used for snpEff. 
+
+`-c` specifies the path to the snpEff configuration file 
+
+`-v` specifies verbose output. 
+
+`-no-intergenic` specifies that we want to skip functional consequence testing in intergenic regions. 
+
+`-i` and `-o` specify the input and output file format respectively. In this case, we specify vcf for both. 
+
+`hg19` specifies that we want to use the hg19 annotation database. 
+
+`NA12878.bwa.sort.rmdup.realign.bam.filter.vcf` specifies our input vcf filename 
+
+`NA12878.bwa.sort.rmdup.realign.bam.filter.snpeff.vcf` specifies our output vcf filename 
