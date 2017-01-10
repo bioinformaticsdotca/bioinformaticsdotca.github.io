@@ -265,12 +265,3 @@ NA12878.bwa.sort.bam.vcf  NA12878.bwa.sort.rmdup.realign.bam  other_files
 <pre><code>NA12878.bwa.sort.bam          NA12878.bwa.sort.rmdup.realign.bai                 NA12878.bwa.sort.rmdup.realign.bam.vcf
 </code></pre>
 
-<pre><code>NA12878.bwa.sort.bam.bai      NA12878.bwa.sort.rmdup.realign.bam                 NA12878.bwa.sort.rmdup.realign.bam.vcf.idx
-</code></pre>
-
-
-
-
-
-
-
