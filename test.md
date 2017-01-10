@@ -22,7 +22,7 @@ This is some content...
 
 
 <pre><code>
-moved width em to css in pre and code to 75% this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
+changed width em to % in pre removed width % in code this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
 </code></pre>
 
 
