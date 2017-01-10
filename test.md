@@ -22,7 +22,7 @@ This is some content...
 
 
 <pre><code>
-i've add an extra div and fixed formatting and added width as em this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
+moved width em to css this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
 </code></pre>
 
 
