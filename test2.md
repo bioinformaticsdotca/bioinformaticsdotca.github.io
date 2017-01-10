@@ -234,3 +234,17 @@ To perform more rigorous filtering, another program must be used. In our case, w
 --filterName QDFilter --filterName FSFilter --filterName MQFilter
 </code></pre>
 
+
+`-Xmx2g` instructs java to allow up 2 GB of RAM to be used for GATK. 
+
+`-R` specifies which reference sequence to use. 
+
+`--variant` specifies the input vcf file. 
+
+`-o` specifies the output vcf file. 
+
+`--filterExpression` defines an expression using the vcf INFO and genotype variables. 
+
+`--filterName` defines what the filter field should display if that filter is true. 
+
+***What is QD, FS, and MQ?***
