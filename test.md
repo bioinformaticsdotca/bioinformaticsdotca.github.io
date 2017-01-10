@@ -20,10 +20,16 @@ This is some content...
 
 
 <div style="overflow:scroll">
+
+
 ```
-i've add an extra div this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
+i've add an extra div and fixed formatting this is all code there is a lot of it there should be a scroll bar does the scroll bar appear or is it just not there how to fix this html code or css
 ```
+
+
 <\div>
+
+
 
 # Day 2
 
