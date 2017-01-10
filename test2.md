@@ -227,3 +227,10 @@ To perform more rigorous filtering, another program must be used. In our case, w
 
 **NOTE:** The best practice when using GATK is to use the *VariantRecalibrator*. In our data set, we had too few variants to accurately use the variant recalibrator and therefore we used the *VariantFiltration* tool instead. 
 
+<pre><code>java -Xmx2g -jar /usr/local/GATK/GenomeAnalysisTK.jar -T VariantFiltration \
+-R other_files/hg19.fa --variant NA12878.bwa.sort.rmdup.realign.bam.vcf \
+-o NA12878.bwa.sort.rmdup.realign.bam.filter.vcf --filterExpression "QD < 2.0" \
+--filterExpression "FS > 200.0" --filterExpression "MQ < 40.0" \
+--filterName QDFilter --filterName FSFilter --filterName MQFilter
+</code></pre>
+
