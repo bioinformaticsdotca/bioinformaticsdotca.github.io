@@ -19,7 +19,7 @@ This is some content...
 #### Lab Practical
 
 
-<div style="width: 10em; overflow:scroll">
+<div style="width: 50em; overflow:scroll">
 
 
 <pre><code>
