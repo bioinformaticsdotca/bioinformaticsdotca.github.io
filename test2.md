@@ -249,5 +249,11 @@ To perform more rigorous filtering, another program must be used. In our case, w
 
 ***What is QD, FS, and MQ?***
 
+#### File check
+
+At this point, you should have the following result files:
+
+
+
 
 
