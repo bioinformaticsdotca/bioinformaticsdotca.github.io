@@ -253,8 +253,7 @@ To perform more rigorous filtering, another program must be used. In our case, w
 
 At this point, you should have the following result files:
 
-<pre><code>
-this is code
+<pre><code>ubuntu@ip-10-182-231-187:~/workspace/module5$ ls
 </code></pre>
 
 
