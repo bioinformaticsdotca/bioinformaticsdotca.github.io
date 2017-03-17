@@ -3410,24 +3410,24 @@
 
 	#main {
 		background-color: #ffffff;
-		color: #636363;
+		color: #000000;
 		border-radius: 0.25em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main a:hover {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main blockquote {
@@ -3516,7 +3516,7 @@
 				}
 
 		#main label {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main input[type="text"],
@@ -3543,7 +3543,7 @@
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #636363;
+			color: #000000;
 		}
 
 			#main input[type="checkbox"] + label:before,
@@ -3554,8 +3554,8 @@
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #636363;
-			border-color: #636363;
+			background-color: #000000;
+			border-color: #000000;
 			color: #ffffff;
 		}
 
@@ -3595,7 +3595,7 @@
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #636363;
+			color: #000000;
 		}
 
 			#main .icon.alt:hover {
@@ -3611,7 +3611,7 @@
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main header.major h2:after {
@@ -3631,7 +3631,7 @@
 			}
 
 		#main table th {
-			color: #636363;
+			color: #000000;
 		}
 
 		#main table thead {
