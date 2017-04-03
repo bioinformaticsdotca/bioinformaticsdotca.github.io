@@ -4,3 +4,39 @@
 [submodule "AWS_stuff"]
 	path = AWS_stuff
 	url = https://github.com/bioinformaticsdotca/AWS_stuff.git
+[submodule "Genomic_Epi_2017"]
+	path = Genomic_Epi_2017
+	url = https://github.com/bioinformaticsdotca/Genomic_Epi_2017.git
+[submodule "Genomic_Med_2017"]
+	path = Genomic_Med_2017
+	url = https://github.com/bioinformaticsdotca/Genomic_Med_2017.git
+[submodule "HTSeq_2017"]
+	path = HTSeq_2017
+	url = https://github.com/bioinformaticsdotca/HTSeq_2017.git
+[submodule "BiCG_2017"]
+	path = BiCG_2017
+	url = https://github.com/bioinformaticsdotca/BiCG_2017.git
+[submodule "Metabolomics_2017"]
+	path = Metabolomics_2017
+	url = https://github.com/bioinformaticsdotca/Metabolomics_2017.git
+[submodule "IntroR_2017"]
+	path = IntroR_2017
+	url = https://github.com/bioinformaticsdotca/IntroR_2017.git
+[submodule "EDA_2017"]
+	path = EDA_2017
+	url = https://github.com/bioinformaticsdotca/EDA_2017.git
+[submodule "Epigenomics_2017"]
+	path = Epigenomics_2017
+	url = https://github.com/bioinformaticsdotca/Epigenomics_2017.git
+[submodule "Microbiome_2017"]
+	path = Microbiome_2017
+	url = https://github.com/bioinformaticsdotca/Microbiome_2017.git
+[submodule "Pathways_2017"]
+	path = Pathways_2017
+	url = https://github.com/bioinformaticsdotca/Pathways_2017.git
+[submodule "CloudComp_2017"]
+	path = CloudComp_2017
+	url = https://github.com/bioinformaticsdotca/CloudComp_2017.git
+[submodule "RNASeq_2017"]
+	path = RNASeq_2017
+	url = https://github.com/bioinformaticsdotca/RNASeq_2017.git
