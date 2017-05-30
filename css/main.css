@@ -2739,7 +2739,8 @@
 /* Table */
 
 	.table-wrapper {
-		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+		overflow-x: scroll;
 		max-width: 65em;
 	}
 
@@ -2747,6 +2748,7 @@
 		margin: 0 0 2em 0;
 		max-width: 65em;
 		overflow: scroll;
+		display: block;
 	}
 
 		table tbody tr {
