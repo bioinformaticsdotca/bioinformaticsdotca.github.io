@@ -2745,7 +2745,7 @@
 
 	table {
 		margin: 0 0 2em 0;
-		max-width: 1000px;
+		width: 65em;
 		overflow: scroll;
 	}
 
