@@ -2742,6 +2742,7 @@
 		-webkit-overflow-scrolling: touch;
 		overflow-x: scroll;
 		max-width: 65em;
+		display: block;
 	}
 
 	table {
