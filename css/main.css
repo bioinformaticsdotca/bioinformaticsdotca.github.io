@@ -2739,8 +2739,7 @@
 /* Table */
 
 	.table-wrapper {
-		-webkit-overflow-scrolling: touch;
-		overflow-x: scroll;
+		overflow: scroll;
 		max-width: 65em;
 	}
 
