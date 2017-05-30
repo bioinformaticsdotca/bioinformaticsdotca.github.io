@@ -2740,13 +2740,13 @@
 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
+		overflow-x: scroll;
 	}
 
 	table {
 		margin: 0 0 2em 0;
-		width: 750;
-		overflow: auto;
+		width: 100%;
+		overflow: scroll;
 	}
 
 		table tbody tr {
