@@ -2741,13 +2741,13 @@
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: scroll;
-		max-width: 35em;
+		max-width: 65em;
 		display: block;
 	}
 
 	table {
 		margin: 0 0 2em 0;
-		max-width: 35em;
+		max-width: 65em;
 		overflow: scroll;
 		display: block;
 	}
