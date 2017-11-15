@@ -41,3 +41,6 @@
 	path = RNASeq_2017
 	url = https://github.com/bioinformaticsdotca/RNASeq_2017.git
 	
+[submodule "10_Simple_Rules"]
+	path = 10_Simple_Rules
+	url = ../10_Simple_Rules
