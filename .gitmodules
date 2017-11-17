@@ -43,4 +43,4 @@
 	
 [submodule "10_Simple_Rules"]
 	path = 10_Simple_Rules
-	url = ../10_Simple_Rules
+	url = https://github.com/bioinformaticsdotca/10_Simple_Rules.git
