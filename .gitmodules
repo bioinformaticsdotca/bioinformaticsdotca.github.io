@@ -44,3 +44,27 @@
 [submodule "10_Simple_Rules"]
 	path = 10_Simple_Rules
 	url = https://github.com/bioinformaticsdotca/10_Simple_Rules.git
+[submodule "Epigenomics_2018"]
+	path = Epigenomics_2018
+	url = ../Epigenomics_2018
+[submodule "GenEpi_2018"]
+	path = GenEpi_2018
+	url = ../GenEpi_2018
+[submodule "GenMed_2018"]
+	path = GenMed_2018
+	url = ../GenMed_2018
+[submodule "HTseq_2018"]
+	path = HTseq_2018
+	url = ../HTseq_2018
+[submodule "Metabolomics_2018"]
+	path = Metabolomics_2018
+	url = ../Metabolomics_2018
+[submodule "Metagenomics_2018"]
+	path = Metagenomics_2018
+	url = ../Metagenomics_2018
+[submodule "Pathways_2018"]
+	path = Pathways_2018
+	url = ../Pathways_2018
+[submodule "RNAseq_2018"]
+	path = RNAseq_2018
+	url = ../RNAseq_2018
