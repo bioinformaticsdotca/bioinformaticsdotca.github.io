@@ -70,10 +70,10 @@
 	url = https://github.com/bioinformaticsdotca/RNAseq_2018.git
 [submodule "BiCG_2018"]
 	path = BiCG_2018
-	url = ../BiCG_2018
+	url = https://github.com/bioinformaticsdotca/BiCG_2018.git
 [submodule "IntroR_2018"]
 	path = IntroR_2018
-	url = ../IntroR_2018
+	url = https://github.com/bioinformaticsdotca/IntroR_2018.git
 [submodule "EDA_2018"]
 	path = EDA_2018
-	url = ../EDA_2018
+	url = https://github.com/bioinformaticsdotca/EDA_2018.git
