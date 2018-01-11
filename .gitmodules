@@ -68,3 +68,12 @@
 [submodule "RNAseq_2018"]
 	path = RNAseq_2018
 	url = https://github.com/bioinformaticsdotca/RNAseq_2018
+[submodule "BiCG_2018"]
+	path = BiCG_2018
+	url = https://github.com/bioinformaticsdotca/BiCG_2018
+[submodule "IntroR_2018"]
+	path = IntroR_2018
+	url = https://github.com/bioinformaticsdotca/IntroR_2018
+[submodule "EDA_2018"]
+	path = EDA_2018
+	url = https://github.com/bioinformaticsdotca/EDA_2018
