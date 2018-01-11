@@ -46,34 +46,34 @@
 	url = https://github.com/bioinformaticsdotca/10_Simple_Rules.git
 [submodule "Epigenomics_2018"]
 	path = Epigenomics_2018
-	url = https://github.com/bioinformaticsdotca/Epigenomics_2018
+	url = https://github.com/bioinformaticsdotca/Epigenomics_2018.git
 [submodule "GenEpi_2018"]
 	path = GenEpi_2018
-	url = https://github.com/bioinformaticsdotca/GenEpi_2018
+	url = https://github.com/bioinformaticsdotca/GenEpi_2018.git
 [submodule "GenMed_2018"]
 	path = GenMed_2018
-	url = https://github.com/bioinformaticsdotca/GenMed_2018
+	url = https://github.com/bioinformaticsdotca/GenMed_2018.git
 [submodule "HTseq_2018"]
 	path = HTseq_2018
-	url = https://github.com/bioinformaticsdotca/HTseq_2018
+	url = https://github.com/bioinformaticsdotca/HTseq_2018.git
 [submodule "Metabolomics_2018"]
 	path = Metabolomics_2018
-	url = https://github.com/bioinformaticsdotca/Metabolomics_2018
+	url = https://github.com/bioinformaticsdotca/Metabolomics_2018.git
 [submodule "Metagenomics_2018"]
 	path = Metagenomics_2018
-	url = https://github.com/bioinformaticsdotca/Metagenomics_2018
+	url = https://github.com/bioinformaticsdotca/Metagenomics_2018.git
 [submodule "Pathways_2018"]
 	path = Pathways_2018
-	url = https://github.com/bioinformaticsdotca/Pathways_2018
+	url = https://github.com/bioinformaticsdotca/Pathways_2018.git
 [submodule "RNAseq_2018"]
 	path = RNAseq_2018
-	url = https://github.com/bioinformaticsdotca/RNAseq_2018
+	url = https://github.com/bioinformaticsdotca/RNAseq_2018.git
 [submodule "BiCG_2018"]
 	path = BiCG_2018
-	url = https://github.com/bioinformaticsdotca/BiCG_2018
+	url = https://github.com/bioinformaticsdotca/BiCG_2018.git
 [submodule "IntroR_2018"]
 	path = IntroR_2018
-	url = https://github.com/bioinformaticsdotca/IntroR_2018
+	url = https://github.com/bioinformaticsdotca/IntroR_2018.git
 [submodule "EDA_2018"]
 	path = EDA_2018
-	url = https://github.com/bioinformaticsdotca/EDA_2018
+	url = https://github.com/bioinformaticsdotca/EDA_2018.git
