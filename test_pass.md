@@ -1,5 +1,5 @@
 ---
-layout: tutorial_page
+layout: pass_protected
 permalink: /test_pass
 link: https://bioinformaticsdotca.github.io/test_pass
 title: Test
