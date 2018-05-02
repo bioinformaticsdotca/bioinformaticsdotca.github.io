@@ -8,4 +8,4 @@ image: /site_images/CBW_wshop-epidem_map-icon.png
 home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2017
 ---
 
-This is a test page
+This is a test page that has been updated
