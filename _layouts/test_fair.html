@@ -18,36 +18,24 @@
 			<!-- BioSchemas -->
 				<div itemscope itemtype="http://schema.org/creativeWork">
 					<meta itemprop="genre" content="trainingMaterial">
-					<div itemprop="name"> {{ page.header2 }} </div>
-					<div itemprop="description"> {{ page.description }} </div>
-					<div>Event type: 
-						<span itemprop="eventType">Workshops and courses</span>
+					<div itemprop="name" content=" {{ page.header2 }} "/>
+					<div itemprop="description" content=" {{ page.description }} "/>
+					<div itemprop="eventType" content=" Workshops and courses"/>
+					<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name" content=" {{ page.author }} "/>
 					</div>
-					<div>Author: 
-						<div itemprop="author" itemscope itemtype="http://schema.org/Person">
-							<span itemprop="name"> {{ page.author }} </span>
-						</div>
+					<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
+   							<span itemprop="audienceType" content=" Omics "/>
+   							<span itemprop="genre" content=" Omics "/>
 					</div>
-					<div>Target audience:
-						<span itemprop="audience" itemscope itemtype="http://schema.org/Audience">
-   							<span itemprop="audienceType">Omics</span>
-   							<span itemprop="genre">Omics</span>
-						</span>
+					<div>
+						<span itemprop="learningResourceType" content="text" />
+						<span itemprop="learningResourceType" content="exercise files" /> 
+						<span itemprop="learningResourceType" content="scripts" />
 					</div>
-					<div>Material: 
-						<span itemprop="learningResourceType">text</span>,
-						<span itemprop="learningResourceType">exercise files</span>, 
-						<span itemprop="learningResourceType">scripts</span>
-					</div>
-					<div>License:
-						<span itemprop="license">https://creativecommons.org/licenses/by-sa/4.0/</span>
-					</div>
-					<div> Tutorial as part of workshop
-						<span itemprop="isPartOf"> {{ page.home }} </span>
-					</div>
-					<div>Last modified:
-   						<span itemprop="dateModified"> {{ page.modified }} </span>
-					</div>
+					<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
+					<div itemprop="isPartOf" content=" {{ page.home }} "/>
+					<div itemprop="dateModified" content=" {{ page.modified }} "/>
 					</meta>
 				</div>
 		
