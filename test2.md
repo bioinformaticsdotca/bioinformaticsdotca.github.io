@@ -1,6 +1,6 @@
 ---
 layout: test_fair
-permalink: /test_pass2
+permalink: /test_pass_2
 title: Test
 header1: Workshop Pages for Students
 header2: Infectious Disease Genomic Epidemiology 2017 Module 1 Lab
