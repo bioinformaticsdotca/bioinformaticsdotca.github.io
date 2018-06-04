@@ -1,5 +1,5 @@
 ---
-layout: tutorial_page
+layout: test_fair
 permalink: /test_pass2
 title: Test
 header1: Workshop Pages for Students
@@ -9,3 +9,5 @@ home: https://bioinformaticsdotca.github.io/genomic_epidemiology_2017
 ---
 
 This is a test page that has been updated
+
+Switch to FAIR layout 2

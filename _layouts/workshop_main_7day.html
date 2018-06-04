@@ -15,6 +15,30 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+		<!-- BioSchemas -->
+				<div itemscope itemtype="http://schema.org/CourseInstance">
+					<div itemprop="name" content=" {{ page.header2 }} "/>
+					<div itemprop="about" content=" {{page.keywords}} "/>
+					<div itemprop="description" content=" {{ page.description }} "/>
+					<div itemprop="eventType" content="Workshops and courses"/>
+					<div itemprop="courseMode" content="In-person" />
+					<div itemprop="organizer" itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="name" content="bioinformatics.ca"/>
+					</div>
+					<div itemprop="instructor" content= " {{ page.instructors }} " /> 
+					<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
+   							<span itemprop="audienceType" content="Omics"/>
+   							<span itemprop="genre" content="Omics "/>
+					</div>
+					<div itemprop="duration" content=" {{ page.length }} " />
+					<div itemprop="inLanguage" content="English" />
+					<div itemprop="image" content=" {{ page.image }} " />
+					<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
+					<div itemprop="isPartOf" content="Canadian Bioinformatics Workshops"/>
+					</meta>
+				</div>
+	
 	</head>
   
   	<body>
@@ -76,7 +100,7 @@
 								<li><a href="https://www.youtube.com/channel/UCKbkfKk65PZyRCzUwXOJung" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright"><font color="grey">&copy; CBW 2016. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
+						<p class="copyright"><font color="grey">&copy; CBW 2018. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
 					</footer>
 
 			</div>

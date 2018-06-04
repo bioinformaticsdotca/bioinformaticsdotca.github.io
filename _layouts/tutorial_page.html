@@ -15,6 +15,31 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+		
+			<!-- BioSchemas -->
+				<div itemscope itemtype="http://schema.org/creativeWork">
+					<meta itemprop="genre" content="trainingMaterial">
+					<div itemprop="name" content=" {{ page.header2 }} "/>
+					<div itemprop="description" content=" {{ page.description }} "/>
+					<div itemprop="eventType" content=" Workshops and courses"/>
+					<div itemprop="author" itemscope itemtype="http://schema.org/Person">
+							<span itemprop="name" content=" {{ page.author }} "/>
+					</div>
+					<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
+   							<span itemprop="audienceType" content=" Omics "/>
+   							<span itemprop="genre" content=" Omics "/>
+					</div>
+					<div>
+						<span itemprop="learningResourceType" content="text" />
+						<span itemprop="learningResourceType" content="exercise files" /> 
+						<span itemprop="learningResourceType" content="scripts" />
+					</div>
+					<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
+					<div itemprop="isPartOf" content=" {{ page.home }} "/>
+					<div itemprop="dateModified" content=" {{ page.modified }} "/>
+					</meta>
+				</div>
+						
 	</head>
   
   	<body>
@@ -69,7 +94,7 @@
 								<li><a href="https://www.youtube.com/channel/UCKbkfKk65PZyRCzUwXOJung" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright"><font color="grey">&copy; CBW 2016. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
+						<p class="copyright"><font color="grey">&copy; CBW 2018. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
 					</footer>
 
 			</div>
