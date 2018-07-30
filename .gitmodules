@@ -80,3 +80,6 @@
 [submodule "Travel_logistics"]
 	path = Travel_logistics
 	url = https://github.com/bioinformaticsdotca/travel_logistics.git
+[submodule "GOBLET2018"]
+	path = GOBLET2018
+	url = https://github.com/bioinformaticsdotca/GOBLET2018.git
