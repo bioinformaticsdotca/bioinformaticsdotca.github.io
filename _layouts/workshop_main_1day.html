@@ -19,7 +19,7 @@
 		<!-- BioSchemas -->
 				<div itemscope itemtype="http://schema.org/CourseInstance">
 					<div itemprop="name" content=" {{ page.header2 }} "/>
-					<div itemprop="about" content=" {{page.keywords}} "/>
+					<div itemprop="about" content=" {{ page.keywords }} "/>
 					<div itemprop="description" content=" {{ page.description }} "/>
 					<div itemprop="eventType" content="Workshops and courses"/>
 					<div itemprop="courseMode" content="In-person" />
@@ -29,13 +29,15 @@
 					<div itemprop="instructor" content= " {{ page.instructors }} " /> 
 					<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
    							<span itemprop="audienceType" content="Omics"/>
-   							<span itemprop="genre" content="Omics "/>
-					</div>
+   					<div>
 					<div itemprop="duration" content=" {{ page.length }} " />
+					<div itemprop="location" content=" {{ page.location }} "/>
+					<div itemprop="startDate" content=" {{ page.startDate }} "/>
+					<div itemprop="endDate" content=" {{ page.endDate }} "/>						
 					<div itemprop="inLanguage" content="English" />
 					<div itemprop="image" content=" {{ page.image }} " />
 					<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
-					<div itemprop="isPartOf" content="Canadian Bioinformatics Workshops"/>
+					<div itemprop="isPartOf" content="Canadian Bioinformatics Workshops"/>	
 					</meta>
 				</div>
 	
