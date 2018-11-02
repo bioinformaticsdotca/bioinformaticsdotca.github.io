@@ -15,30 +15,39 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-			<!-- BioSchemas -->
-				<div itemscope itemtype="http://schema.org/creativeWork">
-					<meta itemprop="genre" content="trainingMaterial">
-					<div itemprop="name" content=" {{ page.header2 }} "/>
-					<div itemprop="description" content=" {{ page.description }} "/>
-					<div itemprop="eventType" content=" Workshops and courses"/>
-					<div itemprop="author" itemscope itemtype="http://schema.org/Person">
-							<span itemprop="name" content=" {{ page.author }} "/>
-					</div>
+
+		<!-- BioSchemas -->
+				<div itemscope itemtype="http://schema.org/Course">
 					<div itemprop="audience" itemscope itemtype="http://schema.org/Audience">
-   							<span itemprop="audienceType" content=" Omics "/>
-   							<span itemprop="genre" content=" Omics "/>
+   							<span itemprop="audienceType" content=" {{ page.audience }} "/>
+   					<div>
+   					<div itemprop="provider" itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="name" content="bioinformatics.ca"/>
 					</div>
-					<div>
-						<span itemprop="learningResourceType" content="text" />
-						<span itemprop="learningResourceType" content="exercise files" /> 
-						<span itemprop="learningResourceType" content="scripts" />
+					<div itemprop="producer" itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="name" content="bioinformatics.ca"/>
 					</div>
-					<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
-					<div itemprop="isPartOf" content=" {{ page.home }} "/>
-					<div itemprop="dateModified" content=" {{ page.modified }} "/>
-					</meta>
+					<div itemprop="courseCode" content=" {{ page.courseCode }} "/>
+					<div itemprop="description" content=" {{ page.description }} "/>
+					<div itemprop="hasCourseInstance" itemscope itemtype="http://schema.org/CourseInstance">
+						<div itemprop="name" content=" {{ page.yearName }} "/>
+						<div itemprop="eventType" content="Workshops and courses"/>
+						<div itemprop="courseMode" content="In-person" />
+						<div itemprop="eventStatus" content=" {{ page.status }} "/>
+						<div itemprop="instructor" content=" {{ page.instructors }} " /> 
+						<div itemprop="duration" content=" {{ page.length }} " />
+						<div itemprop="location" content=" {{ page.location }} "/>
+						<div itemprop="startDate" content=" {{ page.startDate }} "/>
+						<div itemprop="endDate" content=" {{ page.endDate }} "/>						
+						<div itemprop="license" content=" https://creativecommons.org/licenses/by-sa/4.0/ "/>
+					</div>
+					<div itemprop="inLanguage" content="English" />
+					<div itemprop="image" content=" {{ page.image }} " />
+					<div itemprop="about" content=" {{ page.keywords }} "/>
+					<div itemprop="name" content=" {{ page.header2 }} "/>
+					<div itemprop="isPartOf" content="Canadian Bioinformatics Workshops"/>
 				</div>
-		
+	
 	
 	</head>
   
@@ -59,7 +68,10 @@
 					<nav id="nav">
 						<ul>
 							<li><a href="https://bioinformaticsdotca.github.io/" class="active">Home</a></li>
-							<li><a href="{{ page.home }}">Workshop Page</a></li>
+							<li><a href="#welcome">Welcome</a></li>
+							<li><a href="#preworkshop">Pre-workshop Materials</a></li>
+							<li><a href="#day1">Day 1</a></li>
+							<li><a href="#day2">Day 2</a></li>
 						</ul>
 					</nav>
 
@@ -94,7 +106,7 @@
 								<li><a href="https://www.youtube.com/channel/UCKbkfKk65PZyRCzUwXOJung" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright"><font color="grey">&copy; CBW 2016. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
+						<p class="copyright"><font color="grey">&copy; CBW 2018. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
 					</footer>
 
 			</div>
@@ -107,7 +119,8 @@
 			<script src="js/util.js"></script>
 			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
 			<script src="js/main.js"></script>
-		<script>
+		
+				<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
