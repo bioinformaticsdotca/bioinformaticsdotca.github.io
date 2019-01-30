@@ -83,3 +83,6 @@
 [submodule "GOBLET2018"]
 	path = GOBLET2018
 	url = https://github.com/bioinformaticsdotca/GOBLET2018.git
+[submodule "CSHL_2019"]
+	path = CSHL_2019
+	url = https://github.com/bioinformaticsdotca/CSHL_2019.git
