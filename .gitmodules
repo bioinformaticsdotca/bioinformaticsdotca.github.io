@@ -86,3 +86,6 @@
 [submodule "CSHL_2019"]
 	path = CSHL_2019
 	url = https://github.com/bioinformaticsdotca/CSHL_2019.git
+[submodule "IntroR_2019"]
+	path = IntroR_2019
+	url = https://github.com/bioinformaticsdotca/IntroR_2019.git
