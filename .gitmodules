@@ -89,3 +89,6 @@
 [submodule "IntroR_2019"]
 	path = IntroR_2019
 	url = https://github.com/bioinformaticsdotca/IntroR_2019.git
+[submodule "EDA_2019"]
+	path = EDA_2019
+	url = https://github.com/bioinformaticsdotca/EDA_2019.git
