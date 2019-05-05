@@ -101,3 +101,6 @@
 [submodule "RNAseq_2019"]
 	path = RNAseq_2019
 	url = https://github.com/bioinformaticsdotca/RNAseq_2019.git
+[submodule "Pathways_2019"]
+	path = Pathways_2019
+	url = https://github.com/bioinformaticsdotca/Pathways_2019.git
