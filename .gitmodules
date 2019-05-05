@@ -98,3 +98,6 @@
 [submodule "BiCG_2019"]
 	path = BiCG_2019
 	url = https://github.com/bioinformaticsdotca/BiCG_2019.git
+[submodule "RNAseq_2019"]
+	path = RNAseq_2019
+	url = https://github.com/bioinformaticsdotca/RNAseq_2019.git
