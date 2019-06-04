@@ -104,3 +104,6 @@
 [submodule "Pathways_2019"]
 	path = Pathways_2019
 	url = https://github.com/bioinformaticsdotca/Pathways_2019.git
+[submodule "HTseq_2019"]
+	path = HTseq_2019
+	url = https://github.com/bioinformaticsdotca/HTseq_2019.git
