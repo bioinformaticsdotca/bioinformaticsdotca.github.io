@@ -10,7 +10,7 @@ for [bioinformatics.ca](https://bioinformatics.ca) workshops.
 *   [Past Workshops](#second)
 *   [About](#cta)
 
-Welcome to the Canadian Bioinformatics Workshops Student Pages!
+Welcome to the Canadian Bioinformatics Workshops Student Pages
 ---------------------------------------------------------------
 
 Every year, the CBW offers hands-on workshops in bioinformatics. These pages contain the materials for those workshops.
