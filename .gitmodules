@@ -107,3 +107,6 @@
 [submodule "Cloud_2019"]
 	path = Cloud_2019
 	url = https://github.com/bioinformaticsdotca/Cloud_2019.git
+[submodule "IntroR_2020"]
+	path = IntroR_2020
+	url = https://github.com/bioinformatics-ca/IntroR_2020.git
