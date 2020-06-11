@@ -110,3 +110,6 @@
 [submodule "IntroR_2020"]
 	path = IntroR_2020
 	url = https://github.com/bioinformatics-ca/IntroR_2020.git
+[submodule "EDA_2020"]
+	path = EDA_2020
+	url = https://github.com/bioinformatics-ca/EDA_2020.git
