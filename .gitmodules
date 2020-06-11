@@ -116,3 +116,6 @@
 [submodule "Metabolomics_2020"]
 	path = Metabolomics_2020
 	url = https://github.com/bioinformatics-ca/Metabolomics_2020.git
+[submodule "RNAseq_2020"]
+	path = RNAseq_2020
+	url = https://github.com/bioinformatics-ca/RNAseq_2020.git
