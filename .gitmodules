@@ -113,3 +113,6 @@
 [submodule "EDA_2020"]
 	path = EDA_2020
 	url = https://github.com/bioinformatics-ca/EDA_2020.git
+[submodule "Metabolomics_2020"]
+	path = Metabolomics_2020
+	url = https://github.com/bioinformatics-ca/Metabolomics_2020.git
