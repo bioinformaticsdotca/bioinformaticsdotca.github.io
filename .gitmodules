@@ -122,3 +122,6 @@
 [submodule "HTseq_2020"]
 	path = HTseq_2020
 	url = https://github.com/bioinformatics-ca/HTseq_2020.git
+[submodule "Pathways_2020"]
+	path = Pathways_2020
+	url = https://github.com/bioinformatics-ca/Pathways_2020
