@@ -125,3 +125,6 @@
 [submodule "Pathways_2020"]
 	path = Pathways_2020
 	url = https://github.com/bioinformatics-ca/Pathways_2020.git
+[submodule "ML_2020"]
+	path = ML_2020
+	url = https://github.com/bioinformatics-ca/ML_2020.git
