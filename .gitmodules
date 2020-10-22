@@ -128,3 +128,6 @@
 [submodule "ML_2020"]
 	path = ML_2020
 	url = https://github.com/bioinformatics-ca/ML_2020.git
+[submodule "Epigenomics_2020"]
+	path = Epigenomics_2020
+	url = https://github.com/bioinformatics-ca/Epigenomics_2020.git
