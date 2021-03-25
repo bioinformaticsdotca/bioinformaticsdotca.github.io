@@ -131,9 +131,3 @@
 [submodule "Epigenomics_2020"]
 	path = Epigenomics_2020
 	url = https://github.com/bioinformatics-ca/Epigenomics_2020.git
-[submodule "INR_2021"]
-	path = INR_2021
-	url = https://github.com/bioinformatics-ca/INR_2021.git
-[submodule "AUR_2021"]
-	path = AUR_2021
-	url = https://github.com/bioinformatics-ca/AUR_2021.git
