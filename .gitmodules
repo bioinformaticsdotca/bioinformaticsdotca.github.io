@@ -134,3 +134,6 @@
 [submodule "PNA_2021"]
 	path = PNA_2021
 	url = https://github.com/bioinformatics-ca/PNA_2021.git
+[submodule "MLE_2021"]
+	path = MLE_2021
+	url = https://github.com/bioinformatics-ca/MLE_2021.git
