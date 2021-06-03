@@ -140,3 +140,6 @@
 [submodule "CAN_2021"]
 	path = CAN_2021
 	url = https://github.com/bioinformatics-ca/CAN_2021.git
+[submodule "AWS_2021"]
+	path = AWS_2021
+	url = https://github.com/bioinformatics-ca/AWS_2021
