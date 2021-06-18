@@ -143,3 +143,6 @@
 [submodule "AWS_2021"]
 	path = AWS_2021
 	url = https://github.com/bioinformatics-ca/AWS_2021
+[submodule "INR_2021"]
+	path = INR_2021
+	url = https://github.com/bioinformatics-ca/INR_2021.git
