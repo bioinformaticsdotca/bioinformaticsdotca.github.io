@@ -3053,7 +3053,7 @@
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
 				flex-direction: column-reverse;
-				text-align: center;
+				/* text-align: center; */
 			}
 
 				.spotlight .content {
@@ -3187,7 +3187,7 @@
 				#header.alt {
 					padding: 6em 4em 3em 4em ;
 				}
-			
+
 			#header.tutorial {
 					padding: 6em 4em 3em 4em ;
 				}
@@ -3265,7 +3265,7 @@
 				#header.alt {
 					padding: 3.5em 1em 0.5em 1em ;
 				}
-			
+
 			#header.tutorial {
 					padding: 3.5em 1em 0.5em 1em ;
 				}

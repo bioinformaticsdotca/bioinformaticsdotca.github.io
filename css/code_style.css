@@ -1,5 +1,9 @@
 pre { text-align: left; }
 
+details {
+  margin: 20px 0px;
+}
+
 .output::before {
   background-color: #efefef;
   content: "Output";
@@ -15,7 +19,8 @@ pre { text-align: left; }
 .error::before, .output::before, .language-bash::before {
   display: block;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 0px 10px;
+  /* font-size: small; */
 }
 
 .output {
@@ -266,6 +271,6 @@ pre { text-align: left; }
 .highlight .w {
   color: #bbbbbb;
 }
-.highlight {
+/* .highlight {
   background-color: #f8f8f8;
-}
+} */
