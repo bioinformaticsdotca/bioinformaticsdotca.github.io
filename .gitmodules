@@ -152,3 +152,6 @@
 [submodule "MIC_2021"]
 	path = MIC_2021
 	url = https://github.com/bioinformatics-ca/MIC_2021.git
+[submodule "RNA_2021"]
+	path = RNA_2021
+	url = https://github.com/bioinformatics-ca/RNA_2021.git
