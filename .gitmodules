@@ -161,3 +161,6 @@
 [submodule "HTG_2021"]
 	path = HTG_2021
 	url = https://github.com/bioinformatics-ca/HTG_2021.git
+[submodule "IDE_2021"]
+	path = IDE_2021
+	url = https://github.com/bioinformatics-ca/IDE_2021.git
