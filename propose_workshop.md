@@ -6,7 +6,7 @@ header1: Canadian Bioinformatics Workshops
 header2: How to Propose a New Workshop
 image: site_images/bioinformatics_LOGO.jpg
 author: Ann Meyer
-modified: 2018-01-10
+modified: 2023-03-01
 ---
 
 Bioinformatics.ca welcomes proposals for new workshops.
@@ -14,7 +14,7 @@ Bioinformatics.ca welcomes proposals for new workshops.
 To propose a new workshop, you must complete [a workshop proposal](https://docs.google.com/a/bioinformatics.ca/document/d/1mhECI_vIDQnsW10p12UcXHFJbXF_5bV0bNDK-LCtpyc/edit?usp=sharing). This proposal should include:
 
 1. Workshop title
-2. Length of workshop.
+2. Length of workshop
 3. Instructors
 4. Target audience
 5. Pre-requisites
@@ -30,4 +30,4 @@ Workshop proposals will be reviewed at an annual review meeting held in October.
 
 The descriptions of workshops available at bioinformatics.ca are a good example of what the proposal should look like.
 
-Questions and completed proposals should be sent to ann.meyer@bioinformatics.ca.
+Questions and completed proposals should be sent to support@bioinformatics.ca.
