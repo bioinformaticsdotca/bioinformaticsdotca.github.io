@@ -170,3 +170,6 @@
 [submodule "PNA_2023"]
 	path = PNA_2023
 	url = git@github.com:bioinformaticsdotca/PNA_2023.git
+[submodule "AUR_2023"]
+	path = AUR_2023
+	url = git@github.com:bioinformaticsdotca/AUR_2023.git
