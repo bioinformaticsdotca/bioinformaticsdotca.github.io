@@ -176,3 +176,6 @@
 [submodule "INR_2023"]
 	path = INR_2023
 	url = git@github.com:bioinformaticsdotca/INR_2023.git
+[submodule "MIC_2023"]
+	path = MIC_2023
+	url = git@github.com:bioinformaticsdotca/MIC_2023.git
