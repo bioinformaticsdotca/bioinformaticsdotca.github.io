@@ -197,3 +197,27 @@
 [submodule "IDE_2024"]
 	path = IDE_2024
 	url = git@github.com:bioinformaticsdotca/IDE_2024.git
+[submodule "MET_2024"]
+	path = MET_2024
+	url = git@github.com:bioinformaticsdotca/MET_2024.git
+[submodule "INR_2024"]
+	path = INR_2024
+	url = git@github.com:bioinformaticsdotca/INR_2024.git
+[submodule "AUR_2024"]
+	path = AUR_2024
+	url = git@github.com:bioinformaticsdotca/AUR_2024.git
+[submodule "RNA_2024"]
+	path = RNA_2024
+	url = git@github.com:bioinformaticsdotca/RNA_2024.git
+[submodule "scRNA_2024"]
+	path = scRNA_2024
+	url = git@github.com:bioinformaticsdotca/scRNA_2024.git
+[submodule "PNA_2024"]
+	path = PNA_2024
+	url = git@github.com:bioinformaticsdotca/PNA_2024.git
+[submodule "EPI_2024"]
+	path = EPI_2024
+	url = git@github.com:bioinformaticsdotca/EPI_2024.git
+[submodule "MLE_2024"]
+	path = MLE_2024
+	url = git@github.com:bioinformaticsdotca/MLE_2024.git
