@@ -194,3 +194,6 @@
 [submodule "EPI_2023"]
 	path = EPI_2023
 	url = git@github.com:bioinformaticsdotca/EPI_2023.git
+[submodule "IDE_2024"]
+	path = IDE_2024
+	url = git@github.com:bioinformaticsdotca/IDE_2024.git
