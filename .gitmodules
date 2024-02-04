@@ -227,3 +227,6 @@
 [submodule "BMB_2024"]
 	path = BMB_2024
 	url = git@github.com:bioinformaticsdotca/BMB_2024.git
+[submodule "STAT_2024"]
+	path = STAT_2024
+	url = git@github.com:bioinformaticsdotca/STAT_2024.git
