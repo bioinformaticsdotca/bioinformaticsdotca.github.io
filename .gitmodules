@@ -239,3 +239,6 @@
 [submodule "IMG_2024"]
 	path = IMG_2024
 	url = git@github.com:bioinformaticsdotca/IMG_2024.git
+[submodule "ISO_2024"]
+	path = ISO_2024
+	url = git@github.com:bioinformaticsdotca/ISO_2024.git
