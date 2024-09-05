@@ -242,3 +242,6 @@
 [submodule "ISO_2024"]
 	path = ISO_2024
 	url = git@github.com:bioinformaticsdotca/ISO_2024.git
+[submodule "OMPRN_2024"]
+	path = OMPRN_2024
+	url = git@github.com:bioinformaticsdotca/OMPRN_2024.git
