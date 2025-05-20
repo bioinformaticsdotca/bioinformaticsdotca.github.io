@@ -1,7 +1,0 @@
-{
-  "libraryStrings": {
-    "distributeButtonLabel": "Розподілити рівномірно",
-    "distributeButtonWarning": "Значення буде змінено для всіх діапазонів. Бажаєте продовжити?",
-    "rangeOutOfSequenceWarning": "Діапазони очок не є послідовними"
-  }
-}
