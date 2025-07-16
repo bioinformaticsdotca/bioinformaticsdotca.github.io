@@ -188,9 +188,6 @@
 [submodule "scRNA_2023"]
 	path = scRNA_2023
 	url = git@github.com:bioinformaticsdotca/scRNA_2023.git
-[submodule "MLE_2023"]
-	path = MLE_2023
-	url = git@github.com:bioinformaticsdotca/MLE_2023.git
 [submodule "EPI_2023"]
 	path = EPI_2023
 	url = git@github.com:bioinformaticsdotca/EPI_2023.git
