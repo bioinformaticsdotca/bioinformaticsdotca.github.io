@@ -1,0 +1,16 @@
+{
+  "name": "cbw-workshops-page",
+  "version": "1.0.0",
+  "description": "Validation scripts for the CBW workshop data.",
+  "main": "index.html",
+  "scripts": {
+    "validate": "node validate.js",
+    "test": "echo \"Running validation...\" && node validate.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.16.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

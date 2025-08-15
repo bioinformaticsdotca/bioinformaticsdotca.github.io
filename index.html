@@ -1,743 +1,655 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>CBW Student Pages</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Bioinformatics Workshops</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel=“icon” type=“image/x-icon” href=“favicon.ico”>
+    <link rel=“icon” type=“image/png” sizes=“32x32" href=“favicon-32x32.png”>
+    <link rel=“icon” type=“image/png” sizes=“16x16" href=“favicon-16x16.png”>
+    <link rel=“apple-touch-icon” sizes=“180x180” href=“apple-touch-icon.png”>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Manrope', 'sans-serif'], },
+                    colors: {
+                        // Original Brand Colors (Used for borders and color bar)
+                        'brand-purple': '#5A1F65',
+                        'region-bc': '#3C9048',
+                        'region-alberta': '#86264E',
+                        'region-prairies': '#BD8528',
+                        'region-ontario': '#BB682C',
+                        'region-quebec': '#427FA4',
+                        'region-atlantic': '#208A99',
+                        'region-online': '#5A1F65', // Same as brand-purple
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+                        // NEW LIGHTER REGIONAL COLORS FOR TAG BACKGROUNDS (AAA compliant with text-gray-900)
+                        'region-bc-light': '#8ed792',         // CBH British Columbia light
+                        'region-alberta-light': '#ca668a',    // CBH Alberta light
+                        'region-prairies-light': '#f6bc6a',   // CBH Prairies light
+                        'region-ontario-light': '#ffb37a',    // CBH Ontario light
+                        'region-quebec-light': '#9bccf0',     // CBH Quebec light
+                        'region-atlantic-light': '#84d3e1',   // CBH Atlantic light
+                        'region-online-light': '#cc7ed9',     // CBW light (matching brand-purple light)
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html, body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; }
+        body { background-color: #f8fafc; }
+        /* Removed hover effects from .card directly */
+        .container { background-color: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); width: 100%; max-width: 80rem; border: 1px solid #e5e7eb; }
+        /* Apply transition to the wrapper that gets the hover effects */
+        .dropdown-panel, .year-section, .card-interactive-wrapper { transition: all 0.3s ease-in-out; }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="site_images/bioinformatics_LOGO.jpg" alt="" width="50%" height="50%" /></span>
-						<p>Student workshop pages<br />
-						for <a href="https://bioinformatics.ca">bioinformatics.ca</a> workshops.</p>
-					</header>
+        /* Permanent grayscale for past-no-materials cards */
+        .card.past-no-materials img,
+        .card.past-no-materials .h-1\.5, /* Targets the color bar */
+        .card.past-no-materials .flex-wrap > span { /* Targets the region tags */
+          filter: grayscale(100%);
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Current Workshops</a></li>
-							<li><a href="#second">Past Workshops</a></li>
-							<li><a href="#cta">About</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Welcome to the Canadian Bioinformatics Workshops Student Pages!</h2>
-										</header>
-										<p>Every year, the CBW offers hands-on workshops in bioinformatics.  These pages contain the materials for those workshops.</p>
-										<ul class="actions">
-											<li><a href="https://bioinformatics.ca/workshops/workshop-application-form/" class="button">Register for a Workshop</a></li>
-										</ul>
-									</div>
-									
-								</div>
-							</section>
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Current Workshops</h2>
-								</header>
-						
-								<ul class="features">
-
-									<li>
-										<img src="site_images/ISO_logo.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/ISO-V_2025">ISO-V Introductory Spatial 'Omics Analysis: Visium HD</a></h3>
-										<p>Feb. 20-21, 2025 - Toronto ON and virtual</p>
-									</li>
-									
-									<li>
-										<img src="site_images/BMB_2024_v1.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/BMB_2025">BMB - Beginner Microbiome Analysis</a></h3>
-										<p>May 26-27, 2025 - Vancouver BC</p>
-									</li>
-
-									<li>
-										<img src="site_images/AMB_2024_v1.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AMB_2025">AMB - Advanced Microbiome Analysis</a></h3>
-										<p>May 29-30, 2025 - Vancouver BC</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/INR_2025">INR - Introduction to R</a> </h3>
-										<p>June 23-24, 2025 - Toronto ON</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AUR_2025">AUR - Analysis Using R</a> </h3>
-										<p>June 25-26, 2025 - Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNA_2025">RNA - RNA-seq Analysis</a></h3>
-										<p>July 7-9, 2025 - Ottawa ON and Edmonton AB</p>
-									</li> 
-									
-									<li>
-										<img src="site_images/CBW_sc-rna-seq.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/scRNA_2025">scRNA - Single Cell RNA-seq Analysis</a></h3>
-										<p>July 10-11, 2025 - Ottawa ON and Edmonton AB</p>
-									</li>
-
-									<li>
-										<img src="site_images/GAL_2025.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/GAL_2025">RNA-seq Analysis Using Galaxy en Français</a></h3>
-										<p>11-13 Août - Montréal, QC</p>
-									</li>
+        /* No transition for the image on past-no-materials cards because it's permanently gray */
+        .card.past-no-materials img {
+            opacity: 1; /* Ensure it's not faded */
+        }
+        /* No hover specific styles for color bar/region tags for past-no-materials because they are permanently gray */
+        .card.past-no-materials:hover .h-1\.5,
+        .card.past-no-materials:hover .flex-wrap > span {
+            filter: grayscale(100%); /* Keeps it grayscale on hover as it's already gray */
+        }
 
 
-
-								</ul>
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="https://bioinformatics.ca/workshops/application-process" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
-
-
-
-						<!-- 2024 -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>2024 Workshops</h2>
-								</header>
-						
-								<ul class="features">
-								
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/IDE_2024">IDE - Infectious Disease Genomic Epidemiology</a></h3>
-										<p>May 13-17, 2024 - Vancouver BC and Hamilton ON</p>
-									</li>
-									
-									<li>
-										<img src="site_images/BMB_2024_v1.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/BMB_2024">BMB - Beginner Microbiome Analysis</a></h3>
-										<p>May 27-28, 2024 - St. John's, NL</p>
-									</li>
-
-									<li>
-										<img src="site_images/AMB_2024_v1.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AMB_2024">AMB - Advanced Microbiome Analysis</a></h3>
-										<p>May 29-30, 2024 - St. John's, NL</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/INR_2024">INR - Introduction to R</a> </h3>
-										<p>June 11-12, 2024 - Toronto ON</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AUR_2024">AUR - Analysis Using R</a> </h3>
-										<p>June 13-14, 2024 - Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNA_2024">RNA - RNA-seq Analysis</a></h3>
-										<p>June 17-19, 2024 - Toronto ON</p>
-									</li> 
-									
-									<li>
-										<img src="site_images/CBW_sc-rna-seq.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/scRNA_2024">scRNA - Single Cell RNA-seq Analysis</a></h3>
-										<p>June 20-21, 2024 - Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/PNA_2024">PNA - Pathway and Network Analysis</a></h3>
-										<p>June 26-28, 2024 - Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_SpatialOmics_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/ISO_2024">ISO - Introduction to Spatial 'Omics Analysis</a></h3>
-										<p>July 9-10, 2024 - Toronto, ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/STAT_2024.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/STAT_2024">STAT - Help! What Statistical Model Should I Use?</a></h3>
-										<p>August 19-21, 2024 - Virtual</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_MLE_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MLE_2024">MLE - Machine Learning</a></h3>
-										<p>September 7-8, 2024 - Online</p>
-									</li>
-
-									<li>
-										<img src="site_images/PROT_logo.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/PROT_2024">PROT - Proteomics</a></h3>
-										<p>September 16-18 - Laval QC</p>
-									</li>
-
-									<li>
-										<img src="site_images/PGX_Logo.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/PGX_2024">PGX - Pharmacogenomics Data Analysis</a></h3>
-										<p>October 17-18, Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/OMPRN_logo.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/OMPRN_2024">OMPRN - Bridging Pathology and Genomics: A Practical Workshop on NGS for Pathologists and Pathology Researchers</a></h3>
-										<p>October 21-22, 2024 - Toronto ON</p>
-									</li>
-
-									<li>
-										<img src="site_images/CBW_PathwayAsynchronous_Icon.png" alt="" width="100" height="100" />
-										<h3>PNA - Pathway and Network Analysis</h3>
-										<p>November 11-December 6, 2024 - Online</p>
-									</li>
-								
-								</ul>
-								
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Past Workshops</h2>
-								</header>
+        /* Styling for the "Materials Coming Soon" and "Materials Not Available" overlay */
+        .materials-overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease-in-out; /* Smooth transition */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none; /* Allows clicks to pass through to elements below if desired, though here it covers the image */
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.25rem; /* text-xl */
+            padding: 1rem;
+        }
+        /* When the parent card (which has 'group' class) is hovered, show the overlay */
+        .card.group:hover .materials-overlay {
+            opacity: 1;
+        }
 
 
-								<h2>2023 Workshops</h2>
-								<ul class="features">
-								
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/IDE_2023">IDE - Infectious Disease Genomic Epidemiology</a></h3>
-										<p>April 18-21, 2023 - Online</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/PNA_2023">PNA - Pathway and Network Analysis</a></h3>
-										<p>June 5-7, 2023 - Toronto</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/INR_2023">INR - Introduction to R</a> </h3>
-										<p>June 26-27, 2023 - Toronto</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AUR_2023">AUR - Analysis Using R</a> </h3>
-										<p>June 28-29, 2023 - Toronto</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MIC_2023">MIC - CBW-IMPACTT Microbiome Analysis</a> </h3>
-										<p>July 5-7, 2023 - Calgary</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MET_2023">MET - Metabolomics Analysis</a></h3>
-										<p>July 6 - 7, 2023 - Edmonton and Montréal</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNA_2023">RNA - RNA-seq Analysis</a></h3>
-										<p>July 17-19, 2023 - Toronto</p>
-									</li> 
-									
-									<li>
-										<img src="site_images/CBW_sc-rna-seq.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/scRNA_2023">scRNA - Single Cell RNA-seq Analysis</a></h3>
-										<p>July 20-21, 2023 - Toronto</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_MLE_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MLE_2023">MLE - Machine Learning</a></h3>
-										<p>August 16-17, 2023 - Online</p>
-									</li>
+        .card.hidden, .year-section.hidden { opacity: 0; transform: scale(0.95); max-height: 0; overflow: hidden; margin: 0 !important; padding: 0 !important; border: none; pointer-events: none; }
+        .filter-button:hover .dropdown-arrow { transform: translateY(2px); }
 
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/EPI_2023">EPI - Epigenomics Analysis</a></h3>
-										<p>October 11-13, 2023 - Online</p>
-									</li>
-									
-									
-									
-								
-								</ul>
-								
-								
-								<h2>2021 Workshops</h2>
-								<ul class="features">
-				
-									
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/PNA_2021">PNA - Pathway and Network Analysis</a></h3>
-										<p>May 10-12, 2021 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_MLE_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MLE_2021">MLE - Machine LEarning</a></h3>
-										<p>May 25-26, 2021 - Online</p>
-									</li>	
-									<li>
-										<img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/CAN_2021">CAN - Cancer ANalysis</a></h3>
-										<p>June 7-11, 2021 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/INR_2021">INR - INtroduction to R</a> </h3>
-										<p>June 21-22, 2021 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/AUR_2021">AUR- Analysis using R</a> </h3>
-										<p>June 28-29, 2021 - Online</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/MIC_2021">MIC - MICrobiome analysis</a> </h3>
-										<p>September 1-3, 2021 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNA_2021">RNA - RNA-seq analysis</a></h3>
-										<p>September 8-10, 2021 - Online</p>
-									</li>
-							                <li>
-										<img src="site_images/CBW_Epigenome-data_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/EPI_2021">EPI - EPIgenomics Analysis</a> </h3>
-										<p>September 13-15, 2021 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/HTG_2021">HTG - High Throughput Genomics analysis</a></h3>
-										<p>September 27-29, 2021 - Online</p>
-									</li>
-									
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/IDE_2021">IDE - Infectious Disease Epidemiology analysis</a></h3>
-										<p>October 4-6, 2021 - Online</p>
-									</li>
-								</ul>
-								
-								
-								
-								<h2>2020 Workshops</h2>
-								<ul class="features">
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" /> 
-										<h3><a href="https://bioinformaticsdotca.github.io/intror_2020">Introduction to R</a></h3>
-										<p>June 9 - 10, 2020 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/eda_2020">Exploratory Analysis of Biological Data Using R</a></h3>
-										<p>June 11 - 12, 2020 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/metabolomics_2020">Informatics and Statistics for Metabolomics</a></h3>
-										<p>June 15 - 16, 2020 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNAseq_2020">Informatics for RNA-Seq Analysis</a></h3>
-										<p>June 17 - 19, 2020 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/htseq_2020">Informatics on High-Throughput Sequencing Data</a></h3>
-										<p>July 09 - 10, 2020 - Online<p>
-									</li>
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/Pathways_2020">Pathway and Network Analysis of -omics Data</a></h3>
-										<p>July 27 - 29, 2020 - Online</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_MLE_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/ML_2020">Machine Learning</a></h3>
-										<p>September 21 - 22, 2020 - Online</p>  
-									</li>	
-                                                                       <li>
-										<img src="site_images/CBW_Epigenome-data_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/epigenomics_2020">Epigenomic Data Analysis</a> </h3>
-										<p>October 22 - 23, 2020 - Online</p>
-									</li>
-								</ul>
-								
-									
-									
-								<h2>2019 Workshops</h2>
-								<ul class="features">
-								 <li>
-										<img src="site_images/CBW-CSHL-graphic-square.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/CSHL_2019">High-throughput Biology: From Sequence to Networks</a></h3>
-										<p>March 11 - 17, 2019 - Cold Spring Harbor, New York</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/intror_2019">Introduction to R</a></h3>
-										<p>May 13 - 14, 2019 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/eda_2019">Exploratory Analysis of Biological Data Using R</a></h3>
-										<p>May 15 - 16, 2019 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/BiCG_2019">Bioinformatics for Cancer Genomics</a></h3>
-										<p>June 3-4, 2019 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/RNAseq_2019">Informatics for RNA-Seq Analysis</a></h3>
-										<p>June 11 - 13, 2019 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/htseq_2019">Informatics on High-Throughput Sequencing Data</a></h3>
-										<p>June 20 - 21, 2019 - Montreal, QC<p>
-									</li>
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/Pathways_2019">Pathway and Network Analysis of -omics Data</a></h3>
-										<p>June 26 - 28, 2019 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_bigdata_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/Cloud_2019">Using Clouds for Big Cancer Data Analysis</a></h3>
-										<p>November 2, 2019 - Ottawa, ON</p>
-									</li>	
-									</ul>
-									
-									
-								<h2>2018 Workshops</h2>
-								<ul class="features">
+        /* Focus styles for keyboard navigation */
+        /* Applied to the <a> tag when the card is clickable, or to internal interactive elements */
+        a:focus, button:focus, input:focus, .card:focus-within {
+            outline: 2px solid #5A1F65; /* Brand purple outline */
+            outline-offset: 3px;
+        }
 
-									<li>
-										<img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/bicg_2018">Bioinformatics for Cancer Genomics</a></h3>
-										<p>March 12 - 17, 2018 - Cold Spring Harbor, New York</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/intror_2018">Introduction to R</a></h3>
-										<p>May 14 - 15, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/eda_2018">Exploratory Analysis of Biological Data Using R</a></h3>
-										<p>May 16 - 17, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/htseq_2018">Informatics on High-Throughput Sequencing Data</a></h3>
-										<p>May 24 - 25, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/rnaseq_2018">Informatics for RNA-Seq Analysis</a></h3>
-										<p>May 28 - 30, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/metagenomics_2018">Analysis of Metagenomic Data</a></h3>
-										<p>June 5 - 7, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/metabolomics_2018">Informatics and Statistics for Metabolomics</a></h3>
-										<p>June 11 - 12, 2018 - Montreal, QC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_population_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/genmed_2018">Bioinformatics of Genomic Medicine</a></h3>
-										<p>June 13 - 14, 2018 - Montreal, QC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_Epigenome-data_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/epigenomics_2018">Epigenomic Data Analysis</a> </h3>
-										<p>June 18 - 19, 2018 - Vancouver, BC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/pathways_2018">Pathway and Network Analysis of -omics Data</a></h3>
-										<p>June 25 - 27, 2018 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/epidemiology_2018">Infectious Disease Genomic Epidemiology</a></h3>
-										<p>July 10 - 12, 2018 - Downtown Toronto, ON</p>
-									</li>
-									
-								</ul>
-									
-									
-								<h2>2017 Workshops</h2>
-								<ul class="features">
-									<li>
-										<img src="site_images/CBW-CSHL-graphic-square.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/high-throughput_biology_2017">High-Throughput Biology: From Sequence to Networks</a></h3>
-										<p>March 20 - 26, 2017 - Cold Spring Harbor, New York</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_epidemiology_icon.png" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/genomic_epidemiology_2017">Infectious Disease Genomic Epidemiology</a></h3>
-										<p>May 1 - 3, 2017 - Vancouver, BC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_population_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/genomic_medicine_2017">Bioinformatics of Genomic Medicine</a></h3>
-										<p>May 10 - 11, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/htseq_2017">Informatics on High-Throughput Sequencing Data</a></h3>
-										<p>May 25 - 26, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io//bicg_2017">Bioinformatics for Cancer Genomics</a></h3>
-										<p>May 29 - June 2, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/metabolomics_2017">Informatics and Statistics for Metabolomics</a></h3>
-										<p>June 6 - 7, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_introtoR-icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/IntroR_2017">Introduction to R</a></h3>
-										<p>June 12, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_R_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/EDA_2017">Exploratory Analysis of Biological Data Using R</a></h3>
-										<p>June 13 - 14, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_Epigenome-data_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/epigenomics_2017">Epigenomic Data Analysis</a> </h3>
-										<p>June 15 - 16, 2017 - Montreal, QC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/mss_2017">Microbiome Summer School</a> </h3>
-										<p>June 19 - 22, 2017 - Quebec City, QC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_pathway_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/pathways_2017">Pathway and Network Analysis of -omics Data</a></h3>
-										<p>June 26 - 28, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/rnaseq_2017">Informatics for RNA-Seq Analysis</a></h3>
-										<p>July 10 - 12, 2017 - Downtown Toronto, ON</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_bigdata_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/CloudComputing_2017">Working with Big Cancer Data in the Collaboratory Cloud</a></h3>
-										<p>November 4, 2017 - Vancouver, BC</p>
-									</li>
-									<li>
-										<img src="site_images/CBW_bigdata_icon.jpg" alt="" width="100" height="100" />
-										<h3><a href="https://bioinformaticsdotca.github.io/GOBLET_GitHub_2017">Using GitHub for Workshops</a></h3>
-										<p>November 23, 2017 - Oeiras, Portugal</p>
-									</li>
-									
-										
+        @media (max-width: 639px) {
+            .carousel-on-mobile {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 1rem;
+                padding: 0.5rem 1rem;
+                margin: 0 -1rem;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .carousel-on-mobile::-webkit-scrollbar {
+                display: none;
+            }
+            .carousel-on-mobile > .card {
+                flex: 0 0 80%;
+                max-width: 320px;
+                scroll-snap-align: start;
+            }
+        }
 
-									
-								</ul>
-								
-								<h2>2016 Workshops</h2>
+        .truncate-2-lines {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
 
-<ul class="features">
-  <li>
-  <img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/informatics_and_statistics_for_metabolomics_2016/"><h3>Informatics and Statistics for Metabolomics 2016</h3> </a> <p>Toronto, ON  May 25 to May 27, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2016/"><h3>Bioinformatics for Cancer Genomics 2016</h3> </a>  <p>Toronto, ON  May 30 to June 3, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_introtoR-icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/introduction_to_r_2016/"><h3>Introduction to R 2016</h3> </a>  <p>Toronto, ON  June 6, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_R_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/exploratory_analysis_of_biological_data_2016/"><h3>Exploratory Analysis of Biological Data Using R 2016</h3> </a>  <p>Toronto, ON  June 7 to June 8, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/informatics_on_high-throughput_sequencing_data_2016/"><h3>Informatics on High Throughput Sequencing Data 2016</h3> </a>  <p>Montreal, QC  June 9 to June 10, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_pathway_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/pathway_and_network_analysis_of_omics_data_2016/"><h3>Pathway and Network Analysis of -omics Data 2016</h3> </a>  <p>Toronto, ON  June 13 to June 15, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/informatics_for_rna_seq_analysis_2016/"><h3>Informatics for RNA-Seq Analysis 2016</h3> </a>  <p>Toronto, ON  June 16 to June 17, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_Epigenome-data_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/epigenomic_data_analysis_2016/"><h3>Epigenomic Data Analysis 2016</h3> </a>  <p>Toronto, ON  June 20 to June 21, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/analysis_of_metagenomic_data_2016/"><h3>Analysis of Metagenomic Data 2016</h3> </a>  <p>Vancouver, BC  June 22 to June 24, 2016</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_bigdata_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/bioinformatics_on_big_data_2016/"><h3>Bioinformatics on Big Data: Computing on the Human Genome 2016</h3> </a>  <p>Toronto, ON  September 29 to September 30, 2016</p>
-  </li>
-</ul>
+        /* --- Specific Status Display Styles (Icon + Text) --- */
+        .status-icon-text {
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem; /* text-sm */
+            font-weight: 600; /* font-semibold */
+            margin-bottom: 0.5rem; /* Spacing between status and title */
+            color: #1f2937; /* Tailwind's gray-900 for black text */
+        }
+        .status-icon-text .icon-symbol { /* Targeting the span with the Unicode character */
+            font-size: 1.25rem; /* Roughly match the size of the previous Font Awesome icons */
+            margin-right: 0.5rem;
+            flex-shrink: 0;
+            display: inline-block; /* Treat icon as inline-block */
+            vertical-align: middle; /* Align icon vertically in the middle */
+            line-height: 1; /* Ensures icon is properly aligned vertically */
+        }
+        /* Custom colors for icons - using Tailwind's default palette */
+        .icon-green { color: #059669; /* Emerald 600 */ }
+        .icon-orange { color: #EA580C; /* Orange 600 */ }
+    </style>
+</head>
 
-<h2>2015 Workshops</h2>
+<body class="antialiased">
+    <div class="container mx-auto my-8 md:my-12">
+        <header class="text-center mb-12">
+            <a href="https://bioinformatics.ca" target="_blank" rel="noopener noreferrer">
+                <img src="img/CBW_logo.png" alt="Canadian Bioinformatics Workshops Logo - Link to Bioinformatics.ca homepage" class="mx-auto mb-6 h-40 w-auto">
+            </a>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">Canadian Bioinformatics Workshops</h1>
+        </header>
 
-<ul class="features">
-  <li>
-  <img src="site_images/CBW-CSHL-graphic-square.png" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/high_throughput_biology_2015/"><h3>High-Throughput Biology: From Sequence to Networks 2015</h3> </a> <p>New York  April 27 to May 3, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_introtoR-icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/introduction_to_r_2015/"><h3>Introduction to R 2015</h3> </a>  <p>Toronto, ON  May 20, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_R_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/EDA_in_r_2015/"><h3>Exploratory Analysis of Biological Data using R 2015</h3> </a>  <p>Toronto, ON  May 21 to May 22, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_cancerDNA_icon-16.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/bioinformatics_for_cancer_genomics_2015/"><h3>Bioinformatics for Cancer Genomics 2015</h3> </a>  <p>Toronto, ON  May 25 to May 29, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_pathway_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/pathway_and_network_analysis_2015/"><h3>Pathway and Network Analysis of -omics Data 2015</h3> </a>  <p>Toronto, ON  June 1 to June 3, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_RNA_seq_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/rnaseq_analysis_2015/"><h3>Informatics for RNA-Seq Analysis 2015</h3> </a>  <p>Toronto, ON  June 8 to June 9, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_High-throughput_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/high-throughput_sequencing_2015/"><h3>Informatics on High-Throughput Sequencing Data 2015</h3> </a>  <p>Toronto, ON  June 10 to June 11, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_metabolomics_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/informatics_and_statistics_for_metabolomics_2015/"><h3>Informatics and Statistics for Metabolomics 2015</h3> </a>  <p>Montreal, QC  June 15 to June 16, 2015</p>
-  </li>
-  <li>
-  <img src="site_images/CBW_Metagenome_icon.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/analysis_of_metagenomic_data_2015/"><h3>Analysis of Metagenomic Data 2015</h3> </a>  <p>Halifax, NS  June 24 to June 26, 2015</p>
-  </li>  
-</ul>
+        <nav aria-label="Main Navigation" class="text-center mb-12 flex justify-center items-center gap-4 md:gap-6 flex-wrap py-4">
+            <a href="#current-workshops-section" class="inline-block bg-white text-brand-purple font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg border-2 border-brand-purple hover:bg-purple-50">Upcoming Workshops</a>
+            <a href="#past-workshops-section" class="inline-block bg-white text-brand-purple font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg border-2 border-brand-purple hover:bg-purple-50">Past Workshops</a>
+            <a href="https://bioinformatics.ca/hub/about/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-brand-purple font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg border-2 border-brand-purple hover:bg-purple-50">About<img src="img/box-arrow-up-right.svg" alt="External link icon" class="ml-2 inline-block w-3 h-3"><span class="sr-only"> (opens in new tab)</span></a>
+            <a href="https://bioinformatics.ca/workshops/workshop-application-form/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-brand-purple font-bold py-3 px-6 rounded-lg text-lg transition-transform transform hover:scale-105 shadow-lg border-2 border-brand-purple hover:bg-purple-50">Apply Now<img src="img/box-arrow-up-right.svg" alt="External link icon" class="ml-2 inline-block w-3 h-3"><span class="sr-only"> (opens in new tab)</span></a>
+        </nav>
 
-<h2>Select Workshops Prior to 2015</h2>
+        <div id="filter-bar" role="region" aria-label="Workshop Filters" class="mb-12 flex justify-center items-center flex-wrap gap-4 p-4 bg-slate-100/70 rounded-xl">
+            <div class="relative w-full sm:w-auto">
+                <label for="text-search-input" class="sr-only">Search workshops by keyword</label>
+                <input type="search" id="text-search-input" placeholder="Search workshops..." class="w-full sm:w-48 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-brand-purple focus:border-brand-purple transition">
+            </div>
+        </div>
 
-<ul class="features">
-  <li>
-  <img src="site_images/bioinformatics_LOGO.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/flow_cytometry_2013/"><h3>Flow Cytometry Data Analysis using R 2013</h3> </a> <p>Toronto, ON  June 17 to June 18, 2013</p>
-  </li>
-  <li>
-  <img src="site_images/bioinformatics_LOGO.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/microarrays_2013/"><h3>Microarray Data Analysis 2013</h3> </a>  <p>Toronto, ON  June 24 to June 25, 2013</p>
-  </li>
-  <li>
-  <img src="site_images/bioinformatics_LOGO.jpg" alt="" width="75" height="75" /><a href="http://bioinformatics-ca.github.io/patents_2012/"><h3>Patent Informatics 2012</h3> </a>  <p>Toronto, ON  April 19, 2012</p>
-  </li>
-</ul>
-								
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="https://bioinformatics.ca/workshops/previous-workshops/" class="button">See Past Workshops</a></li>
-									</ul>
-								</footer>
-							</section>
+        <main id="link-container" class="space-y-16">
+            <div id="no-results-message" class="hidden" role="status" aria-live="polite">
+                <div class="text-center py-12 px-6 bg-slate-50 rounded-lg">
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">No workshops found</h3>
+                    <p class="mt-1 text-base text-gray-500">Could not load or render workshops. Please check the browser console for details.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>About the CBW Series</h2>
-								</header>
-								<p>Our workshop instructors are experts in their fields.  Along with the CBW Scientific Committee, the core instructors are responsible for the ongoing curriculum development and the management of the workshops.  Visit <a href="http://bioinformatics.ca/instructors/">our instructor page</a> for a list of our core instructors, past and present instructors, and invited lecturers.</p>
-								
-								<p>Workshop materials are licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>. This means that you are able to copy, share and modify the work, as long as the result is distributed under the same license.</p>
-								
-								<p>Interested in proposing a new workshop? Find details <a href="https://bioinformaticsdotca.github.io/propose_a_workshop">here</a>.  </p>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response = await fetch('workshops.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const linksData = await response.json();
+        const regionOrder = ['BC', 'Alberta', 'Prairies', 'Ontario', 'Quebec', 'Atlantic', 'Online'];
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Normalize 'today' to start of day for comparison
 
-									
-								<footer class="major">
-									<ul class="actions">
-										<li><a href="http://bioinformatics.ca/workshops/workshop-application-form/" class="button">Register for a Workshop</a></li>
-									</ul>
-								</footer>
-							</section>
+        const linkContainer = document.getElementById('link-container');
+        const noResultsMessage = document.getElementById('no-results-message');
+        const searchInput = document.getElementById('text-search-input');
+        const filterBar = document.getElementById('filter-bar');
 
-					</div>
+        const allFilters = {
+            year: { container: null, active: new Set(), label: "Year" },
+            regions: { container: null, active: new Set(), label: "Region" },
+            title: { container: null, active: new Set(), label: "Workshop" },
+            tags: { container: null, active: new Set(), label: "Topics" },
+            format: { container: null, active: new Set(), label: "Format" },
+            status: { container: null, active: new Set(), label: "Status" }
+        };
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2><font color="grey">Contact Us</font></h2>
-							<dl class="alt">
-								<dt><font color="grey">Email</font></dt>
-								<dd><font color="grey">support{at}bioinformatics{dot}ca</font></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="https://twitter.com/Bioinfodotca" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/bioinformaticsdotca/" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://github.com/bioinformaticsdotca" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.youtube.com/channel/UCKbkfKk65PZyRCzUwXOJung" class="icon fa-youtube alt"><span class="label">YouTube</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright"><font color="grey">&copy; CBW 2023. Design: <a href="https://html5up.net">HTML5 UP</a>.</font></p>
-					</footer>
+        function formatDateRange(startDateStr, endDateStr) {
+            const start = new Date(startDateStr + 'T00:00:00');
+            const end = new Date(endDateStr + 'T00:00:00');
+            const startMonth = start.toLocaleString('en-US', { month: 'long' });
+            const startDay = start.getDate();
+            const year = start.getFullYear();
+            if (!endDateStr || startDateStr === endDateStr) return `${startMonth} ${startDay}, ${year}`;
+            const endMonth = end.toLocaleString('en-US', { month: 'long' });
+            const endDay = end.getDate();
+            if (startMonth === endMonth) return `${startMonth} ${startDay} - ${endMonth} ${endDay}, ${year}`;
+            return `${startMonth} ${startDay} - ${endMonth} ${endDay}, ${year}`;
+        }
 
-			</div>
+        function createCardElement(link) {
+            const workshopStartDate = new Date(link.startDate + 'T00:00:00');
+            const workshopEndDate = new Date(link.endDate + 'T00:00:00');
+            const isPastWorkshop = workshopEndDate < today;
+            const hasNoUrl = (!link.url || link.url === "");
 
-		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.scrollex.min.js"></script>
-			<script src="js/jquery.scrolly.min.js"></script>
-			<script src="js/skel.min.js"></script>
-			<script src="js/util.js"></script>
-			<!--[if lte IE 8]><script src="js/ie/respond.min.js"></script><![endif]-->
-			<script src="js/main.js"></script>
-		<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            // Determine if this card should have the 'past-no-materials' behavior (permanent graying, MNA overlay)
+            const applyPastNoMaterialsBehavior = isPastWorkshop && hasNoUrl;
+            // Determine if this card needs the "Materials Coming Soon" overlay
+            const applyComingSoonOverlay = !isPastWorkshop && hasNoUrl;
 
-  ga('create', 'UA-90204097-1', 'auto');
-  ga('send', 'pageview');
+            // Apply 'past-no-materials' class for permanent grayscale and potential hover background
+            const cardClassSuffix = applyPastNoMaterialsBehavior ? ' past-no-materials hover:bg-gray-100' : '';
+            const card = document.createElement('article');
+            card.className = `card flex flex-col bg-white rounded-xl shadow-lg overflow-hidden ${cardClassSuffix}`;
+            card.setAttribute('role', 'group'); // Used for group-hover targeting in CSS
 
+            card.dataset.year = JSON.stringify([link.year]);
+            card.dataset.title = JSON.stringify([link.title]);
+            card.dataset.tags = JSON.stringify(link.tags);
+            card.dataset.regions = JSON.stringify(link.regions);
+            card.dataset.format = JSON.stringify([link.format]);
+            card.dataset.search = (
+                link.title + ' ' +
+                link.tags.join(' ') + ' ' +
+                (link.locations || []).join(' ') + ' ' +
+                (link.instructors || []).join(' ')
+            ).toLowerCase();
+
+
+            let statusInfoHTML = '';
+            let statusTags = [];
+
+            // Determine primary workshop status (Happening Now, Upcoming, Past)
+            if (workshopStartDate <= today && today <= workshopEndDate) {
+                statusInfoHTML = `
+                    <div class="status-icon-text icon-green mb-2">
+                        <span class="icon-symbol">&#x25CF;</span> <span>Happening Now</span>
+                    </div>`;
+                statusTags = ["Happening Now"];
+            } else if (workshopStartDate > today) {
+                statusInfoHTML = `
+                    <div class="status-icon-text icon-orange mb-2">
+                        <span class="icon-symbol">&#x23F1;</span> <span>Upcoming</span>
+                    </div>`;
+                statusTags = ["Upcoming"];
+            } else { // Workshop is in the past
+                 statusTags = ["Past"];
+            }
+            card.dataset.status = JSON.stringify(statusTags);
+
+
+            const sortedRegions = [...link.regions].sort((a,b) => regionOrder.indexOf(a) - regionOrder.indexOf(b));
+
+            const regionTagsHTML = sortedRegions.map(region => {
+                const borderClass = `border-region-${region.toLowerCase().replace(' ', '-')}`;
+                const lightBgClass = `bg-region-${region.toLowerCase().replace(' ', '-')}-light`;
+                // Region tags will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                return `<span class="flex items-center justify-center ${lightBgClass} text-gray-900 border-2 ${borderClass} rounded-full px-3 py-1 text-xs font-bold shadow-sm" title="Region: ${region}">${region}</span>`;
+            }).join('');
+
+            const regionColors = sortedRegions.map(region => tailwind.config.theme.extend.colors[`region-${region.toLowerCase()}`]).filter(Boolean);
+            let colorBarHTML = '<div class="h-1.5 bg-gray-300"><span class="sr-only">Workshop regions color bar</span></div>';
+            if (regionColors.length > 1) {
+                // Color bar will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                colorBarHTML = `<div class="h-1.5" style="background-image: linear-gradient(to right, ${regionColors.join(', ')})"><span class="sr-only">Workshop regions color bar</span></div>`;
+            } else if (regionColors.length === 1) {
+                // Color bar will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                colorBarHTML = `<div class="h-1.5" style="background-color: ${regionColors[0]}"><span class="sr-only">Workshop region: ${sortedRegions[0]}</span></div>`;
+            }
+
+            const locationsHTML = (link.locations || []).map(loc => `
+                <div class="flex items-center text-sm text-gray-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    <span class="font-medium">${loc}</span>
+                </div>
+            `).join('');
+
+            // Image class: permanent grayscale for past-no-materials
+            const imageBaseClass = 'w-full h-48 object-cover';
+            // No hover effect on the image itself, as it's permanently gray for past-no-materials and an overlay for coming soon
+            const imageHoverEffectClass = applyPastNoMaterialsBehavior ? '' : 'transition-all duration-300'; // No extra hover classes needed here, CSS handles static grayscale.
+
+            // No materials status tag for past-no-materials
+            let materialsStatusTagHTML = '';
+            let titleAriaLabelSuffix = '';
+
+            // Overlay for "Materials Coming Soon" or "Materials Not Available"
+            let overlayHTML = '';
+            if (applyComingSoonOverlay) {
+                overlayHTML = `
+                    <div class="absolute inset-0 flex items-center justify-content-center materials-overlay">
+                        <span class="text-xl font-bold uppercase">Materials Coming Soon</span>
+                        <span class="sr-only"> for ${link.title} workshop</span>
+                    </div>
+                `;
+            } else if (applyPastNoMaterialsBehavior) {
+                overlayHTML = `
+                    <div class="absolute inset-0 flex items-center justify-content-center materials-overlay">
+                        <span class="text-xl font-bold uppercase">Material Not Available</span>
+                        <span class="sr-only"> for ${link.title} workshop</span>
+                    </div>
+                `;
+                titleAriaLabelSuffix = ' - Material not available';
+            }
+
+
+            // Common HTML structure for the card's visual content, regardless of clickability
+            const commonCardVisuals = `
+                <div class="relative">
+                    <img loading="lazy" class="${imageBaseClass} ${imageHoverEffectClass}" src="${link.image}" alt="Image for ${link.title} workshop${titleAriaLabelSuffix}" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=800';">
+                    ${overlayHTML}
+                    <div class="absolute top-3 right-3 z-10">
+                        <div class="flex flex-wrap justify-end gap-2 max-w-[calc(100% - 6rem)]">
+                            ${regionTagsHTML}
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col flex-grow">
+                    ${statusInfoHTML} <div class="min-h-16">
+                        <h3 class="text-lg font-bold ${applyPastNoMaterialsBehavior ? 'text-gray-600' : 'text-gray-800'} truncate-2-lines" ${titleAriaLabelSuffix ? `aria-label="${link.title}${titleAriaLabelSuffix}"` : ''}>
+                            ${link.title}
+                        </h3>
+                    </div>
+                    <div class="space-y-2 mt-3">
+                        <div class="flex items-center text-sm text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                            <span class="font-medium">${formatDateRange(link.startDate, link.endDate)}</span>
+                        </div>
+                        ${locationsHTML}
+                    </div>
+                </div>
+            `;
+
+            if (link.url) {
+                // If URL exists, wrap the entire visual content in an <a> tag
+                card.innerHTML = `
+                    <a href="${link.url}" target="_blank" rel="noopener noreferrer"
+                       class="card-interactive-wrapper flex flex-col flex-grow transform hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl">
+                        ${colorBarHTML}
+                        ${commonCardVisuals}
+                        <span class="sr-only">View workshop materials for ${link.title} (opens in new tab)</span>
+                    </a>
+                `;
+            } else {
+                // If no URL, provide the content directly within the article
+                card.classList.add('group'); // Crucial for the `group-hover` effect on the overlay
+                card.innerHTML = `
+                    ${colorBarHTML}
+                    <div class="flex flex-col flex-grow">
+                        ${commonCardVisuals}
+                    </div>
+                `;
+            }
+
+            return card;
+        }
+
+        function generatePageContent() {
+            const currentAndUpcomingLinks = [];
+            const pastLinks = [];
+            for (const link of linksData) {
+                const workshopEndDate = new Date(link.endDate + 'T00:00:00');
+                const isPast = workshopEndDate < today;
+
+                if (!isPast) currentAndUpcomingLinks.push(link);
+                else pastLinks.push(link);
+            }
+
+            // Sort current and upcoming workshops by start date
+            currentAndUpcomingLinks.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
+            // Sort past workshops by start date (most recent first)
+            pastLinks.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
+
+
+            if (currentAndUpcomingLinks.length > 0) {
+                const currentSection = document.createElement('section');
+                currentSection.className = 'year-section';
+                currentSection.id = 'current-workshops-section';
+                const currentTitle = document.createElement('h2');
+                currentTitle.className = 'text-3xl font-bold mb-8 text-gray-800 pl-3 border-l-4 border-green-500';
+                currentTitle.textContent = 'Happening Now & Upcoming';
+                const gridContainer = document.createElement('div');
+                gridContainer.className = 'carousel-on-mobile sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-8';
+                gridContainer.setAttribute('role', 'region');
+                gridContainer.setAttribute('aria-label', 'List of Upcoming and Happening Now Workshops');
+                currentAndUpcomingLinks.forEach(link => gridContainer.appendChild(createCardElement(link)));
+                currentSection.appendChild(currentTitle);
+                currentSection.appendChild(gridContainer);
+                linkContainer.insertBefore(currentSection, noResultsMessage);
+            }
+
+            const pastLinksByYear = pastLinks.reduce((acc, link) => { (acc[link.year] = acc[link.year] || []).push(link); return acc; }, {});
+            const sortedYears = Object.keys(pastLinksByYear).sort((a, b) => b - a); // Sort years descending
+            let firstPastSectionAssigned = false;
+            sortedYears.forEach(year => {
+                const yearSection = document.createElement('section');
+                yearSection.className = 'year-section';
+                if (!firstPastSectionAssigned) { yearSection.id = 'past-workshops-section'; firstPastSectionAssigned = true; }
+                const yearTitle = document.createElement('h2');
+                yearTitle.className = 'text-3xl font-bold mb-8 text-gray-800 pl-3 border-l-4 border-brand-purple';
+                yearTitle.textContent = `${year}`;
+                const gridContainer = document.createElement('div');
+                gridContainer.className = 'carousel-on-mobile sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-8';
+                gridContainer.setAttribute('role', 'region');
+                gridContainer.setAttribute('aria-label', `List of Past Workshops from ${year}`);
+                pastLinksByYear[year].forEach(link => gridContainer.appendChild(createCardElement(link)));
+                yearSection.appendChild(yearTitle);
+                yearSection.appendChild(gridContainer);
+                linkContainer.insertBefore(yearSection, noResultsMessage);
+            });
+        }
+
+        function updateFilterCounts() {
+            for (const type in allFilters) {
+                // Defensive check to ensure allFilters[type] and allFilters[type].active exist and is a Set
+                if (allFilters[type] && allFilters[type].active instanceof Set) {
+                    const count = allFilters[type].active.size;
+                    const countEl = document.getElementById(`${type}-filter-count`);
+                    if(countEl) {
+                        countEl.textContent = count;
+                        countEl.classList.toggle('hidden', count === 0);
+                        const button = countEl.closest('.filter-button');
+                        if (button) {
+                            if (count > 0) {
+                                button.setAttribute('aria-label', `${allFilters[type].label} filter active, ${count} selected`);
+                            } else {
+                                button.setAttribute('aria-label', `${allFilters[type].label} filter`);
+                            }
+                        }
+                    }
+                } else {
+                    // Log a detailed error to help diagnose which filter type is problematic
+                    console.error(`Error: Filter type '${type}' or its 'active' property is not a Set. Current state for this filter:`, allFilters[type]);
+                }
+            }
+        }
+
+        function applyFilters() {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let totalVisibleCards = 0;
+            noResultsMessage.classList.add('hidden');
+            noResultsMessage.setAttribute('aria-live', 'off');
+
+            document.querySelectorAll('.card').forEach(card => {
+                const searchMatch = !searchTerm || card.dataset.search.includes(searchTerm);
+                let filtersMatch = true;
+                for (const type in allFilters) {
+                    if (allFilters[type].active.size === 0) continue;
+
+                    const cardValues = new Set(JSON.parse(card.dataset[type] || '[]').map(String));
+
+                    if (![...allFilters[type].active].some(filterValue => cardValues.has(filterValue))) {
+                        filtersMatch = false;
+                        break;
+                    }
+                }
+                if (searchMatch && filtersMatch) {
+                    card.classList.remove('hidden');
+                    totalVisibleCards++;
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            document.querySelectorAll('.year-section').forEach(section => {
+                const visibleCards = section.querySelectorAll('.card:not(.hidden)').length;
+                section.classList.toggle('hidden', visibleCards === 0);
+            });
+
+            if (totalVisibleCards === 0) {
+                noResultsMessage.classList.remove('hidden');
+                noResultsMessage.setAttribute('aria-live', 'polite');
+            } else {
+                noResultsMessage.setAttribute('aria-live', 'off');
+            }
+            updateFilterCounts();
+        }
+
+        function generateFilterOptions() {
+            const options = {
+                year: [...new Set(linksData.map(link => link.year))].sort((a, b) => b - a),
+                regions: regionOrder,
+                title: [...new Set(linksData.map(link => link.title))].sort(),
+                tags: [...new Set(linksData.flatMap(link => link.tags))].sort(),
+                format: [...new Set(linksData.map(link => link.format))].sort(),
+                status: ["Upcoming", "Happening Now", "Past"]
+            };
+
+            for (const type in allFilters) {
+                if (options[type] && options[type].length > 0) {
+                    const dropdown = document.createElement('div');
+                    dropdown.className = 'relative';
+                    const dropdownButtonId = `filter-button-${type}`;
+                    const dropdownPanelId = `filter-panel-${type}`;
+
+                    const dropdownPanel = document.createElement('div');
+                    dropdownPanel.className = 'dropdown-panel hidden absolute z-10 mt-2 w-56 bg-white rounded-md shadow-2xl border border-gray-200/80 origin-top-right right-0 max-h-60 overflow-y-auto';
+                    dropdownPanel.setAttribute('role', 'listbox');
+                    dropdownPanel.setAttribute('id', dropdownPanelId);
+                    dropdownPanel.setAttribute('aria-labelledby', dropdownButtonId);
+
+                    const checkboxContainer = document.createElement('div');
+                    checkboxContainer.className = 'p-2 space-y-1';
+
+                    options[type].forEach(value => {
+                        const optionId = `filter-${type}-${String(value).replace(/\s+/g, '-')}`;
+                        const label = document.createElement('label');
+                        label.className = 'flex items-center space-x-3 p-2 hover:bg-slate-100 rounded-md cursor-pointer';
+                        label.setAttribute('for', optionId);
+
+                        label.innerHTML = `
+                            <input type="checkbox" id="${optionId}" data-type="${type}" value="${value}"
+                                class="h-4 w-4 rounded border-gray-300 text-brand-purple focus:ring-brand-purple/50">
+                            <span class="text-sm text-gray-700 font-medium">${value}</span>
+                        `;
+                        checkboxContainer.appendChild(label);
+                    });
+
+                    dropdownPanel.appendChild(checkboxContainer);
+                    dropdown.innerHTML = `
+                        <button id="${dropdownButtonId}" class="filter-button bg-white hover:bg-gray-50 text-gray-700 font-semibold py-2.5 px-5 border border-gray-300 rounded-lg shadow-sm flex items-center transition-all duration-200"
+                            aria-haspopup="listbox" aria-expanded="false" aria-controls="${dropdownPanelId}">
+                            <span>${allFilters[type].label}</span>
+                            <span id="${type}-filter-count" class="ml-2 bg-brand-purple text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center hidden">0</span>
+                            <svg class="dropdown-arrow w-4 h-4 ml-2 text-gray-500 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>`;
+                    dropdown.appendChild(dropdownPanel);
+                    filterBar.appendChild(dropdown);
+                    allFilters[type].container = checkboxContainer;
+                }
+            }
+            const resetButton = document.createElement('button');
+            resetButton.id = 'reset-filters-button';
+            resetButton.className = 'bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2.5 px-5 rounded-lg shadow-sm flex items-center transition-all duration-200';
+            resetButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5M4 9a9 9 0 0114.12-5.12M20 15a9 9 0 01-14.12 5.12" /></svg>Reset Filters`;
+            filterBar.appendChild(resetButton);
+        }
+
+        function setupInteraction() {
+            filterBar.addEventListener('click', e => {
+                const button = e.target.closest('.filter-button');
+                if (button) {
+                    const panel = button.nextElementSibling;
+                    const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+                    document.querySelectorAll('.dropdown-panel').forEach(p => {
+                        p.classList.add('hidden');
+                        p.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    });
+
+                    if (!isExpanded) {
+                        panel.classList.remove('hidden');
+                        button.setAttribute('aria-expanded', 'true');
+                    } else {
+                        panel.classList.add('hidden');
+                        button.setAttribute('aria-expanded', 'false');
+                    }
+                    return;
+                }
+
+                if (e.target.type === 'checkbox') {
+                    const type = e.target.dataset.type;
+                    const value = e.target.value;
+                    if (e.target.checked) allFilters[type].active.add(value);
+                    else allFilters[type].active.delete(value);
+                    applyFilters();
+                    return;
+                }
+
+                if(e.target.closest('#reset-filters-button')) {
+                    searchInput.value = '';
+                    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+                    for (const type in allFilters) allFilters[type].active.clear();
+                    applyFilters();
+                    const liveRegion = document.createElement('div');
+                    liveRegion.setAttribute('aria-live', 'polite');
+                    liveRegion.classList.add('sr-only');
+                    liveRegion.textContent = 'All filters reset.';
+                    document.body.appendChild(liveRegion);
+                    setTimeout(() => liveRegion.remove(), 1000);
+                }
+            });
+
+            document.addEventListener('click', e => {
+                if (!e.target.closest('.relative') && !e.target.closest('.dropdown-panel')) {
+                    document.querySelectorAll('.dropdown-panel').forEach(p => {
+                        p.classList.add('hidden');
+                        p.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    });
+                }
+            });
+
+            document.addEventListener('keydown', e => {
+                if (e.key === 'Escape') {
+                    document.querySelectorAll('.dropdown-panel').forEach(p => {
+                        p.classList.add('hidden');
+                        p.previousElementSibling.setAttribute('aria-expanded', 'false');
+                    });
+                }
+            });
+
+            searchInput.addEventListener('input', applyFilters);
+        }
+
+        generatePageContent();
+        generateFilterOptions();
+        setupInteraction();
+        updateFilterCounts();
+
+    } catch (error) {
+        console.error("Could not initialize the app:", error);
+        document.body.innerHTML = `<div class="text-center p-8"><h2 class="text-xl font-bold text-red-700">A critical error occurred.</h2><p class="mt-2 text-red-500">Could not load or render workshops. Please check the browser console for details.</p></div>`;
+    }
+});
 </script>
 
-	</body>
+<style>
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+</style>
+</body>
 </html>
