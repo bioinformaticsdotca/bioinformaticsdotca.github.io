@@ -224,9 +224,6 @@
 [submodule "STAT_2024"]
 	path = STAT_2024
 	url = git@github.com:bioinformaticsdotca/STAT_2024.git
-[submodule "PROT_2024"]
-	path = PROT_2024
-	url = git@github.com:bioinformaticsdotca/PROT_2024.git
 [submodule "PGX_2024"]
 	path = PGX_2024
 	url = git@github.com:bioinformaticsdotca/PGX_2024.git
