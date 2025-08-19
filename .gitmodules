@@ -197,9 +197,6 @@
 [submodule "MET_2024"]
 	path = MET_2024
 	url = git@github.com:bioinformaticsdotca/MET_2024.git
-[submodule "AUR_2024"]
-	path = AUR_2024
-	url = git@github.com:bioinformaticsdotca/AUR_2024.git
 [submodule "RNA_2024"]
 	path = RNA_2024
 	url = git@github.com:bioinformaticsdotca/RNA_2024.git
