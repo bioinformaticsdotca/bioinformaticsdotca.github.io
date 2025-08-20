@@ -218,9 +218,6 @@
 [submodule "IMG_2024"]
 	path = IMG_2024
 	url = git@github.com:bioinformaticsdotca/IMG_2024.git
-[submodule "OMPRN_2024"]
-	path = OMPRN_2024
-	url = git@github.com:bioinformaticsdotca/OMPRN_2024.git
 [submodule "Julia_Repo"]
 	path = Julia_Repo
 	url = git@github.com:bioinformaticsdotca/Julia_Repo.git
