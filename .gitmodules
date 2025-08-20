@@ -206,9 +206,6 @@
 [submodule "EPI_2024"]
 	path = EPI_2024
 	url = git@github.com:bioinformaticsdotca/EPI_2024.git
-[submodule "MLE_2024"]
-	path = MLE_2024
-	url = git@github.com:bioinformaticsdotca/MLE_2024.git
 [submodule "AMB_2024"]
 	path = AMB_2024
 	url = git@github.com:bioinformaticsdotca/AMB_2024.git
