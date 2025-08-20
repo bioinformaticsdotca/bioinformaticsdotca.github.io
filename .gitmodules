@@ -215,9 +215,6 @@
 [submodule "BMB_2024"]
 	path = BMB_2024
 	url = git@github.com:bioinformaticsdotca/BMB_2024.git
-[submodule "PGX_2024"]
-	path = PGX_2024
-	url = git@github.com:bioinformaticsdotca/PGX_2024.git
 [submodule "IMG_2024"]
 	path = IMG_2024
 	url = git@github.com:bioinformaticsdotca/IMG_2024.git
