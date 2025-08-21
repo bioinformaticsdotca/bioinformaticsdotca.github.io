@@ -164,9 +164,6 @@
 [submodule "IDE_2021"]
 	path = IDE_2021
 	url = https://github.com/bioinformatics-ca/IDE_2021.git
-[submodule "IDE_2023"]
-	path = IDE_2023
-	url = git@github.com:bioinformaticsdotca/IDE_2023.git
 [submodule "PNA_2023"]
 	path = PNA_2023
 	url = git@github.com:bioinformaticsdotca/PNA_2023.git
