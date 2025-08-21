@@ -1,4 +1,18 @@
 [
+        {
+        "url": "GAL_2025/",
+        "title": "RNA-seq Analysis Using Galaxy en Français",
+        "instructors": ["Virginie Calderon", "Caroline Grou", "Ludovic Malet", "Gaspard Reulet"],
+        "tags": ["RNA-seq", "Analysis", "French"],
+        "regions": ["Quebec"],
+        "year": 2025,
+        "startDate": "2025-08-11",
+        "endDate": "2025-08-13",
+        "image": "img/CBW_GAL_Icon.png",
+        "locations": ["Montreal, QC"],
+        "format": "In-person"
+    },
+    
     {
         "url": "BMB_2025/",
         "title": "Beginner Microbiome Analysis",
@@ -560,7 +574,7 @@
     },
 
     {
-        "url": "IDE_2021",
+        "url": "IDE_2021/",
         "title": "Infectious Disease Epidemiology Analysis",
         "instructors": ["William Hsiao", "Rob Beiko", "Finlay Maguire", "Dillon Barker", "Aaron Petkau", "Gary Van Domselaar", "Ed Taboada", "Jalees Nasir", "Jimmy Liu", "Venus Lau", "BF Francis Ouellette", "Rachade Hmamouchi"],
         "tags": ["Analysis"],
