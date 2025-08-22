@@ -1,5 +1,5 @@
 [
-        {
+    {
         "url": "GAL_2025/",
         "title": "RNA-seq Analysis Using Galaxy en Français",
         "instructors": ["Virginie Calderon", "Caroline Grou", "Ludovic Malet", "Gaspard Reulet"],
@@ -12,7 +12,91 @@
         "locations": ["Montreal, QC"],
         "format": "In-person"
     },
-    
+
+    {
+        "url": "ISO-V_2025/",
+        "title": "Introductory Spatial ’Omics Analysis: Visium HD",
+        "instructors": ["Shamini Ayyadhury", "Amina Abow", "Melanie Peralta", "Savannah Kipatrick", "Alyona Ivanova", "Trevor Pugh", "Gary Bader", "Nia Hughes", "Zhibin Lu"],
+        "tags": ["Introductory", "Analysis"],
+        "regions": ["Ontario", "Online"],
+        "year": 2025,
+        "startDate": "2025-02-20",
+        "endDate": "2025-02-21",
+        "image": "img/CBW_ISO_Icon.jpg",
+        "locations": ["Toronto, ON", "Online"],
+        "format": "Distributed"
+    },
+
+    {
+        "url": "AMB_2025/",
+        "title": "Advanced Microbiome Analysis",
+        "instructors": ["Morgan Langille", "Robyn Wright", "John Parkinson", "Ryan J. McLaughlin", "Juan Santana", "Tony Liu", "Zhibin Lu"],
+        "tags": ["Advanced", "Microbiome", "Analysis"],
+        "regions": ["BC"],
+        "year": 2025,
+        "startDate": "2025-05-29",
+        "endDate": "2025-05-30",
+        "image": "img/CBW_AMB_Icon.png",
+        "locations": ["Vancouver, BC"],
+        "format": "In-person"
+    },
+
+    {
+        "url": "INR_2025/",
+        "title": "Introduction to R",
+        "instructors": ["Frances Wong"],
+        "tags": ["Introductory", "R"],
+        "regions": ["Ontario"],
+        "year": 2025,
+        "startDate": "2025-06-23",
+        "endDate": "2025-06-24",
+        "image": "img/CBW_INR_Icon.png",
+        "locations": ["Toronto, ON"],
+        "format": "In-person"
+    },
+
+    {
+        "url": "AUR_2025/",
+        "title": "Analysis Using R",
+        "instructors": ["Shraddha Pai", "Delaram Pouyabahar", "Zoe Klein", "Nia Hughes"],
+        "tags": ["Analysis", "R"],
+        "regions": ["Ontario"],
+        "year": 2025,
+        "startDate": "2025-06-25",
+        "endDate": "2025-06-26",
+        "image": "img/CBW_AUR_Icon.png",
+        "locations": ["Toronto, ON"],
+        "format": "In-person"
+    },
+
+    {
+        "url": "RNA_2025/",
+        "title": "RNA-seq Analysis",
+        "instructors": ["Malachi Griffith", "Obi Griffith", "Isabel Risch", "Varinder Madhav Verma", "Mobin Khoramjoo", "Nicolas Ho", "Melisa Acun"],
+        "tags": ["RNA-seq", "Analysis"],
+        "regions": ["Ontario", "Alberta"],
+        "year": 2025,
+        "startDate": "2025-07-07",
+        "endDate": "2024-07-08",
+        "image": "img/CBW_RNA_Icon.png",
+        "locations": ["Ottawa, ON", "Edmonton, AB"],
+        "format": "In-person"
+    },
+
+    {
+        "url": "scRNA_2025/",
+        "title": "Single Cell RNA-seq Analysis",
+        "instructors": ["Tallulah Andrews", "Trevor Pugh", "Nicolas Ho", "Kevin Joannou", "Mobin Khoramjoo"],
+        "tags": ["RNA-seq", "Analysis"],
+        "regions": ["Ontario", "Alberta"],
+        "year": 2025,
+        "startDate": "2025-07-10",
+        "endDate": "2024-07-11",
+        "image": "img/CBW_scRNA_Icon.jpg",
+        "locations": ["Ottawa, ON", "Edmonton, AB"],
+        "format": "In-person"
+    },
+
     {
         "url": "BMB_2025/",
         "title": "Beginner Microbiome Analysis",
@@ -42,7 +126,7 @@
     },
 
     {
-        "url": "BMB_2024/",
+        "url": "BMB_2024",
         "title": "Beginner Microbiome Analysis",
         "instructors": ["Morgan Langille", "Robyn Wright", "Monica Alvaro Fuss", "Ben Fisher", "Michelle Brazas", "Nia Hughes", "Zhibin Lu"],
         "tags": ["Microbiome", "Analysis"],
@@ -56,7 +140,7 @@
     },
 
     {
-        "url": "AMB_2024/",
+        "url": "AMB_2024",
         "title": "Advanced Microbiome Analysis",
         "instructors": ["Morgan Langille", "Robyn Wright", "Monica Alvaro Fuss", "Ben Fisher", "Michelle Brazas", "Nia Hughes", "Zhibin Lu"],
         "tags": ["Advanced", "Microbiome", "Analysis"],
@@ -98,7 +182,7 @@
     },
 
     {
-        "url": "RNA_2024/",
+        "url": "RNA_2024",
         "title": "RNA-seq Analysis",
         "instructors": [""],
         "tags": ["RNA-seq", "Analysis"],
@@ -112,7 +196,7 @@
     },
 
     {
-        "url": "scRNA_2024/",
+        "url": "scRNA_2024",
         "title": "Single Cell RNA-seq Analysis",
         "instructors": [""],
         "tags": ["RNA-seq", "Analysis"],
@@ -126,7 +210,7 @@
     },
 
     {
-        "url": "PNA_2024/",
+        "url": "PNA_2024",
         "title": "Pathway and Network Analysis",
         "instructors": [""],
         "tags": ["Pathway", "Network", "Analysis"],
@@ -224,90 +308,6 @@
     },
 
     {
-        "url": "ISO_2025/",
-        "title": "Introductory Spatial ’Omics Analysis: Visium HD",
-        "instructors": ["Shamini Ayyadhury", "Amina Abow", "Melanie Peralta", "Savannah Kipatrick", "Alyona Ivanova", "Trevor Pugh", "Gary Bader", "Nia Hughes", "Zhibin Lu"],
-        "tags": ["Introductory", "Analysis"],
-        "regions": ["Ontario", "Online"],
-        "year": 2025,
-        "startDate": "2025-02-20",
-        "endDate": "2025-02-21",
-        "image": "img/CBW_ISO_Icon.jpg",
-        "locations": ["Toronto, ON", "Online"],
-        "format": "Distributed"
-    },
-
-    {
-        "url": "AMB_2025/",
-        "title": "Advanced Microbiome Analysis",
-        "instructors": ["Morgan Langille", "Robyn Wright", "John Parkinson", "Ryan J. McLaughlin", "Juan Santana", "Tony Liu", "Zhibin Lu"],
-        "tags": ["Advanced", "Microbiome", "Analysis"],
-        "regions": ["BC"],
-        "year": 2025,
-        "startDate": "2025-05-29",
-        "endDate": "2025-05-30",
-        "image": "img/CBW_AMB_Icon.png",
-        "locations": ["Vancouver, BC"],
-        "format": "In-person"
-    },
-
-    {
-        "url": "INR_2025/",
-        "title": "Introduction to R",
-        "instructors": ["Frances Wong"],
-        "tags": ["Introductory", "R"],
-        "regions": ["Ontario"],
-        "year": 2025,
-        "startDate": "2025-06-23",
-        "endDate": "2025-06-24",
-        "image": "img/CBW_INR_Icon.png",
-        "locations": ["Toronto, ON"],
-        "format": "In-person"
-    },
-
-    {
-        "url": "AUR_2025/",
-        "title": "Analysis Using R",
-        "instructors": ["Shraddha Pai", "Delaram Pouyabahar", "Zoe Klein", "Nia Hughes"],
-        "tags": ["Analysis", "R"],
-        "regions": ["Ontario"],
-        "year": 2025,
-        "startDate": "2025-06-25",
-        "endDate": "2025-06-26",
-        "image": "img/CBW_AUR_Icon.png",
-        "locations": ["Toronto, ON"],
-        "format": "In-person"
-    },
-
-    {
-        "url": "RNA_2025/",
-        "title": "RNA-seq Analysis",
-        "instructors": ["Malachi Griffith", "Obi Griffith", "Isabel Risch", "Varinder Madhav Verma", "Mobin Khoramjoo", "Nicolas Ho", "Melisa Acun"],
-        "tags": ["RNA-seq", "Analysis"],
-        "regions": ["Ontario", "Alberta"],
-        "year": 2025,
-        "startDate": "2025-07-07",
-        "endDate": "2024-07-08",
-        "image": "img/CBW_RNA_Icon.png",
-        "locations": ["Ottawa, ON", "Edmonton, AB"],
-        "format": "In-person"
-    },
-
-    {
-        "url": "scRNA_2025/",
-        "title": "Single Cell RNA-seq Analysis",
-        "instructors": ["Tallulah Andrews", "Trevor Pugh", "Nicolas Ho", "Kevin Joannou", "Mobin Khoramjoo"],
-        "tags": ["RNA-seq", "Analysis"],
-        "regions": ["Ontario", "Alberta"],
-        "year": 2025,
-        "startDate": "2025-07-10",
-        "endDate": "2024-07-11",
-        "image": "img/CBW_scRNA_Icon.jpg",
-        "locations": ["Ottawa, ON", "Edmonton, AB"],
-        "format": "In-person"
-    },
-
-    {
         "url": "IDE_2023/",
         "title": "Infectious Disease Genomic Epidemiology",
         "instructors": ["William Hsiao", "Fiona Brinkman", "Zhibin Lu", "Emma Griffiths", "Jared Simpson", "Ed Taboada", "Andrew McArthur", "Finlay Maguire", "Aaron Petkau", "Samira Mubareka", "Gary Van Domselaar"],
@@ -322,7 +322,7 @@
     },
 
     {
-        "url": "PNA_2023/",
+        "url": "PNA_2023",
         "title": "Pathway and Network Analysis",
         "instructors": ["Gary Bader", "Veronique Voisin", "Ruth Isserlin", "Lincoln Stein"],
         "tags": ["Pathway", "Network", "Analysis"],
@@ -336,7 +336,7 @@
     },
 
     {
-        "url": "INR_2023/",
+        "url": "INR_2023",
         "title": "Introduction to R",
         "instructors": ["Frances Wong"],
         "tags": ["Introductory", "R"],
@@ -350,7 +350,7 @@
     },
 
     {
-        "url": "AUR_2023/",
+        "url": "AUR_2023",
         "title": "Analysis Using R",
         "instructors": ["Shraddha Pai", "Delaram Pouyabahar", "Chaitra Sarathy"],
         "tags": ["Analysis", "R"],
@@ -364,7 +364,7 @@
     },
 
     {
-        "url": "MIC_2023/",
+        "url": "MIC_2023",
         "title": "CBW-IMPACTT Microbiome Analysis",
         "instructors": ["John Parkinson", "Morgan Langille", "Hena Ramay", "Laura Sycuro", "Anita Kozyrskyj"],
         "tags": ["Microbiome", "Analysis"],
@@ -392,7 +392,7 @@
     },
 
     {
-        "url": "RNA_2023/",
+        "url": "RNA_2023",
         "title": "RNA-seq Analysis",
         "instructors": ["Obi Griffith", "Malachi Griffith", "Heather Gibling", "Vida Talebian", "Michelle Brazas", "Nia Hughes", "Zhibin Lu"],
         "tags": ["RNA-seq", "Analysis"],
@@ -406,7 +406,7 @@
     },
 
     {
-        "url": "scRNA_2023/",
+        "url": "scRNA_2023",
         "title": "Single Cell RNA-seq Analysis",
         "instructors": ["Tallulah Andrews", "Trevor Pugh", "Gary Bader", "Rachel Edgar", "Ping Luo", "Delaram Pouyabahar", "Michelle Brazas", "Nia Hughes", "Zhibin Lu"],
         "tags": ["RNA-seq", "Analysis"],
@@ -448,7 +448,7 @@
     },
 
     {
-        "url": "PNA_2021/",
+        "url": "PNA_2021",
         "title": "Pathway and Network Analysis",
         "instructors": ["Gary Bader", "Robin Haw", "Michael Hoffman", "Veronique Voisin", "Ruth Isserlin"],
         "tags": ["Analysis"],
@@ -462,7 +462,7 @@
     },
 
     {
-        "url": "MLE_2021/",
+        "url": "MLE_2021",
         "title": "Machine Learning",
         "instructors": ["David Wishart", "BF Francis Ouellette", "Rachade Hmamouchi", "Louisa Normington", "Leif Wilm"],
         "tags": ["Machine Learning"],
@@ -490,7 +490,7 @@
     },
 
     {
-        "url": "INR_2021/",
+        "url": "INR_2021",
         "title": "Introduction to R",
         "instructors": ["Frances Wong"],
         "tags": ["Introductory", "R"],
@@ -504,7 +504,7 @@
     },
 
     {
-        "url": "AUR_2021/",
+        "url": "AUR_2021",
         "title": "Analysis Using R",
         "instructors": ["BF Francis Ouellette", "Rachade Hmamouchi", "Lauren", "Gregory Downs", "Gabriela Morgenshtern"],
         "tags": ["Analysis", "R"],
@@ -518,7 +518,7 @@
     },
 
     {
-        "url": "MIC_2021/",
+        "url": "MIC_2021",
         "title": "Microbiome Analysis",
         "instructors": ["BF Francis Ouellette", "Rachade Hmamouchi", "Laura A. Hug", "Nikhil George", "Diana Haider", "William Hsiao", "Muhammad Zohaib Anwar", "Ana Popovic", "Jacob Nearing", "Justin Jia", "Morgan Langille", "Rob Beiko", "Fiona Brinkman"],
         "tags": ["Microbiome", "Analysis"],
@@ -532,7 +532,7 @@
     },
 
     {
-        "url": "RNA_2021/",
+        "url": "RNA_2021",
         "title": "RNA-seq Analysis",
         "instructors": ["Obi Griffith", "Malachi Griffith", "Felicia Gomez", "Huiming Xia", "Emma Bell", "BF Francis Ouellette", "Rachade Hmamouchi"],
         "tags": ["RNA-seq", "Analysis"],
@@ -574,7 +574,7 @@
     },
 
     {
-        "url": "IDE_2021/",
+        "url": "IDE_2021",
         "title": "Infectious Disease Epidemiology Analysis",
         "instructors": ["William Hsiao", "Rob Beiko", "Finlay Maguire", "Dillon Barker", "Aaron Petkau", "Gary Van Domselaar", "Ed Taboada", "Jalees Nasir", "Jimmy Liu", "Venus Lau", "BF Francis Ouellette", "Rachade Hmamouchi"],
         "tags": ["Analysis"],
