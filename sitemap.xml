@@ -2,7 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://bioinformaticsdotca.github.io/GAL_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/ISO-V_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://bioinformaticsdotca.github.io/AMB_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/INR_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/AUR_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/RNA_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/scRNA_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/BMB_2025</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/INR_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/AUR_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/ISO_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/STAT_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/MLE_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/PROT_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/PGX_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/OMPRN_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/IDE_2023</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/MET_2023</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/MLE_2023</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/EPI_2023</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/CAN_2021</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/EPI_2021</loc>
     <lastmod>2025-08-17</lastmod>
   </url>
 
