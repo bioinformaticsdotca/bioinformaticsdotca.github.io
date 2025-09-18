@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
+    <loc>https://bioinformaticsdotca.github.io/INR_Sask-2510</loc>
+  </url>
+  
+  <url>
     <loc>https://bioinformaticsdotca.github.io/GAL_2025</loc>
     <lastmod>2025-08-17</lastmod>
   </url>
@@ -60,7 +64,7 @@
     <loc>https://bioinformaticsdotca.github.io/STAT_2024</loc>
     <lastmod>2025-08-17</lastmod>
   </url>
-  
+
   <url>
     <loc>https://bioinformaticsdotca.github.io/MLE_2024</loc>
     <lastmod>2025-08-17</lastmod>
