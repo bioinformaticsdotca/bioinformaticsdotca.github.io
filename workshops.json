@@ -1,40 +1,65 @@
 [
-{
-    "url": "INR_Mon-2510",
-    "title": "Introduction to R",
-    "instructors": [
-        "Celia Greenwood",
-        "Alexandre Reynaud",
-        "W. Alton Russell",
-        "Anna K. Naumova",
-        "Adrien Osakwe",
-        "Han Yu",
-        "Audrey Baguette",
-        "Maximiliane Jousse",
-        "Daniel Gurman",
-        "Rodrigo Migueles Ramirez"
-    ],
-    "tags": [
-        "Data Science",
-        "R",
-        "Bioinformatics",
-        "Statistics"
-    ],
-    "regions": [
-        "Quebec",
-        "Online"
-    ],
-    "year": 2025,
-    "startDate": "2025-10-01",
-    "endDate": "2025-10-02",
-    "image": "img/CBW_INR_Icon.png",
-    "location": [
-        "Montréal QC",
-        "Virtual"
-    ],
-    "format": "Hybrid"
-},
-  {
+    {
+        "url": "INR_Ed-2510",
+        "title": "Introduction to R",
+        "instructors": [
+            "Linglong Kong",
+            "Enze Shi",
+            "Ce Zhang"
+        ],
+        "tags": [
+            "R",
+            "Bioinformatics",
+            "Statistics"
+        ],
+        "regions": [
+            "Alberta"
+        ],
+        "year": 2025,
+        "startDate": "2025-10-23",
+        "endDate": "2025-10-24",
+        "image": "img/CBW_RNA_Icon.png",
+        "location": [
+            "Edmonton AB"
+        ],
+        "format": "In-person"
+    },
+    {
+        "url": "INR_Mon-2510",
+        "title": "Introduction to R",
+        "instructors": [
+            "Celia Greenwood",
+            "Alexandre Reynaud",
+            "W. Alton Russell",
+            "Anna K. Naumova",
+            "Adrien Osakwe",
+            "Han Yu",
+            "Audrey Baguette",
+            "Maximiliane Jousse",
+            "Daniel Gurman",
+            "Rodrigo Migueles Ramirez"
+        ],
+        "tags": [
+            "Data Science",
+            "R",
+            "Bioinformatics",
+            "Statistics"
+        ],
+        "regions": [
+            "Quebec",
+            "Online"
+        ],
+        "year": 2025,
+        "startDate": "2025-10-01",
+        "endDate": "2025-10-02",
+        "image": "img/CBW_INR_Icon.png",
+        "location": [
+            "Montréal QC",
+            "Virtual"
+        ],
+        "format": "Hybrid"
+    },
+    {
       "url": "INR_Sask-2510",
       "title": "Introduction to R",
       "instructors": [
@@ -55,7 +80,7 @@
           "SK"
       ],
       "format": "In-person"
-  },
+    },
     {
         "url": "GAL_2025/",
         "title": "RNA-seq Analysis Using Galaxy en Français",
