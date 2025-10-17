@@ -170,7 +170,7 @@
                 <label for="text-search-input" class="sr-only">Search workshops by keyword</label>
                 <input type="search" id="text-search-input" placeholder="Search workshops..." class="w-full sm:w-48 px-4 py-2.5 border border-gray-300 rounded-lg shadow-sm focus:ring-brand-purple focus:border-brand-purple transition">
             </div>
-        </div>
+            </div>
 
         <main id="link-container" class="space-y-16">
             <div id="no-results-message" class="hidden" role="status" aria-live="polite">
@@ -205,7 +205,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             title: { container: null, active: new Set(), label: "Workshop" },
             tags: { container: null, active: new Set(), label: "Topics" },
             format: { container: null, active: new Set(), label: "Format" },
-            status: { container: null, active: new Set(), label: "Status" }
+            status: { container: null, active: new Set(), label: "Status" },
+            // NEW FILTER ADDED
+            materials: { container: null, active: new Set(), label: "Materials" } 
         };
 
         function formatDateRange(startDateStr, endDateStr) {
@@ -225,12 +227,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             const workshopStartDate = new Date(link.startDate + 'T00:00:00');
             const workshopEndDate = new Date(link.endDate + 'T00:00:00');
             const isPastWorkshop = workshopEndDate < today;
-            const hasNoUrl = (!link.url || link.url === "");
+            const hasUrl = (link.url && link.url !== "");
 
             // Determine if this card should have the 'past-no-materials' behavior (permanent graying, MNA overlay)
-            const applyPastNoMaterialsBehavior = isPastWorkshop && hasNoUrl;
+            const applyPastNoMaterialsBehavior = isPastWorkshop && !hasUrl;
             // Determine if this card needs the "Materials Coming Soon" overlay
-            const applyComingSoonOverlay = !isPastWorkshop && hasNoUrl;
+            const applyComingSoonOverlay = !isPastWorkshop && !hasUrl;
 
             // Apply 'past-no-materials' class for permanent grayscale and potential hover background
             const cardClassSuffix = applyPastNoMaterialsBehavior ? ' past-no-materials hover:bg-gray-100' : '';
@@ -272,6 +274,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             card.dataset.status = JSON.stringify(statusTags);
 
+            // Set materials status for filtering
+            card.dataset.materials = JSON.stringify(hasUrl ? ["Available"] : ["Not Available"]);
+
 
             const sortedRegions = [...link.regions].sort((a,b) => regionOrder.indexOf(a) - regionOrder.indexOf(b));
 
@@ -282,7 +287,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return `<span class="flex items-center justify-center ${lightBgClass} text-gray-900 border-2 ${borderClass} rounded-full px-3 py-1 text-xs font-bold shadow-sm" title="Region: ${region}">${region}</span>`;
             }).join('');
 
-            const regionColors = sortedRegions.map(region => tailwind.config.theme.extend.colors[`region-${region.toLowerCase()}`]).filter(Boolean);
+            const regionColors = sortedRegions.map(region => tailwind.config.theme.extend.colors[`region-${region.toLowerCase().replace(' ', '-')}`]).filter(Boolean);
             let colorBarHTML = '<div class="h-1.5 bg-gray-300"><span class="sr-only">Workshop regions color bar</span></div>';
             if (regionColors.length > 1) {
                 // Color bar will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
@@ -305,7 +310,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             const imageHoverEffectClass = applyPastNoMaterialsBehavior ? '' : 'transition-all duration-300'; // No extra hover classes needed here, CSS handles static grayscale.
 
             // No materials status tag for past-no-materials
-            let materialsStatusTagHTML = '';
             let titleAriaLabelSuffix = '';
 
             // Overlay for "Materials Coming Soon" or "Materials Not Available"
@@ -355,7 +359,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `;
 
-            if (link.url) {
+            if (hasUrl) {
                 // If URL exists, wrap the entire visual content in an <a> tag
                 card.innerHTML = `
                     <a href="${link.url}" target="_blank" rel="noopener noreferrer"
@@ -468,6 +472,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.querySelectorAll('.card').forEach(card => {
                 const searchMatch = !searchTerm || card.dataset.search.includes(searchTerm);
                 let filtersMatch = true;
+                
                 for (const type in allFilters) {
                     if (allFilters[type].active.size === 0) continue;
 
@@ -478,6 +483,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         break;
                     }
                 }
+                
                 if (searchMatch && filtersMatch) {
                     card.classList.remove('hidden');
                     totalVisibleCards++;
@@ -507,7 +513,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 title: [...new Set(linksData.map(link => link.title))].sort(),
                 tags: [...new Set(linksData.flatMap(link => link.tags))].sort(),
                 format: [...new Set(linksData.map(link => link.format))].sort(),
-                status: ["Upcoming", "Happening Now", "Past"]
+                status: ["Upcoming", "Happening Now", "Past"],
+                // NEW OPTION ADDED
+                materials: ["Available"] 
             };
 
             for (const type in allFilters) {
@@ -651,5 +659,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   border-width: 0;
 }
 </style>
+
+<footer class="mt-16 py-8 px-4 text-center text-sm text-gray-600 bg-slate-50 border-t border-gray-200">
+    <p>
+        Many CBW workshops are archived. If you are looking for material from a workshop not available here,
+        email us at
+        <a href="mailto:training@bioinformatics.ca" class="text-brand-purple hover:text-purple-700 font-semibold transition-colors duration-200">
+            training@bioinformatics.ca
+        </a>.
+    </p>
+</footer>
+
 </body>
 </html>
