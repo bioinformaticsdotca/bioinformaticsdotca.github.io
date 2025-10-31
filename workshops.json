@@ -1,5 +1,29 @@
 [
     {
+    "url": "INR_Van-2511",
+    "title": "Introduction to R",
+    "instructors": [
+        "Rodolfo Lourenzutti",
+        "Ido Hatam"
+    ],
+    "tags": [
+        "R"
+    ],
+    "regions": [
+        "BC"
+    ],
+    "year": 2025,
+    "startDate": "2025-11-06",
+    "endDate": "2025-11-07",
+    "image": "img/CBW_INR_Icon.png",
+    "location": [
+        "Vancouver",
+        "BC"
+    ],
+    "format": "In-person"
+    },
+
+    {
     "url": "GPO_Hal-2511",
     "title": "Genomics for Precision Oncology: Halifax, NS",
     "instructors": [
