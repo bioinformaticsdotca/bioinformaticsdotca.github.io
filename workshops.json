@@ -52,7 +52,7 @@
         "startDate": "2025-10-01",
         "endDate": "2025-10-02",
         "image": "img/INR_icon.png",
-        "locations": ["Montréal QC", "Virtual"],
+        "locations": ["Montréal QC", "Online"],
         "format": "Hybrid"
     },
 
