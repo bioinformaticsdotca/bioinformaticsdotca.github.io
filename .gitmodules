@@ -41,9 +41,6 @@
 	path = RNASeq_2017
 	url = https://github.com/bioinformaticsdotca/RNASeq_2017.git
 	
-[submodule "10_Simple_Rules"]
-	path = 10_Simple_Rules
-	url = https://github.com/bioinformaticsdotca/10_Simple_Rules.git
 [submodule "Epigenomics_2018"]
 	path = Epigenomics_2018
 	url = https://github.com/bioinformaticsdotca/Epigenomics_2018.git
@@ -146,9 +143,6 @@
 [submodule "INR_2021"]
 	path = INR_2021
 	url = https://github.com/bioinformatics-ca/INR_2021.git
-[submodule "AUR_2021"]
-	path = AUR_2021
-	url = https://github.com/bioinformatics-ca/AUR_2021.git
 [submodule "MIC_2021"]
 	path = MIC_2021
 	url = https://github.com/bioinformatics-ca/MIC_2021.git
