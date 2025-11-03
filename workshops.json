@@ -17,8 +17,7 @@
     "endDate": "2025-11-07",
     "image": "img/CBW_INR_Icon.png",
     "location": [
-        "Vancouver",
-        "BC"
+        "Vancouver, BC"
     ],
     "format": "In-person"
     },
@@ -113,23 +112,14 @@
     {
       "url": "INR_Sask-2510",
       "title": "Introduction to R",
-      "instructors": [
-          "Mohamed Helmy"
-      ],
-      "tags": [
-          "R"
-      ],
-      "regions": [
-          "Prairies"
-      ],
+      "instructors": ["Mohamed Helmy"],
+      "tags": ["R"],
+      "regions": ["Prairies"],
       "year": 2025,
       "startDate": "2025-10-06",
       "endDate": "2025-10-07",
       "image": "img/CBW_INR_Icon.png",
-      "location": [
-          "Saskatoon",
-          "SK"
-      ],
+      "location": ["Saskatoon, SK"],
       "format": "In-person"
     },
     {
