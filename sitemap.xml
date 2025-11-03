@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+<url><loc>https://bioinformaticsdotca.github.io/MIG_2025</loc></url>
   <url>
     <loc>https://bioinformaticsdotca.github.io/INR_Van-2511</loc>
   </url>
@@ -16,11 +16,11 @@
   <url>
     <loc>https://bioinformaticsdotca.github.io/INR_Mon-2510</loc>
   </url>
-  
+
   <url>
     <loc>https://bioinformaticsdotca.github.io/INR_Sask-2510</loc>
   </url>
-  
+
   <url>
     <loc>https://bioinformaticsdotca.github.io/GAL_2025</loc>
     <lastmod>2025-08-17</lastmod>
@@ -130,5 +130,5 @@
     <loc>https://bioinformaticsdotca.github.io/EPI_2021</loc>
     <lastmod>2025-08-17</lastmod>
   </url>
-  
+
   </urlset>

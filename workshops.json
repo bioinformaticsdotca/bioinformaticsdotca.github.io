@@ -1,4 +1,16 @@
-[
+[{
+    "url": "MIG_2025",
+    "title": "Microbial Genomics",
+    "instructors": ["Jared Simpson","Gary van Domselaar","Andrew McArthur","Rob Beiko","Fiona Brinkman"],
+    "tags": ["Bioinformatics","genomics"],
+    "regions": ["Ontario"],
+    "year": 2025,
+    "startDate": "2025-11-20",
+    "endDate": "2025-11-22",
+    "image": "img/MIG.png",
+    "locations": ["Online"],
+    "format": "Online"
+},
     {
         "url": "INR_Van-2511",
         "title": "Introduction to R",
