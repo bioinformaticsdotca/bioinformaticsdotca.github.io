@@ -1,73 +1,73 @@
 [
     {
-    "url": "INR_Van-2511",
-    "title": "Introduction to R",
-    "instructors": ["Rodolfo Lourenzutti","Ido Hatam"],
-    "tags": ["R"],
-    "regions": ["BC"],
-    "year": 2025,
-    "startDate": "2025-11-06",
-    "endDate": "2025-11-07",
-    "image": "img/CBW_INR_Icon.png",
-    "locations": ["Vancouver, BC"],
-    "format": "In-person"
+        "url": "INR_Van-2511",
+        "title": "Introduction to R",
+        "instructors": ["Rodolfo Lourenzutti","Ido Hatam"],
+        "tags": ["R"],
+        "regions": ["BC"],
+        "year": 2025,
+        "startDate": "2025-11-06",
+        "endDate": "2025-11-07",
+        "image": "img/INR_icon.png",
+        "locations": ["Vancouver, BC"],
+        "format": "In-person"
     },
 
     {
-    "url": "GPO_Hal-2511",
-    "title": "Genomics for Precision Oncology: Halifax, NS",
-    "instructors": ["Daniel Gaston","Victor Martinez"],
-    "tags": ["Cancer", "Genomics", "Oncology", "AWS", "Halifax", "BHCRI"],
-    "regions": ["Atlantic"],
-    "year": 2025,
-    "startDate": "2025-11-04",
-    "endDate": "2025-11-05",
-    "image": "img/CBW-GPO-cancer-logo-w-transparency-1024x1024.png",
-    "locations": ["Halifax NS"],
-    "format": "In-person"
+        "url": "GPO_Hal-2511",
+        "title": "Genomics for Precision Oncology: Halifax, NS",
+        "instructors": ["Daniel Gaston","Victor Martinez"],
+        "tags": ["Cancer", "Genomics", "Oncology", "AWS", "Halifax", "BHCRI"],
+        "regions": ["Atlantic"],
+        "year": 2025,
+        "startDate": "2025-11-04",
+        "endDate": "2025-11-05",
+        "image": "img/GPO_icon.png",
+        "locations": ["Halifax, NS"],
+        "format": "In-person"
     },
 
     {
-    "url": "INR_Ed-2510",
-    "title": "Introduction to R",
-    "instructors": ["Linglong Kong", "Enze Shi", "Ce Zhang"],
-    "tags": ["R", "Bioinformatics", "Statistics"],
-    "regions": ["Alberta"],
-    "year": 2025,
-    "startDate": "2025-10-23",
-    "endDate": "2025-10-24",
-    "image": "img/CBW_INR_Icon.png",
-    "locations": ["Edmonton AB"],
-    "format": "In-person"
+        "url": "INR_Ed-2510",
+        "title": "Introduction to R",
+        "instructors": ["Linglong Kong", "Enze Shi", "Ce Zhang"],
+        "tags": ["R", "Bioinformatics", "Statistics"],
+        "regions": ["Alberta"],
+        "year": 2025,
+        "startDate": "2025-10-23",
+        "endDate": "2025-10-24",
+        "image": "img/INR_icon.png",
+        "locations": ["Edmonton AB"],
+        "format": "In-person"
     },
 
     {
-    "url": "INR_Mon-2510/",
-    "title": "Introduction to R",
-    "instructors": ["Celia Greenwood", "Alexandre Reynaud", "W. Alton Russell", "Anna K. Naumova", "Adrien Osakwe", "Han Yu", "Audrey Baguette", "Maximiliane Jousse", "Daniel Gurman", "Rodrigo Migueles Ramirez"
-    ],
-    "tags": ["Data Science", "R", "Bioinformatics", "Statistics"],
-    "regions": ["Quebec", "Online"],
-    "year": 2025,
-    "startDate": "2025-10-01",
-    "endDate": "2025-10-02",
-    "image": "img/CBW_INR_Icon.png",
-    "locations": ["Montréal QC", "Virtual"],
-    "format": "Hybrid"
+        "url": "INR_Mon-2510/",
+        "title": "Introduction to R",
+        "instructors": ["Celia Greenwood", "Alexandre Reynaud", "W. Alton Russell", "Anna K. Naumova", "Adrien Osakwe", "Han Yu", "Audrey Baguette", "Maximiliane Jousse", "Daniel Gurman", "Rodrigo Migueles Ramirez"
+        ],
+        "tags": ["Data Science", "R", "Bioinformatics", "Statistics"],
+        "regions": ["Quebec", "Online"],
+        "year": 2025,
+        "startDate": "2025-10-01",
+        "endDate": "2025-10-02",
+        "image": "img/INR_icon.png",
+        "locations": ["Montréal QC", "Virtual"],
+        "format": "Hybrid"
     },
 
     {
-      "url": "INR_Sask-2510/",
-      "title": "Introduction to R",
-      "instructors": ["Mohamed Helmy"],
-      "tags": ["R"],
-      "regions": ["Prairies"],
-      "year": 2025,
-      "startDate": "2025-10-06",
-      "endDate": "2025-10-07",
-      "image": "img/CBW_INR_Icon.png",
-      "locations": ["Saskatoon, SK"],
-      "format": "In-person"
+        "url": "INR_Sask-2510/",
+        "title": "Introduction to R",
+        "instructors": ["Mohamed Helmy"],
+        "tags": ["R"],
+        "regions": ["Prairies"],
+        "year": 2025,
+        "startDate": "2025-10-06",
+        "endDate": "2025-10-07",
+        "image": "img/INR_icon.png",
+        "locations": ["Saskatoon, SK"],
+        "format": "In-person"
     },
     
     {
@@ -79,7 +79,7 @@
         "year": 2025,
         "startDate": "2025-08-11",
         "endDate": "2025-08-13",
-        "image": "img/CBW_GAL_Icon.png",
+        "image": "img/legacy_icons/l-GAL_icon.png",
         "locations": ["Montreal, QC"],
         "format": "In-person"
     },
@@ -93,7 +93,7 @@
         "year": 2025,
         "startDate": "2025-02-20",
         "endDate": "2025-02-21",
-        "image": "img/CBW_ISO_Icon.jpg",
+        "image": "img/legacy_icons/l-ISO_icon.jpg",
         "locations": ["Toronto, ON", "Online"],
         "format": "Distributed"
     },
@@ -107,7 +107,7 @@
         "year": 2025,
         "startDate": "2025-05-29",
         "endDate": "2025-05-30",
-        "image": "img/CBW_AMB_Icon.png",
+        "image": "img/legacy_icons/l-AMB_icon.png",
         "locations": ["Vancouver, BC"],
         "format": "In-person"
     },
@@ -121,7 +121,7 @@
         "year": 2025,
         "startDate": "2025-06-23",
         "endDate": "2025-06-24",
-        "image": "img/CBW_INR_Icon.png",
+        "image": "img/legacy_icons/l-INR_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -135,7 +135,7 @@
         "year": 2025,
         "startDate": "2025-06-25",
         "endDate": "2025-06-26",
-        "image": "img/CBW_AUR_Icon.png",
+        "image": "img/legacy_icons/l-AUR_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -149,7 +149,7 @@
         "year": 2025,
         "startDate": "2025-07-07",
         "endDate": "2024-07-08",
-        "image": "img/CBW_RNA_Icon.png",
+        "image": "img/legacy_icons/l-RNA_icon.png",
         "locations": ["Ottawa, ON", "Edmonton, AB"],
         "format": "In-person"
     },
@@ -163,7 +163,7 @@
         "year": 2025,
         "startDate": "2025-07-10",
         "endDate": "2024-07-11",
-        "image": "img/CBW_scRNA_Icon.jpg",
+        "image": "img/legacy_icons/l-scRNA_icon.jpg",
         "locations": ["Ottawa, ON", "Edmonton, AB"],
         "format": "In-person"
     },
@@ -177,7 +177,7 @@
         "year": 2025,
         "startDate": "2025-05-26",
         "endDate": "2025-05-27",
-        "image": "img/CBW_BMB_Icon.png",
+        "image": "img/legacy_icons/l-BMB_icon.png",
         "locations": ["Vancouver, BC"],
         "format": "In-person"
     },
@@ -191,7 +191,7 @@
         "year": 2024,
         "startDate": "2024-05-13",
         "endDate": "2024-05-17",
-        "image": "img/CBW_IDE-legacy_Icon.png",
+        "image": "img/legacy_icons/l-IDE-legacy_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -205,7 +205,7 @@
         "year": 2024,
         "startDate": "2024-06-11",
         "endDate": "2024-06-12",
-        "image": "img/CBW_INR_Icon.png",
+        "image": "img/legacy_icons/l-INR_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -219,7 +219,7 @@
         "year": 2024,
         "startDate": "2024-06-13",
         "endDate": "2024-06-14",
-        "image": "img/CBW_AUR_Icon.png",
+        "image": "img/legacy_icons/l-AUR_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -233,7 +233,7 @@
         "year": 2024,
         "startDate": "2024-06-26",
         "endDate": "2024-06-28",
-        "image": "img/CBW_PNA_Icon.png",
+        "image": "img/legacy_icons/l-PNA_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -247,7 +247,7 @@
         "year": 2024,
         "startDate": "2024-07-09",
         "endDate": "2024-06-10",
-        "image": "img/CBW_ISO_Icon.jpg",
+        "image": "img/legacy_icons/l-ISO_icon.jpg",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -261,7 +261,7 @@
         "year": 2024,
         "startDate": "2024-08-19",
         "endDate": "2024-08-21",
-        "image": "img/CBW_STAT_Icon.jpg",
+        "image": "img/legacy_icons/l-STAT_icon.jpg",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -275,7 +275,7 @@
         "year": 2024,
         "startDate": "2024-09-07",
         "endDate": "2024-09-08",
-        "image": "img/CBW_MLE_Icon.png",
+        "image": "img/legacy_icons/l-MLE_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -289,7 +289,7 @@
         "year": 2024,
         "startDate": "2024-09-16",
         "endDate": "2024-09-18",
-        "image": "img/CBW_PROT_Icon.jpg",
+        "image": "img/legacy_icons/l-PROT_icon.jpg",
         "locations": ["Laval, QC"],
         "format": "In-person"
     },
@@ -303,7 +303,7 @@
         "year": 2024,
         "startDate": "2024-10-17",
         "endDate": "2024-10-18",
-        "image": "img/CBW_PGX_Icon.png",
+        "image": "img/legacy_icons/l-PGX_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -317,7 +317,7 @@
         "year": 2024,
         "startDate": "2024-10-21",
         "endDate": "2024-10-22",
-        "image": "img/CBW_OMPRN_Icon.png",
+        "image": "img/legacy_icons/l-OMPRN_icon.png",
         "locations": ["Toronto, ON"],
         "format": "In-person"
     },
@@ -331,7 +331,7 @@
         "year": 2023,
         "startDate": "2023-04-18",
         "endDate": "2023-04-21",
-        "image": "img/CBW_IDE-legacy_Icon.png",
+        "image": "img/legacy_icons/l-IDE-legacy_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -345,7 +345,7 @@
         "year": 2023,
         "startDate": "2023-07-06",
         "endDate": "2023-07-07",
-        "image": "img/CBW_MET_Icon.png",
+        "image": "img/legacy_icons/l-MET_icon.png",
         "locations": ["Edmonton, AB", "Montreal, QC"],
         "format": "In-person"
     },
@@ -359,7 +359,7 @@
         "year": 2023,
         "startDate": "2023-08-16",
         "endDate": "2023-08-17",
-        "image": "img/CBW_MLE_Icon.png",
+        "image": "img/legacy_icons/l-MLE_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -373,7 +373,7 @@
         "year": 2023,
         "startDate": "2023-10-11",
         "endDate": "2023-10-13",
-        "image": "img/CBW_EPI_Icon.png",
+        "image": "img/legacy_icons/l-EPI_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -387,7 +387,7 @@
         "year": 2021,
         "startDate": "2021-06-07",
         "endDate": "2021-06-11",
-        "image": "img/CBW_CAN_Icon.png",
+        "image": "img/legacy_icons/l-CAN_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -401,7 +401,7 @@
         "year": 2021,
         "startDate": "2021-09-13",
         "endDate": "2021-09-15",
-        "image": "img/CBW_EPI_Icon.png",
+        "image": "img/legacy_icons/l-EPI_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -415,7 +415,7 @@
         "year": 2021,
         "startDate": "2021-09-27",
         "endDate": "2021-09-29",
-        "image": "img/CBW_HTG_Icon.png",
+        "image": "img/legacy_icons/l-HTG_icon.png",
         "locations": ["Online"],
         "format": "Online"
     }

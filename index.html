@@ -49,25 +49,23 @@
         /* Apply transition to the wrapper that gets the hover effects */
         .dropdown-panel, .year-section, .card-interactive-wrapper { transition: all 0.3s ease-in-out; }
 
-        /* Permanent grayscale for past-no-materials cards */
-        .card.past-no-materials img,
-        .card.past-no-materials .h-1\.5, /* Targets the color bar */
-        .card.past-no-materials .flex-wrap > span { /* Targets the region tags */
+        /* NEW/MODIFIED: Permanent grayscale for cards with no materials */
+        .card.no-materials-card img,
+        .card.no-materials-card .h-1\.5, /* Targets the color bar */
+        .card.no-materials-card .flex-wrap > span { /* Targets the region tags */
           filter: grayscale(100%);
         }
-
-        /* No transition for the image on past-no-materials cards because it's permanently gray */
-        .card.past-no-materials img {
-            opacity: 1; /* Ensure it's not faded */
+        /* Ensure image opacity isn't affected by other styles */
+        .card.no-materials-card img {
+            opacity: 1; 
         }
-        /* No hover specific styles for color bar/region tags for past-no-materials because they are permanently gray */
-        .card.past-no-materials:hover .h-1\.5,
-        .card.past-no-materials:hover .flex-wrap > span {
-            filter: grayscale(100%); /* Keeps it grayscale on hover as it's already gray */
+        /* Make the title gray for no-materials cards */
+        .card.no-materials-card .h3-title {
+            color: #6b7280; /* Tailwind's gray-500 or gray-600 for dimmed text */
         }
 
 
-        /* Styling for the "Materials Coming Soon" and "Materials Not Available" overlay */
+        /* Styling for the "Materials Coming Soon" overlay - now unified */
         .materials-overlay {
             background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
             opacity: 0; /* Initially hidden */
@@ -206,8 +204,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             tags: { container: null, active: new Set(), label: "Topics" },
             format: { container: null, active: new Set(), label: "Format" },
             status: { container: null, active: new Set(), label: "Status" },
-            // REMOVED: "materials" filter
-            // materials: { container: null, active: new Set(), label: "Materials" } 
         };
 
         function formatDateRange(startDateStr, endDateStr) {
@@ -229,13 +225,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const isPastWorkshop = workshopEndDate < today;
             const hasUrl = (link.url && link.url !== "");
 
-            // Determine if this card should have the 'past-no-materials' behavior (permanent graying, MNA overlay)
-            const applyPastNoMaterialsBehavior = isPastWorkshop && !hasUrl;
-            // Determine if this card needs the "Materials Coming Soon" overlay
-            const applyComingSoonOverlay = !isPastWorkshop && !hasUrl;
+            // Unified logic: If the URL is missing, it needs the "Coming Soon" overlay and permanent graying
+            const applyNoMaterialsStyling = !hasUrl; 
 
-            // Apply 'past-no-materials' class for permanent grayscale and potential hover background
-            const cardClassSuffix = applyPastNoMaterialsBehavior ? ' past-no-materials hover:bg-gray-100' : '';
+            // Add 'no-materials-card' class if URL is missing
+            const cardClassSuffix = applyNoMaterialsStyling ? ' no-materials-card' : '';
             const card = document.createElement('article');
             card.className = `card flex flex-col bg-white rounded-xl shadow-lg overflow-hidden ${cardClassSuffix}`;
             card.setAttribute('role', 'group'); // Used for group-hover targeting in CSS
@@ -274,26 +268,23 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             card.dataset.status = JSON.stringify(statusTags);
 
-            // REMOVED: "materials" dataset attribute
-            // card.dataset.materials = JSON.stringify(hasUrl ? ["Available"] : ["Not Available"]);
-
 
             const sortedRegions = [...link.regions].sort((a,b) => regionOrder.indexOf(a) - regionOrder.indexOf(b));
 
             const regionTagsHTML = sortedRegions.map(region => {
                 const borderClass = `border-region-${region.toLowerCase().replace(' ', '-')}`;
                 const lightBgClass = `bg-region-${region.toLowerCase().replace(' ', '-')}-light`;
-                // Region tags will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                // CSS will apply grayscale to this span if .no-materials-card is present
                 return `<span class="flex items-center justify-center ${lightBgClass} text-gray-900 border-2 ${borderClass} rounded-full px-3 py-1 text-xs font-bold shadow-sm" title="Region: ${region}">${region}</span>`;
             }).join('');
 
             const regionColors = sortedRegions.map(region => tailwind.config.theme.extend.colors[`region-${region.toLowerCase().replace(' ', '-')}`]).filter(Boolean);
             let colorBarHTML = '<div class="h-1.5 bg-gray-300"><span class="sr-only">Workshop regions color bar</span></div>';
             if (regionColors.length > 1) {
-                // Color bar will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                // CSS will apply grayscale to this div if .no-materials-card is present
                 colorBarHTML = `<div class="h-1.5" style="background-image: linear-gradient(to right, ${regionColors.join(', ')})"><span class="sr-only">Workshop regions color bar</span></div>`;
             } else if (regionColors.length === 1) {
-                // Color bar will be permanently grayscale if applyPastNoMaterialsBehavior is true (CSS handles this)
+                // CSS will apply grayscale to this div if .no-materials-card is present
                 colorBarHTML = `<div class="h-1.5" style="background-color: ${regionColors[0]}"><span class="sr-only">Workshop region: ${sortedRegions[0]}</span></div>`;
             }
 
@@ -304,31 +295,22 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `).join('');
 
-            // Image class: permanent grayscale for past-no-materials
+            // Image class: CSS will apply permanent grayscale via .no-materials-card
             const imageBaseClass = 'w-full h-48 object-cover';
-            // No hover effect on the image itself, as it's permanently gray for past-no-materials and an overlay for coming soon
-            const imageHoverEffectClass = applyPastNoMaterialsBehavior ? '' : 'transition-all duration-300'; // No extra hover classes needed here, CSS handles static grayscale.
+            const imageHoverEffectClass = 'transition-all duration-300'; 
 
-            // No materials status tag for past-no-materials
             let titleAriaLabelSuffix = '';
 
-            // Overlay for "Materials Coming Soon" or "Materials Not Available"
+            // Overlay for "Material Coming Soon"
             let overlayHTML = '';
-            if (applyComingSoonOverlay) {
+            if (applyNoMaterialsStyling) {
                 overlayHTML = `
                     <div class="absolute inset-0 flex items-center justify-content-center materials-overlay">
-                        <span class="text-xl font-bold uppercase">Materials Coming Soon</span>
+                        <span class="text-xl font-bold uppercase">Material Coming Soon</span>
                         <span class="sr-only"> for ${link.title} workshop</span>
                     </div>
                 `;
-            } else if (applyPastNoMaterialsBehavior) {
-                overlayHTML = `
-                    <div class="absolute inset-0 flex items-center justify-content-center materials-overlay">
-                        <span class="text-xl font-bold uppercase">Material Not Available</span>
-                        <span class="sr-only"> for ${link.title} workshop</span>
-                    </div>
-                `;
-                titleAriaLabelSuffix = ' - Material not available';
+                titleAriaLabelSuffix = ' - Material coming soon'; 
             }
 
 
@@ -345,7 +327,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
                 <div class="p-5 flex flex-col flex-grow">
                     ${statusInfoHTML} <div class="min-h-16">
-                        <h3 class="text-lg font-bold ${applyPastNoMaterialsBehavior ? 'text-gray-600' : 'text-gray-800'} truncate-2-lines" ${titleAriaLabelSuffix ? `aria-label="${link.title}${titleAriaLabelSuffix}"` : ''}>
+                        <h3 class="text-lg font-bold text-gray-800 h3-title truncate-2-lines" ${titleAriaLabelSuffix ? `aria-label="${link.title}${titleAriaLabelSuffix}"` : ''}>
                             ${link.title}
                         </h3>
                     </div>
@@ -370,7 +352,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </a>
                 `;
             } else {
-                // If no URL, provide the content directly within the article
+                // If no URL, provide the content directly within the article, and apply the overlay logic
                 card.classList.add('group'); // Crucial for the `group-hover` effect on the overlay
                 card.innerHTML = `
                     ${colorBarHTML}
@@ -514,8 +496,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 tags: [...new Set(linksData.flatMap(link => link.tags))].sort(),
                 format: [...new Set(linksData.map(link => link.format))].sort(),
                 status: ["Upcoming", "Happening Now", "Past"],
-                // REMOVED: "materials" options
-                // materials: ["Available"] 
             };
 
             for (const type in allFilters) {
