@@ -42,7 +42,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        html, body { font-family: 'Manrope', sans-serif; scroll-behavior: smooth; }
+        html, body { font-family: 'Manrope', 'sans-serif'; scroll-behavior: smooth; }
         body { background-color: #f8fafc; }
         /* Removed hover effects from .card directly */
         .container { background-color: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); width: 100%; max-width: 80rem; border: 1px solid #e5e7eb; }
@@ -206,8 +206,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             tags: { container: null, active: new Set(), label: "Topics" },
             format: { container: null, active: new Set(), label: "Format" },
             status: { container: null, active: new Set(), label: "Status" },
-            // NEW FILTER ADDED
-            materials: { container: null, active: new Set(), label: "Materials" } 
+            // REMOVED: "materials" filter
+            // materials: { container: null, active: new Set(), label: "Materials" } 
         };
 
         function formatDateRange(startDateStr, endDateStr) {
@@ -274,8 +274,8 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
             card.dataset.status = JSON.stringify(statusTags);
 
-            // Set materials status for filtering
-            card.dataset.materials = JSON.stringify(hasUrl ? ["Available"] : ["Not Available"]);
+            // REMOVED: "materials" dataset attribute
+            // card.dataset.materials = JSON.stringify(hasUrl ? ["Available"] : ["Not Available"]);
 
 
             const sortedRegions = [...link.regions].sort((a,b) => regionOrder.indexOf(a) - regionOrder.indexOf(b));
@@ -514,8 +514,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 tags: [...new Set(linksData.flatMap(link => link.tags))].sort(),
                 format: [...new Set(linksData.map(link => link.format))].sort(),
                 status: ["Upcoming", "Happening Now", "Past"],
-                // NEW OPTION ADDED
-                materials: ["Available"] 
+                // REMOVED: "materials" options
+                // materials: ["Available"] 
             };
 
             for (const type in allFilters) {
@@ -660,13 +660,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 }
 </style>
 
-<footer class="mt-16 py-8 px-4 text-center text-sm text-gray-600 bg-slate-50 border-t border-gray-200">
+<footer class="mt-16 py-8 px-4 text-center text-lg text-gray-600 bg-slate-50 border-t border-gray-200">
     <p>
-        Many CBW workshops are archived. If you are looking for material from a workshop not available here,
-        email us at
-        <a href="mailto:training@bioinformatics.ca" class="text-brand-purple hover:text-purple-700 font-semibold transition-colors duration-200">
-            training@bioinformatics.ca
-        </a>.
+        <strong>Looking for a workshop not listed above?</strong> <br> Many CBW workshops are archived, but only the most recent are displayed here.
+        Email us at <a href="mailto:training@bioinformatics.ca" class="text-brand-purple hover:text-purple-700 font-semibold transition-colors duration-200">training@bioinformatics.ca</a> and we can help you find what you're looking for.
     </p>
 </footer>
 
