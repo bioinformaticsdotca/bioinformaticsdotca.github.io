@@ -1,4 +1,20 @@
-[{
+[ {
+    "url": "PGE_2025",
+    "title": "Pathogen Genomic Epidemiology",
+    "instructors": ["Angela McLaughlin","Emma Griffiths","Finlay Maguire","Gary Van Domselaar","Idowu Olawaye","Jennifer Guthrie"],
+    "tags": ["Bioinformatics","genomics"],
+    "regions": ["Online"],
+    "year": 2025,
+    "startDate": "2025-11-24",
+    "endDate": "2025-11-26",
+    "image": "img/pge-icon",
+    "locations": ["Online"],
+    "format": "Online"
+},
+
+
+
+{
     "url": "MIG_2025",
     "title": "Microbial Genomics",
     "instructors": ["Jared Simpson","Gary van Domselaar","Andrew McArthur","Rob Beiko","Fiona Brinkman"],
