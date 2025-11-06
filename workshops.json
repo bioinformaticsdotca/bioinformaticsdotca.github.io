@@ -253,9 +253,9 @@
     },
 
     {
-        "url": "",
+        "url": "PNA_2024/",
         "title": "Pathway and Network Analysis",
-        "instructors": [""],
+        "instructors": ["Veronique Voisin", "Ruth Isserlin", "Gary Bader", "Gregory Schwartz", "Chaitra Sarathy"],
         "tags": ["Pathway", "Network", "Analysis"],
         "regions": ["Ontario"],
         "year": 2024,
@@ -402,20 +402,6 @@
         "startDate": "2023-10-11",
         "endDate": "2023-10-13",
         "image": "img/legacy_icons/l-EPI_icon.png",
-        "locations": ["Online"],
-        "format": "Online"
-    },
-
-    {
-        "url": "",
-        "title": "Cancer Analysis",
-        "instructors": ["BF Francis Ouellette", "Rachade Hmamouchi", "Emma Bell", "Trevor Pugh", "Mathieu Bourgey", "Javier Diaz-Mejia", "Heather Gibling", "Andrew McPherson", "Richard de Borja", "Aaron Gillmor", "Sorana Morrissy", "Florence Cavalli", "Veronique Voisin"],
-        "tags": ["Analysis"],
-        "regions": ["Online"],
-        "year": 2021,
-        "startDate": "2021-06-07",
-        "endDate": "2021-06-11",
-        "image": "img/legacy_icons/l-CAN_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
