@@ -8,7 +8,7 @@
         "year": 2025,
         "startDate": "2025-11-24",
         "endDate": "2025-11-26",
-        "image": "img/PGE_icon",
+        "image": "img/PGE_icon.png",
         "locations": ["Online"],
         "format": "Online"
     },
@@ -26,7 +26,7 @@
         "locations": ["Online"],
         "format": "Online"
     },
-    
+
     {
         "url": "INR_Van-2511",
         "title": "Introduction to R",
