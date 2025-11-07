@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://bioinformaticsdotca.github.io/PGE_2025</loc></url>
-<url><loc>https://bioinformaticsdotca.github.io/MIG_2025</loc></url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/PGE_2025</loc>
+  </url>
+
+  <url>
+    <loc>https://bioinformaticsdotca.github.io/MIG_2025</loc>
+  </url>
+
   <url>
     <loc>https://bioinformaticsdotca.github.io/INR_Van-2511</loc>
   </url>
@@ -104,6 +111,11 @@
 
   <url>
     <loc>https://bioinformaticsdotca.github.io/OMPRN_2024</loc>
+    <lastmod>2025-08-17</lastmod>
+  </url>
+
+    <url>
+    <loc>https://bioinformaticsdotca.github.io/IDE_2024</loc>
     <lastmod>2025-08-17</lastmod>
   </url>
 
