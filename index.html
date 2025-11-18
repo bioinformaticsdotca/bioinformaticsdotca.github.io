@@ -4,95 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canadian Bioinformatics Workshops</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel=“icon” type=“image/x-icon” href=“favicon.ico”>
-    <link rel=“icon” type=“image/png” sizes=“32x32" href=“favicon-32x32.png”>
-    <link rel=“icon” type=“image/png” sizes=“16x16" href=“favicon-16x16.png”>
-    <link rel=“apple-touch-icon” sizes=“180x180” href=“apple-touch-icon.png”>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Manrope', 'sans-serif'], },
-                    colors: {
-                        // Original Brand Colors (Used for borders and color bar)
-                        'brand-purple': '#5A1F65',
-                        'region-bc': '#3C9048',
-                        'region-alberta': '#86264E',
-                        'region-prairies': '#BD8528',
-                        'region-ontario': '#BB682C',
-                        'region-quebec': '#427FA4',
-                        'region-atlantic': '#208A99',
-                        'region-online': '#5A1F65', // Same as brand-purple
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-                        // NEW LIGHTER REGIONAL COLORS FOR TAG BACKGROUNDS (AAA compliant with text-gray-900)
-                        'region-bc-light': '#8ed792',         // CBH British Columbia light
-                        'region-alberta-light': '#ca668a',    // CBH Alberta light
-                        'region-prairies-light': '#f6bc6a',   // CBH Prairies light
-                        'region-ontario-light': '#ffb37a',    // CBH Ontario light
-                        'region-quebec-light': '#9bccf0',     // CBH Quebec light
-                        'region-atlantic-light': '#84d3e1',   // CBH Atlantic light
-                        'region-online-light': '#cc7ed9',     // CBW light (matching brand-purple light)
+    <script src="https://cdn.tailwindcss.com/3.4.5"></script>
+
+    <script>
+        if (typeof tailwind !== 'undefined') {
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: { sans: ['Manrope', 'sans-serif'], },
+                        colors: {
+                            // Original Brand Colors
+                            'brand-purple': '#5A1F65',
+                            'region-bc': '#3C9048',
+                            'region-alberta': '#86264E',
+                            'region-prairies': '#BD8528',
+                            'region-ontario': '#BB682C',
+                            'region-quebec': '#427FA4',
+                            'region-atlantic': '#208A99',
+                            'region-online': '#5A1F65',
+
+                            // Lighter Regional Colors
+                            'region-bc-light': '#8ed792',
+                            'region-alberta-light': '#ca668a',
+                            'region-prairies-light': '#f6bc6a',
+                            'region-ontario-light': '#ffb37a',
+                            'region-quebec-light': '#9bccf0',
+                            'region-atlantic-light': '#84d3e1',
+                            'region-online-light': '#cc7ed9',
+                        }
                     }
                 }
             }
+        } else {
+            console.warn("Tailwind CSS failed to load. Styles may be missing.");
         }
     </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <style>
         html, body { font-family: 'Manrope', 'sans-serif'; scroll-behavior: smooth; }
         body { background-color: #f8fafc; }
-        /* Removed hover effects from .card directly */
+        
         .container { background-color: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); width: 100%; max-width: 80rem; border: 1px solid #e5e7eb; }
-        /* Apply transition to the wrapper that gets the hover effects */
+        
         .dropdown-panel, .year-section, .card-interactive-wrapper { transition: all 0.3s ease-in-out; }
 
-        /* NEW/MODIFIED: Permanent grayscale for cards with no materials */
+        /* Permanent grayscale for cards with no materials */
         .card.no-materials-card img,
-        .card.no-materials-card .h-1\.5, /* Targets the color bar */
-        .card.no-materials-card .flex-wrap > span { /* Targets the region tags */
+        .card.no-materials-card .h-1\.5, 
+        .card.no-materials-card .flex-wrap > span { 
           filter: grayscale(100%);
         }
-        /* Ensure image opacity isn't affected by other styles */
-        .card.no-materials-card img {
-            opacity: 1; 
-        }
-        /* Make the title gray for no-materials cards */
-        .card.no-materials-card .h3-title {
-            color: #6b7280; /* Tailwind's gray-500 or gray-600 for dimmed text */
-        }
+        
+        .card.no-materials-card img { opacity: 1; }
+        .card.no-materials-card .h3-title { color: #6b7280; }
 
-
-        /* Styling for the "Materials Coming Soon" overlay - now unified */
+        /* Materials Coming Soon overlay */
         .materials-overlay {
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark overlay */
-            opacity: 0; /* Initially hidden */
-            transition: opacity 0.3s ease-in-out; /* Smooth transition */
+            background-color: rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
             display: flex;
             align-items: center;
             justify-content: center;
-            pointer-events: none; /* Allows clicks to pass through to elements below if desired, though here it covers the image */
+            pointer-events: none;
             text-align: center;
             color: white;
             font-weight: 700;
-            font-size: 1.25rem; /* text-xl */
+            font-size: 1.25rem;
             padding: 1rem;
         }
-        /* When the parent card (which has 'group' class) is hovered, show the overlay */
-        .card.group:hover .materials-overlay {
-            opacity: 1;
-        }
-
+        
+        .card.group:hover .materials-overlay { opacity: 1; }
 
         .card.hidden, .year-section.hidden { opacity: 0; transform: scale(0.95); max-height: 0; overflow: hidden; margin: 0 !important; padding: 0 !important; border: none; pointer-events: none; }
         .filter-button:hover .dropdown-arrow { transform: translateY(2px); }
 
-        /* Focus styles for keyboard navigation */
-        /* Applied to the <a> tag when the card is clickable, or to internal interactive elements */
         a:focus, button:focus, input:focus, .card:focus-within {
-            outline: 2px solid #5A1F65; /* Brand purple outline */
+            outline: 2px solid #5A1F65;
             outline-offset: 3px;
         }
 
@@ -107,9 +105,7 @@
                 scrollbar-width: none;
                 -ms-overflow-style: none;
             }
-            .carousel-on-mobile::-webkit-scrollbar {
-                display: none;
-            }
+            .carousel-on-mobile::-webkit-scrollbar { display: none; }
             .carousel-on-mobile > .card {
                 flex: 0 0 80%;
                 max-width: 320px;
@@ -124,26 +120,38 @@
             -webkit-line-clamp: 2;
         }
 
-        /* --- Specific Status Display Styles (Icon + Text) --- */
+        /* Status Display Styles */
         .status-icon-text {
             display: flex;
             align-items: center;
-            font-size: 0.875rem; /* text-sm */
-            font-weight: 600; /* font-semibold */
-            margin-bottom: 0.5rem; /* Spacing between status and title */
-            color: #1f2937; /* Tailwind's gray-900 for black text */
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
         }
-        .status-icon-text .icon-symbol { /* Targeting the span with the Unicode character */
-            font-size: 1.25rem; /* Roughly match the size of the previous Font Awesome icons */
+        .status-icon-text .icon-symbol {
+            font-size: 1.25rem;
             margin-right: 0.5rem;
             flex-shrink: 0;
-            display: inline-block; /* Treat icon as inline-block */
-            vertical-align: middle; /* Align icon vertically in the middle */
-            line-height: 1; /* Ensures icon is properly aligned vertically */
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
         }
-        /* Custom colors for icons - using Tailwind's default palette */
-        .icon-green { color: #059669; /* Emerald 600 */ }
-        .icon-orange { color: #EA580C; /* Orange 600 */ }
+        .icon-green { color: #059669; }
+        .icon-orange { color: #EA580C; }
+        
+        /* Accessibility helper */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
     </style>
 </head>
 
@@ -182,14 +190,27 @@
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
     try {
+        // Define colors here so the app logic doesn't crash if Tailwind fails to load
+        const workshopColors = {
+            'BC': '#3C9048',
+            'Alberta': '#86264E',
+            'Prairies': '#BD8528',
+            'Ontario': '#BB682C',
+            'Quebec': '#427FA4',
+            'Atlantic': '#208A99',
+            'Online': '#5A1F65'
+        };
+
+        // Re-enabled fetch for local testing
         const response = await fetch('workshops.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const linksData = await response.json();
+
         const regionOrder = ['BC', 'Alberta', 'Prairies', 'Ontario', 'Quebec', 'Atlantic', 'Online'];
         const today = new Date();
-        today.setHours(0, 0, 0, 0); // Normalize 'today' to start of day for comparison
+        today.setHours(0, 0, 0, 0); 
 
         const linkContainer = document.getElementById('link-container');
         const noResultsMessage = document.getElementById('no-results-message');
@@ -224,14 +245,11 @@ document.addEventListener('DOMContentLoaded', async () => {
             const isPastWorkshop = workshopEndDate < today;
             const hasUrl = (link.url && link.url !== "");
 
-            // Unified logic: If the URL is missing, it needs the "Coming Soon" overlay and permanent graying
             const applyNoMaterialsStyling = !hasUrl; 
-
-            // Add 'no-materials-card' class if URL is missing
             const cardClassSuffix = applyNoMaterialsStyling ? ' no-materials-card' : '';
             const card = document.createElement('article');
             card.className = `card flex flex-col bg-white rounded-xl shadow-lg overflow-hidden ${cardClassSuffix}`;
-            card.setAttribute('role', 'group'); // Used for group-hover targeting in CSS
+            card.setAttribute('role', 'group');
 
             card.dataset.year = JSON.stringify([link.year]);
             card.dataset.title = JSON.stringify([link.title]);
@@ -249,7 +267,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             let statusInfoHTML = '';
             let statusTags = [];
 
-            // Determine primary workshop status (Happening Now, Upcoming, Past)
             if (workshopStartDate <= today && today <= workshopEndDate) {
                 statusInfoHTML = `
                     <div class="status-icon-text icon-green mb-2">
@@ -262,7 +279,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         <span class="icon-symbol">&#x23F1;</span> <span>Upcoming</span>
                     </div>`;
                 statusTags = ["Upcoming"];
-            } else { // Workshop is in the past
+            } else { 
                  statusTags = ["Past"];
             }
             card.dataset.status = JSON.stringify(statusTags);
@@ -273,17 +290,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             const regionTagsHTML = sortedRegions.map(region => {
                 const borderClass = `border-region-${region.toLowerCase().replace(' ', '-')}`;
                 const lightBgClass = `bg-region-${region.toLowerCase().replace(' ', '-')}-light`;
-                // CSS will apply grayscale to this span if .no-materials-card is present
                 return `<span class="flex items-center justify-center ${lightBgClass} text-gray-900 border-2 ${borderClass} rounded-full px-3 py-1 text-xs font-bold shadow-sm" title="Region: ${region}">${region}</span>`;
             }).join('');
 
-            const regionColors = sortedRegions.map(region => tailwind.config.theme.extend.colors[`region-${region.toLowerCase().replace(' ', '-')}`]).filter(Boolean);
+            // FIXED: Safely retrieve colors from our local 'workshopColors' object instead of dependent 'tailwind' global
+            const regionColors = sortedRegions.map(region => workshopColors[region] || '#333333');
+            
             let colorBarHTML = '<div class="h-1.5 bg-gray-300"><span class="sr-only">Workshop regions color bar</span></div>';
             if (regionColors.length > 1) {
-                // CSS will apply grayscale to this div if .no-materials-card is present
                 colorBarHTML = `<div class="h-1.5" style="background-image: linear-gradient(to right, ${regionColors.join(', ')})"><span class="sr-only">Workshop regions color bar</span></div>`;
             } else if (regionColors.length === 1) {
-                // CSS will apply grayscale to this div if .no-materials-card is present
                 colorBarHTML = `<div class="h-1.5" style="background-color: ${regionColors[0]}"><span class="sr-only">Workshop region: ${sortedRegions[0]}</span></div>`;
             }
 
@@ -294,13 +310,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 </div>
             `).join('');
 
-            // Image class: CSS will apply permanent grayscale via .no-materials-card
             const imageBaseClass = 'w-full h-48 object-cover';
             const imageHoverEffectClass = 'transition-all duration-300'; 
 
             let titleAriaLabelSuffix = '';
-
-            // Overlay for "Material Coming Soon"
             let overlayHTML = '';
             if (applyNoMaterialsStyling) {
                 overlayHTML = `
@@ -312,8 +325,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 titleAriaLabelSuffix = ' - Material coming soon'; 
             }
 
-
-            // Common HTML structure for the card's visual content, regardless of clickability
             const commonCardVisuals = `
                 <div class="relative">
                     <img loading="lazy" class="${imageBaseClass} ${imageHoverEffectClass}" src="${link.image}" alt="Image for ${link.title} workshop${titleAriaLabelSuffix}" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=800';">
@@ -341,7 +352,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             `;
 
             if (hasUrl) {
-                // If URL exists, wrap the entire visual content in an <a> tag
                 card.innerHTML = `
                     <a href="${link.url}" target="_blank" rel="noopener noreferrer"
                        class="card-interactive-wrapper flex flex-col flex-grow transform hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl">
@@ -351,8 +361,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                     </a>
                 `;
             } else {
-                // If no URL, provide the content directly within the article, and apply the overlay logic
-                card.classList.add('group'); // Crucial for the `group-hover` effect on the overlay
+                card.classList.add('group');
                 card.innerHTML = `
                     ${colorBarHTML}
                     <div class="flex flex-col flex-grow">
@@ -375,11 +384,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 else pastLinks.push(link);
             }
 
-            // Sort current and upcoming workshops by start date
             currentAndUpcomingLinks.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-            // Sort past workshops by start date (most recent first)
             pastLinks.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
-
 
             if (currentAndUpcomingLinks.length > 0) {
                 const currentSection = document.createElement('section');
@@ -399,7 +405,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             }
 
             const pastLinksByYear = pastLinks.reduce((acc, link) => { (acc[link.year] = acc[link.year] || []).push(link); return acc; }, {});
-            const sortedYears = Object.keys(pastLinksByYear).sort((a, b) => b - a); // Sort years descending
+            const sortedYears = Object.keys(pastLinksByYear).sort((a, b) => b - a);
             let firstPastSectionAssigned = false;
             sortedYears.forEach(year => {
                 const yearSection = document.createElement('section');
@@ -421,7 +427,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         function updateFilterCounts() {
             for (const type in allFilters) {
-                // Defensive check to ensure allFilters[type] and allFilters[type].active exist and is a Set
                 if (allFilters[type] && allFilters[type].active instanceof Set) {
                     const count = allFilters[type].active.size;
                     const countEl = document.getElementById(`${type}-filter-count`);
@@ -438,8 +443,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                         }
                     }
                 } else {
-                    // Log a detailed error to help diagnose which filter type is problematic
-                    console.error(`Error: Filter type '${type}' or its 'active' property is not a Set. Current state for this filter:`, allFilters[type]);
+                    console.error(`Error: Filter type '${type}' or its 'active' property is not a Set.`, allFilters[type]);
                 }
             }
         }
@@ -456,9 +460,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 
                 for (const type in allFilters) {
                     if (allFilters[type].active.size === 0) continue;
-
                     const cardValues = new Set(JSON.parse(card.dataset[type] || '[]').map(String));
-
                     if (![...allFilters[type].active].some(filterValue => cardValues.has(filterValue))) {
                         filtersMatch = false;
                         break;
@@ -624,20 +626,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 </script>
-
-<style>
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-</style>
 
 <footer class="mt-16 py-8 px-4 text-center text-lg text-gray-600 bg-slate-50 border-t border-gray-200">
     <p>
