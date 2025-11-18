@@ -10,8 +10,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
+    <!-- Load Tailwind Library (Pinned Version) -->
     <script src="https://cdn.tailwindcss.com/3.4.5"></script>
 
+    <!-- Configure Tailwind with Safety Check -->
     <script>
         if (typeof tailwind !== 'undefined') {
             tailwind.config = {
@@ -179,6 +181,7 @@
             </div>
 
         <main id="link-container" class="space-y-16">
+            <!-- Prototype warning will be injected here if needed -->
             <div id="no-results-message" class="hidden" role="status" aria-live="polite">
                 <div class="text-center py-12 px-6 bg-slate-50 rounded-lg">
                     <h3 class="mt-2 text-xl font-semibold text-gray-900">No workshops found</h3>
@@ -189,8 +192,38 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', async () => {
+    // === FALLBACK SYSTEM: Mock Data ===
+    // This data is used if 'workshops.json' cannot be found (e.g., in Canvas or local dev without a server)
+    const MOCK_DATA = [
+        {
+            "startDate": new Date(new Date().getFullYear(), new Date().getMonth() + 1, 10).toISOString().split('T')[0],
+            "endDate": new Date(new Date().getFullYear(), new Date().getMonth() + 1, 12).toISOString().split('T')[0],
+            "year": new Date().getFullYear(),
+            "title": "Prototype: Future Informatics",
+            "tags": ["Genomics", "Prototype"],
+            "regions": ["Ontario"],
+            "format": "In-Person",
+            "locations": ["Toronto, ON"],
+            "instructors": ["Dr. Jane Doe"],
+            "image": "https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=800",
+            "url": "#"
+        },
+        {
+            "startDate": "2023-05-15",
+            "endDate": "2023-05-17",
+            "year": 2023,
+            "title": "Prototype: Past Analytics",
+            "tags": ["R", "Statistics"],
+            "regions": ["BC"],
+            "format": "Hybrid",
+            "locations": ["Vancouver, BC"],
+            "instructors": ["Dr. John Smith"],
+            "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800",
+            "url": "#"
+        }
+    ];
+
     try {
-        // Define colors here so the app logic doesn't crash if Tailwind fails to load
         const workshopColors = {
             'BC': '#3C9048',
             'Alberta': '#86264E',
@@ -201,12 +234,21 @@ document.addEventListener('DOMContentLoaded', async () => {
             'Online': '#5A1F65'
         };
 
-        // Re-enabled fetch for local testing
-        const response = await fetch('workshops.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+        // === ROBUST DATA FETCHING ===
+        let linksData = [];
+        let isPrototypeMode = false;
+
+        try {
+            const response = await fetch('workshops.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            linksData = await response.json();
+        } catch (fetchError) {
+            console.warn("Failed to load workshops.json. Falling back to prototype data.", fetchError);
+            isPrototypeMode = true;
+            linksData = MOCK_DATA;
         }
-        const linksData = await response.json();
 
         const regionOrder = ['BC', 'Alberta', 'Prairies', 'Ontario', 'Quebec', 'Atlantic', 'Online'];
         const today = new Date();
@@ -216,6 +258,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         const noResultsMessage = document.getElementById('no-results-message');
         const searchInput = document.getElementById('text-search-input');
         const filterBar = document.getElementById('filter-bar');
+
+        // === PROTOTYPE BANNER ===
+        if (isPrototypeMode) {
+            const banner = document.createElement('div');
+            banner.className = "bg-amber-100 border-l-4 border-amber-500 text-amber-700 p-4 mb-8 rounded shadow-sm";
+            banner.innerHTML = `
+                <div class="flex items-center">
+                    <div class="py-1"><svg class="fill-current h-6 w-6 text-amber-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                    <div>
+                        <p class="font-bold">Prototype Mode Active</p>
+                        <p class="text-sm">Could not load 'workshops.json'. Displaying mock data for testing purposes.</p>
+                    </div>
+                </div>
+            `;
+            linkContainer.insertBefore(banner, linkContainer.firstChild);
+        }
 
         const allFilters = {
             year: { container: null, active: new Set(), label: "Year" },
