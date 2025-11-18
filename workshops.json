@@ -176,7 +176,7 @@
         "regions": ["Ontario", "Alberta"],
         "year": 2025,
         "startDate": "2025-07-07",
-        "endDate": "2024-07-08",
+        "endDate": "2025-07-08",
         "image": "img/legacy_icons/l-RNA_icon.png",
         "locations": ["Ottawa, ON", "Edmonton, AB"],
         "format": "In-person"
@@ -190,7 +190,7 @@
         "regions": ["Ontario", "Alberta"],
         "year": 2025,
         "startDate": "2025-07-10",
-        "endDate": "2024-07-11",
+        "endDate": "2025-07-11",
         "image": "img/legacy_icons/l-scRNA_icon.jpg",
         "locations": ["Ottawa, ON", "Edmonton, AB"],
         "format": "In-person"
@@ -274,7 +274,7 @@
         "regions": ["Ontario", "Online"],
         "year": 2024,
         "startDate": "2024-07-09",
-        "endDate": "2024-06-10",
+        "endDate": "2024-07-10",
         "image": "img/legacy_icons/l-ISO_icon.jpg",
         "locations": ["Toronto, ON"],
         "format": "In-person"

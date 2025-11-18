@@ -36,7 +36,7 @@
             },
             "format": {
                 "type": "string",
-                "enum": ["Online", "In-person", "Distributed", "Flipped", "Asynchronous"]
+                "enum": ["Online", "In-person", "Distributed", "Flipped", "Asynchronous", "Hybrid"]
             }
         },
         "required": [
