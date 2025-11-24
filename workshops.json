@@ -1,4 +1,17 @@
-[ 
+[
+    {
+        "url": "MLE_EdVan-2604",
+        "title": "Machine Learning",
+        "instructors": ["David Wishart","Mark Berjanskii","Tanvir Sajed"],
+        "tags": ["bioinformatics","machine learning","data science"],
+        "regions": ["BC","Alberta"],
+        "year": 2026,
+        "startDate": "2026-04-22",
+        "endDate": "2026-04-23",
+        "image": "img/MLE_icon.png",
+        "locations": ["Edmonton, AB","Vancouver, BC"],
+        "format": "Distributed"
+    }, 
     {
     "url": "RNA_MonSJNL-26",
     "title": "RNA-seq Analysis",
