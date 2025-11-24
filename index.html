@@ -60,15 +60,15 @@
         
         .dropdown-panel, .year-section, .card-interactive-wrapper { transition: all 0.3s ease-in-out; }
 
-        /* Permanent grayscale for cards with no materials */
-        .card.no-materials-card img,
-        .card.no-materials-card .h-1\.5, 
-        .card.no-materials-card .flex-wrap > span { 
-          filter: grayscale(100%);
-        }
+        /* Permanent visual adjustments for cards with no materials (excluding image and colors) */
+        /* Note: Grayscale removed from color bar (.h-1.5) and region tags (.flex-wrap > span) */
         
         .card.no-materials-card img { opacity: 1; }
         .card.no-materials-card .h3-title { color: #6b7280; }
+
+        /* Grayscale image and show overlay on hover for 'Material Coming Soon' cards */
+        .card.group:hover .materials-overlay { opacity: 1; }
+        .card.group:hover img { filter: grayscale(100%); }
 
         /* Materials Coming Soon overlay */
         .materials-overlay {
@@ -86,8 +86,6 @@
             padding: 1rem;
         }
         
-        .card.group:hover .materials-overlay { opacity: 1; }
-
         .card.hidden, .year-section.hidden { opacity: 0; transform: scale(0.95); max-height: 0; overflow: hidden; margin: 0 !important; padding: 0 !important; border: none; pointer-events: none; }
         .filter-button:hover .dropdown-arrow { transform: translateY(2px); }
 
@@ -351,7 +349,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 return `<span class="flex items-center justify-center ${lightBgClass} text-gray-900 border-2 ${borderClass} rounded-full px-3 py-1 text-xs font-bold shadow-sm" title="Region: ${region}">${region}</span>`;
             }).join('');
 
-            // FIXED: Safely retrieve colors from our local 'workshopColors' object instead of dependent 'tailwind' global
+            // Safely retrieve colors from our local 'workshopColors' object
             const regionColors = sortedRegions.map(region => workshopColors[region] || '#333333');
             
             let colorBarHTML = '<div class="h-1.5 bg-gray-300"><span class="sr-only">Workshop regions color bar</span></div>';
