@@ -1,17 +1,17 @@
 [
-    {
-    "url": "RNA_SaskTo-2606",
-    "title": "RNA-seq Analysis",
-    "instructors": ["Obi Griffith","Malachi Griffith","Alyona Ivanova","Diogo Pellegrina"],
-    "tags": [],
-    "regions": ["Prairies","Ontario"],
-    "year": 2026,
-    "startDate": "2026-06-22",
-    "endDate": "2026-06-24",
-    "image": "img/RNA_icon.png",
-    "locations": ["Saskatoon, SK"],
-    "format": "Distributed"
-    },
+  {
+  "url": "RNA_SaskTo-2606",
+  "title": "RNA-seq Analysis",
+  "instructors": ["Obi Griffith","Malachi Griffith","Alyona Ivanova","Diogo Pellegrina"],
+  "tags": [],
+  "regions": ["Prairies","Ontario"],
+  "year": 2026,
+  "startDate": "2026-06-22",
+  "endDate": "2026-06-24",
+  "image": "img/RNA_icon.png",
+  "locations": ["Saskatoon, SK","Toronto, ON"],
+  "format": "Distributed"
+},
     {
         "url": "RDM_To-2605",
         "title": "Reproducible Research: Essentials for Managing Your Data",
