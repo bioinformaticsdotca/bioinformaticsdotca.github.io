@@ -1,6 +1,6 @@
 [
      {
-    "url": "PNA_CalSask-2605",
+    "url": "",
     "title": "Pathway and Network Analysis",
     "instructors": ["Richard LeDuc","Constance Li","Diogo Pellegrina"],
     "tags": ["Pathways","Network Analysis"],
@@ -13,7 +13,7 @@
     "format": "Distributed"
 },
   {
-    "url": "scRNA_WinTo-2606",
+    "url": "",
     "title": "Single Cell RNA-seq Analysis",
     "instructors": ["Tallulah Andrews","Chaitra Sarathy","Alyona Ivanova"],
     "tags": [],
@@ -26,7 +26,7 @@
     "format": "Distributed"
 },
   {
-  "url": "RNA_SaskTo-2606",
+  "url": "",
   "title": "RNA-seq Analysis",
   "instructors": ["Obi Griffith","Malachi Griffith","Alyona Ivanova","Diogo Pellegrina"],
   "tags": [],
@@ -38,34 +38,34 @@
   "locations": ["Saskatoon, SK","Toronto, ON"],
   "format": "Distributed"
 },
+{
+    "url": "",
+    "title": "Reproducible Research: Essentials for Managing Your Data",
+    "instructors": ["Mélanie Courtot","Mitchell Shiell","Linda Xiang","Hardeep Nahal-Bose","Edmund Su","David Bujold"],
+    "tags": ["Research Data Management","data discovery","version control","reproducibility","data representation","data model"],
+    "regions": ["Ontario"],
+    "year": 2026,
+    "startDate": "2026-05-27",
+    "endDate": "2026-05-27",
+    "image": "img/RDM_icon.png",
+    "locations": ["Toronto, ON"],
+    "format": "In-person"
+},
+{
+    "url": "",
+    "title": "Machine Learning",
+    "instructors": ["David Wishart","Mark Berjanskii","Tanvir Sajed"],
+    "tags": ["bioinformatics","machine learning","data science"],
+    "regions": ["BC","Alberta"],
+    "year": 2026,
+    "startDate": "2026-04-22",
+    "endDate": "2026-04-23",
+    "image": "img/MLE_icon.png",
+    "locations": ["Edmonton, AB","Vancouver, BC"],
+    "format": "Distributed"
+},
     {
-        "url": "RDM_To-2605",
-        "title": "Reproducible Research: Essentials for Managing Your Data",
-        "instructors": ["Mélanie Courtot","Mitchell Shiell","Linda Xiang","Hardeep Nahal-Bose","Edmund Su","David Bujold"],
-        "tags": ["Research Data Management","data discovery","version control","reproducibility","data representation","data model"],
-        "regions": ["Ontario"],
-        "year": 2026,
-        "startDate": "2026-05-27",
-        "endDate": "2026-05-27",
-        "image": "img/RDM_icon.png",
-        "locations": ["Toronto, ON"],
-        "format": "In-person"
-    },
-    {
-        "url": "MLE_EdVan-2604",
-        "title": "Machine Learning",
-        "instructors": ["David Wishart","Mark Berjanskii","Tanvir Sajed"],
-        "tags": ["bioinformatics","machine learning","data science"],
-        "regions": ["BC","Alberta"],
-        "year": 2026,
-        "startDate": "2026-04-22",
-        "endDate": "2026-04-23",
-        "image": "img/MLE_icon.png",
-        "locations": ["Edmonton, AB","Vancouver, BC"],
-        "format": "Distributed"
-    },
-    {
-    "url": "RNA_MonStJ-26",
+    "url": "",
     "title": "RNA-seq Analysis",
     "instructors": ["Virginie Calderon","Lourdes Peña-Castillo"],
     "tags": ["RNAseq","bioinformatics","transcriptomics","transcriptome","genomics","NGS","sequencing","expression","pathway","enrichment","DESeq2"],
