@@ -1,5 +1,18 @@
 [ 
     {
+    "url": "RNA_MonSJNL-26",
+    "title": "RNA-seq Analysis",
+    "instructors": ["Virginie Calderon","Lourdes Peña-Castillo"],
+    "tags": ["RNAseq","bioinformatics","transcriptomics","transcriptome","genomics","NGS","sequencing","expression","pathway","enrichment","DESeq2"],
+    "regions": ["Quebec","Atlantic"],
+    "year": 2026,
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-19",
+    "image": "img/RNA_icon.png",
+    "locations": ["St. John's, NL"],
+    "format": "Distributed"
+    },
+    {
         "url": "PGE_2025",
         "title": "Pathogen Genomic Epidemiology",
         "instructors": ["Angela McLaughlin","Emma Griffiths","Finlay Maguire","Gary Van Domselaar","Idowu Olawaye","Jennifer Guthrie"],
