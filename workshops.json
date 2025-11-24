@@ -1,4 +1,17 @@
 [
+     {
+    "url": "PNA_CalSask-2605",
+    "title": "Pathway and Network Analysis",
+    "instructors": ["Richard LeDuc","Constance Li","Diogo Pellegrina"],
+    "tags": ["Pathways","Network Analysis"],
+    "regions": ["Alberta","Prairies"],
+    "year": 2026,
+    "startDate": "2026-05-12",
+    "endDate": "2026-05-13",
+    "image": "img/PNA_icon.png",
+    "locations": ["Saskatoon, SK","Calgary, AB"],
+    "format": "Distributed"
+},
   {
     "url": "scRNA_WinTo-2606",
     "title": "Single Cell RNA-seq Analysis",
