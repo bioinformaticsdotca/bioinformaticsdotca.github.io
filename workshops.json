@@ -1,5 +1,5 @@
 [
-  {
+    {
     "url": "RNA_SaskTo-2606",
     "title": "RNA-seq Analysis",
     "instructors": ["Obi Griffith","Malachi Griffith","Alyona Ivanova","Diogo Pellegrina"],
@@ -11,7 +11,7 @@
     "image": "img/RNA_icon.png",
     "locations": ["Saskatoon, SK"],
     "format": "Distributed"
-  },
+    },
     {
         "url": "RDM_To-2605",
         "title": "Reproducible Research: Essentials for Managing Your Data",
@@ -39,7 +39,7 @@
         "format": "Distributed"
     },
     {
-    "url": "RNA_MonSJNL-26",
+    "url": "RNA_MonStJ-26",
     "title": "RNA-seq Analysis",
     "instructors": ["Virginie Calderon","Lourdes Peña-Castillo"],
     "tags": ["RNAseq","bioinformatics","transcriptomics","transcriptome","genomics","NGS","sequencing","expression","pathway","enrichment","DESeq2"],
