@@ -39,7 +39,7 @@
   "format": "Distributed"
 },
 {
-    "url": "RDM_To-2605",
+    "url": "",
     "title": "Reproducible Research: Essentials for Managing Your Data",
     "instructors": ["Mélanie Courtot","Mitchell Shiell","Linda Xiang","Hardeep Nahal-Bose","Edmund Su","David Bujold"],
     "tags": ["Research Data Management","data discovery","version control","reproducibility","data representation","data model"],
