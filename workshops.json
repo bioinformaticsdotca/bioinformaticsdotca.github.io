@@ -1,4 +1,18 @@
 [
+{
+    "url": "RNA_MonStJ-2606",
+    "title": "RNA-seq Analysis",
+    "instructors": ["Virginie Calderon","Lourdes Peña-Castillo"],
+    "tags": ["RNA","Bioinformatics","Data Science"],
+    "regions": ["Quebec","Atlantic"],
+    "year": 2026,
+    "startDate": "2026-06-17",
+    "endDate": "2026-06-19",
+    "image": "img/RNA_icon.png",
+    "locations": ["Montréal, QC","St.John's, NL"],
+    "format": "Distributed"
+},
+
      {
     "url": "PNA_CalSask-2605",
     "title": "Pathway and Network Analysis",
