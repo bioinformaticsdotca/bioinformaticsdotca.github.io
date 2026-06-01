@@ -27,7 +27,7 @@
     "format": "Distributed"
 },
   {
-    "url": "",
+    "url": "scRNA_WinTo-2606",
     "title": "Single Cell RNA-seq Analysis",
     "instructors": ["Tallulah Andrews","Chaitra Sarathy","Alyona Ivanova"],
     "tags": [],
@@ -40,7 +40,7 @@
     "format": "Distributed"
 },
   {
-  "url": "",
+  "url": "RNA_SaskTo-2606",
   "title": "RNA-seq Analysis",
   "instructors": ["Obi Griffith","Malachi Griffith","Alyona Ivanova","Diogo Pellegrina"],
   "tags": [],
