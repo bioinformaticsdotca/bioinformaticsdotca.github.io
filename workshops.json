@@ -1,4 +1,17 @@
 [
+    {
+    "url": "RDM_Ott-2607",
+    "title": "Preparing Life Science Data for AI Applications",
+    "instructors": ["Gelan Ayana Zewdie"],
+    "tags": ["Data science","data management","preparing data"],
+    "regions": ["Ontario"],
+    "year": 2026,
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-01",
+    "image": "img/RDM_icon.png",
+    "locations": ["Ottawa, ON"],
+    "format": "In-person"
+},
 {
     "url": "RNA_MonStJ-2606",
     "title": "RNA-seq Analysis",
