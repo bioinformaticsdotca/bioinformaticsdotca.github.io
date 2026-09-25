@@ -71,7 +71,7 @@
 },
 
 {
-    "url": "LLM_Ed-2611",
+    "url": "",
     "title": "Large Language Models For Bioinformatics",
     "instructors": ["David Wishart","Mark Berjanskii"],
     "tags": ["LLM","Large Language Model","NLP","Transformer","BERT","DNABERT","ProtBERT","RAG","Knowledge Graph"],
@@ -85,7 +85,7 @@
 },
 
 {
-    "url": "RNA_Win-2612",
+    "url": "",
     "title": "RNA-seq Analysis",
     "instructors": ["Athanasios Zovoilis"],
     "tags": [],
