@@ -9,7 +9,7 @@
     "year": 2026,
     "startDate": "2026-09-15",
     "endDate": "2026-09-17",
-    "image": "img/CBW_Metagenome_icon.jpg",
+    "image": "img/legacy_icons/l-MIC_icon.png",
     "locations": ["Guelph, ON"],
     "format": "In-person"
 },
@@ -23,7 +23,7 @@
     "year": 2026,
     "startDate": "2026-11-04",
     "endDate": "2026-11-06",
-    "image": "img/HTG_logo.png",
+    "image": "img/HTG_icon.png",
     "locations": ["Vancouver, BC"],
     "format": "In-person"
 },
@@ -51,7 +51,7 @@
     "year": 2026,
     "startDate": "2026-12-14",
     "endDate": "2026-12-16",
-    "image": "img/RNA-icon.png",
+    "image": "img/RNA_icon.png",
     "locations": ["Winnipeg, MB"],
     "format": "In-person"
 },
