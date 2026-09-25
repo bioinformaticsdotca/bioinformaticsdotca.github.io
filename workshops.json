@@ -1,4 +1,61 @@
 [
+
+    {
+    "url": "MIC_Gue-2609",
+    "title": "CBW/CS-DCC Microbiome Analysis",
+    "instructors": ["Morgan Langille","Robyn Wright","Jacob Nearing","Abbey Saunders"],
+    "tags": ["microbiome","metagenomics","16s","18s"],
+    "regions": ["Ontario"],
+    "year": 2026,
+    "startDate": "2026-09-15",
+    "endDate": "2026-09-17",
+    "image": "img/CBW_Metagenome_icon.jpg",
+    "locations": ["Guelph, ON"],
+    "format": "In-person"
+},
+
+{
+    "url": "HTG_Van-2611",
+    "title": "High-Throughput Genomics",
+    "instructors": ["Erin Pleasance","Ido Hatam"],
+    "tags": ["Genomics","High-Throughput","Sequence Analysis"],
+    "regions": ["BC"],
+    "year": 2026,
+    "startDate": "2026-11-04",
+    "endDate": "2026-11-06",
+    "image": "img/HTG_logo.png",
+    "locations": ["Vancouver, BC"],
+    "format": "In-person"
+},
+
+{
+    "url": "LLM_Ed-2611",
+    "title": "Large Language Models For Bioinformatics",
+    "instructors": ["David Wishart","Mark Berjanskii"],
+    "tags": ["LLM","Large Language Model","NLP","Transformer","BERT","DNABERT","ProtBERT","RAG","Knowledge Graph"],
+    "regions": ["Alberta"],
+    "year": 2026,
+    "startDate": "2026-11-14",
+    "endDate": "2026-11-15",
+    "image": "img/LLM_icon.png",
+    "locations": ["Edmonton, AB"],
+    "format": "In-person"
+},
+
+{
+    "url": "RNA_Win-2612",
+    "title": "RNA-seq Analysis",
+    "instructors": ["Athanasios Zovoilis"],
+    "tags": [],
+    "regions": ["Prairies"],
+    "year": 2026,
+    "startDate": "2026-12-14",
+    "endDate": "2026-12-16",
+    "image": "img/RNA-icon.png",
+    "locations": ["Winnipeg, MB"],
+    "format": "In-person"
+},
+
     {
     "url": "RDM_Ott-2607",
     "title": "Preparing Life Science Data for AI Applications",

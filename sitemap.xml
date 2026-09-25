@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url><loc>https://bioinformaticsdotca.github.io/MIC_Gue-2609</loc></url>
+
+  <url><loc>https://bioinformaticsdotca.github.io/HTG_Van-2611</loc></url>
+
+  <url><loc>https://bioinformaticsdotca.github.io/LLM_Ed-2611</loc></url>
+
+  <url><loc>https://bioinformaticsdotca.github.io/RNA_Win-2612</loc></url>
+
   <url>
     <loc>https://bioinformaticsdotca.github.io/RDM_Ott-2607</loc>
   </url>
