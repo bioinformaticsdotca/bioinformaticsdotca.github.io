@@ -29,6 +29,48 @@
 },
 
 {
+    "url": "MLE_Hal-2610",
+    "title": "Machine Learning Foundations",
+    "instructors": ["Gustavo Sganzerla Martinez","Zahra Sadeghi","Dmytro Tymoshenko","Mackenzie Tapp"],
+    "tags": ["MachineLearning","NeuralNetwork","Bioinformatics","ComputationalBiology","DataScience","LifeScience","Biotech","Biomarker"],
+    "regions": ["Atlantic"],
+    "year": 2026,
+    "startDate": "2026-10-14",
+    "endDate": "2026-10-16",
+    "image": "img/MLE_icon.png",
+    "locations": ["Halifax, NS"],
+    "format": "In-person"
+},
+
+{
+    "url": "FSO_TorVir-2609",
+    "title": "Foundational Spatial 'Omics Analysis",
+    "instructors": ["Shamini Ayyadhury","Alyona Ivanova","Melanie Peralta"],
+    "tags": ["Spatial 'Omics","Bioinformatics"],
+    "regions": ["Ontario","Online"],
+    "year": 2026,
+    "startDate": "2026-09-28",
+    "endDate": "2026-09-30",
+    "image": "img/FSO_icon.png",
+    "locations": ["Toronto, ON","Online"],
+    "format": "Hybrid"
+},
+
+{
+    "url": "CAN_TorMon-2610",
+    "title": "Cancer Analysis",
+    "instructors": ["Trevor Pugh","Linda Xiang","Yoshiaki Tanaka","Robert Everleigh","Mathieu Lajoie","Vida Talebian","Aqsa Alam","Veronique Voisin","Ruth Isserlin","Nicholas Geoffrion"],
+    "tags": ["Cancer Analysis","Bioinformatics"],
+    "regions": ["BC","Ontario"],
+    "year": 2026,
+    "startDate": "2026-10-19",
+    "endDate": "2026-10-23",
+    "image": "img/CAN_icon.png",
+    "locations": ["Toronto, ON","Montreal, ON"],
+    "format": "Distributed"
+},
+
+{
     "url": "LLM_Ed-2611",
     "title": "Large Language Models For Bioinformatics",
     "instructors": ["David Wishart","Mark Berjanskii"],
