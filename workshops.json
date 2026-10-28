@@ -84,20 +84,6 @@
     "format": "In-person"
 },
 
-{
-    "url": "",
-    "title": "RNA-seq Analysis",
-    "instructors": ["Athanasios Zovoilis"],
-    "tags": [],
-    "regions": ["Prairies"],
-    "year": 2026,
-    "startDate": "2026-12-14",
-    "endDate": "2026-12-16",
-    "image": "img/RNA_icon.png",
-    "locations": ["Winnipeg, MB"],
-    "format": "In-person"
-},
-
     {
     "url": "RDM_Ott-2607",
     "title": "Preparing Life Science Data for AI Applications",
