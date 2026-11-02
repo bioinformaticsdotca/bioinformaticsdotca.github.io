@@ -61,12 +61,12 @@
     "title": "Cancer Analysis",
     "instructors": ["Trevor Pugh","Linda Xiang","Yoshiaki Tanaka","Robert Everleigh","Mathieu Lajoie","Vida Talebian","Aqsa Alam","Veronique Voisin","Ruth Isserlin","Nicholas Geoffrion"],
     "tags": ["Cancer Analysis","Bioinformatics"],
-    "regions": ["BC","Ontario"],
+    "regions": ["Quebec","Ontario"],
     "year": 2026,
     "startDate": "2026-10-19",
     "endDate": "2026-10-23",
     "image": "img/CAN_icon.png",
-    "locations": ["Toronto, ON","Montreal, ON"],
+    "locations": ["Toronto, ON","Montreal, QC"],
     "format": "Distributed"
 },
 
